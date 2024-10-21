@@ -1,0 +1,35 @@
+{
+  "chartSettings": {
+    "primaryXAxis": { "title": "Country/Products" },
+    "primaryYAxis": { "title": "Sum of Units Sold" }
+  },
+  "dataSourceSettings": {
+      "columns": [{ "name": "Year" }, { "name": "Quarter" }],
+      "values": [{ "name": "Sold", "caption": "Units Sold" }, { "name": "Amount", "caption": "Sold Amount" }],
+      "rows": [{ "name": "Country", "expandAll": true }, { "name": "Products", "expandAll": true }],
+      "formatSettings": [{ "name": "Amount", "format": "C0" }]
+  },
+  "groupingBarSettings": {
+    "allowDragAndDrop": true,
+    "showFieldsPanel": false,
+    "showFilterIcon": true,
+    "showRemoveIcon": true,
+    "showSortIcon": true,
+    "showValueTypeIcon": true
+  },
+  "pageSettings": {
+    "columnPageSize": 10,
+    "currentColumnPage": 1,
+    "currentRowPage": 1,
+    "rowPageSize": 5
+  },
+  "pagerSettings": {
+    "enableCompactView": false,
+    "isInversed": false,
+    "position": "Bottom",
+    "showColumnPageSize": true,
+    "showColumnPager": true,
+    "showRowPageSize": true,
+    "showRowPager": true
+  }
+}

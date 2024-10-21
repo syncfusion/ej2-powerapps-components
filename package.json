@@ -1,0 +1,18 @@
+{
+  "name": "ej2-powerapps-components",
+  "version": "27.1.48",
+  "private": true,
+  "description": "The Syncfusion PowerApps code component library provides a collection of reusable components for enhancing PowerApps applications.",
+  "scripts": {
+    "build": "gulp build",
+    "pack": "gulp pack",
+    "deploy": "gulp deploy",
+    "pcf:init": "gulp pcf:init",
+    "build:init": "gulp build:init"
+  },
+  "author": "Syncfusion Inc.",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "shelljs": "^0.8.5"
+  }
+}

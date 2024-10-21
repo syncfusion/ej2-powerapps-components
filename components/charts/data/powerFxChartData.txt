@@ -1,0 +1,11 @@
+Table(
+    { VietnamX: 2012, VietnamY: 13.5, CanadaX: 2012, CanadaY: 5.3, MalaysiaX: 2012, MalaysiaY: 5.6, EgyptX: 2012, EgyptY: 6.6, IndonesiaX: 2012, IndonesiaY: 2.3 },
+    { VietnamX: 2013, VietnamY: 12.4, CanadaX: 2013, CanadaY: 5.6, MalaysiaX: 2013, MalaysiaY: 4.7, EgyptX: 2013, EgyptY: 6.8, IndonesiaX: 2013, IndonesiaY: 2.6 },
+    { VietnamX: 2014, VietnamY: 12.7, CanadaX: 2014, CanadaY: 5.9, MalaysiaX: 2014, MalaysiaY: 4.3, EgyptX: 2014, EgyptY: 6.5, IndonesiaX: 2014, IndonesiaY: 4.4 },
+    { VietnamX: 2015, VietnamY: 12.5, CanadaX: 2015, CanadaY: 5.7, MalaysiaX: 2015, MalaysiaY: 3.8, EgyptX: 2015, EgyptY: 5.5, IndonesiaX: 2015, IndonesiaY: 4.9 },
+    { VietnamX: 2016, VietnamY: 12.7, CanadaX: 2016, CanadaY: 7.8, MalaysiaX: 2016, MalaysiaY: 2.8, EgyptX: 2016, EgyptY: 5.1, IndonesiaX: 2016, IndonesiaY: 4.8 },
+    { VietnamX: 2017, VietnamY: 13.7, CanadaX: 2017, CanadaY: 10.3, MalaysiaX: 2017, MalaysiaY: 2.8, EgyptX: 2017, EgyptY: 6.8, IndonesiaX: 2017, IndonesiaY: 5.3 },
+    { VietnamX: 2018, VietnamY: 13.4, CanadaX: 2018, CanadaY: 15.5, MalaysiaX: 2018, MalaysiaY: 4.1, EgyptX: 2018, EgyptY: 7.8, IndonesiaX: 2018, IndonesiaY: 6.2 },
+    { VietnamX: 2019, VietnamY: 12.9, CanadaX: 2019, CanadaY: 17.5, MalaysiaX: 2019, MalaysiaY: 6.8, EgyptX: 2019, EgyptY: 7.3, IndonesiaX: 2019, IndonesiaY: 7.8 },
+    { VietnamX: 2020, VietnamY: 11.2, CanadaX: 2020, CanadaY: 19.5, MalaysiaX: 2020, MalaysiaY: 7.1, EgyptX: 2020, EgyptY: 8.2, IndonesiaX: 2020, IndonesiaY: 9.3 }
+)

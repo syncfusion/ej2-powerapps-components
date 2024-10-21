@@ -1,0 +1,13 @@
+"ColHeaderText","ColType","ColEditType","ColClipMode","ColTextAlign","ColHeaderTextAlign","ColVisible","ColIsPrimaryKey","ColAllowSorting","ColAllowResizing","ColAllowFiltering","ColAllowGrouping","ColallowEditing","ColDisableHtmlEncode","ColEnableGroupByFormat","ColDisplayAsCheckBox","ColAutoFit","ColWidth","ColMinWidth","ColMaxWidth","ColFormat"
+"CheckBox","checkbox","checkboxEdit","Ellipsis","Left","Left","true","false","false","false","false","false","false","false","false","true","false","50","","",
+"OrderID","string","defaultEdit","Ellipsis","Left","Left","true","true","true","true","true","true","true","true","true","false","false","100","100","200",""
+"CustomerID","string","defaultEdit","Ellipsis","Left","Left","true","false","true","true","true","true","true","true","true","false","false","100","100","200",""
+"CustomerName","string","defaultEdit","Ellipsis","Left","Left","true","false","true","true","true","true","true","true","true","false","false","100","100","200",""
+"OrderDate","datetime","dateTimePickerEdit","Ellipsis","Left","Left","true","false","true","true","true","true","true","true","true","false","false","100","100","200","{'type': 'dateTime','format': 'M/d/yyyy h:mm a'}"
+"ShippedDate","datetime","dateTimePickerEdit","Ellipsis","Left","Left","true","false","true","true","true","true","true","true","true","false","false","100","100","200","{'type': 'dateTime','format': 'M/d/yyyy h:mm a'}"
+"Freight","number","numericEdit","Ellipsis","Left","Left","true","false","true","true","true","true","true","true","true","false","false","100","100","200","C"
+"ShipName","string","defaultEdit","Ellipsis","Left","Left","true","false","true","true","true","true","true","true","true","false","false","100","100","200",""
+"ShipAddress","string","defaultEdit","Ellipsis","Left","Left","true","false","true","true","true","true","true","true","true","false","false","100","100","200",""
+"ShipCity","string","defaultEdit","Ellipsis","Left","Left","true","false","true","true","true","true","true","true","true","false","false","100","100","200",""
+"ShipCountry","string","defaultEdit","Ellipsis","Left","Left","true","false","true","true","true","true","true","true","true","false","false","100","100","200",""
+"EmployeeID","number","numericEdit","Ellipsis","Left","Left","true","false","true","true","true","true","true","true","true","false","false","100","100","200","N"

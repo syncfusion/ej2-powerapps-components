@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework
+  object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root"
+    xmlns=""
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <!-- PivotView Control properties -->
+  <data name="SfPivotView" xml:space="preserve">
+    <value>SfPivotView (27.1.48) Preview</value>
+  </data>
+  <data name="SfPivotView_Desc_Key" xml:space="preserve">
+    <value>The EJ2 PowerApps Pivot View Component provides interactive tables with rows, columns, and values that can be dynamically adjusted, offering powerful insights through data aggregation and visualization. This component supports features like filtering, sorting, conditional formatting, and drill-down capabilities, making it an essential tool for data analysis within PowerApps.</value>
+  </data>
+
+  <!-- PivotView Datasource Properties -->
+  <data name="DataSource" xml:space="preserve">
+    <value> DataSource </value>
+  </data>
+
+  <!-- PivotView Config -->
+  <data name="PivotViewConfig" xml:space="preserve">
+    <value>PivotView Config</value>
+  </data>
+  <data name="PivotViewConfig_Desc_Key" xml:space="preserve">
+    <value>The configuration settings for the PivotView component allows you to customize its features and behavior. The dataSource property will be automatically updated based on your data. For refrence, you can find the default configuration in the JSON file located in the "components/pivotview/data" folder in the repository.
+    </value>
+  </data>
+
+  <!-- PivotView Property -->
+  <data name="ShowFieldsList" xml:space="preserve">
+    <value>Show FieldsList</value>
+  </data>
+  <data name="ShowFieldsList_Desc_Key" xml:space="preserve">
+    <value>Allows built-in popup field list to be enabled in the pivot table UI.</value>
+  </data>
+  <data name="AllowCalculatedField" xml:space="preserve">
+    <value>Allow CalculatedField</value>
+  </data>
+  <data name="AllowCalculatedField_Desc_Key" xml:space="preserve">
+    <value>Allows the built-in calculated field dialog to be displayed in the component.</value>
+  </data>
+  <data name="AllowDeferLayoutUpdate" xml:space="preserve">
+    <value>Allow DeferLayoutUpdate</value>
+  </data>
+  <data name="AllowDeferLayoutUpdate_Desc_Key" xml:space="preserve">
+    <value>Allows the pivot table component to be updated only on demand</value>
+  </data>
+  <data name="EnableFieldSearching" xml:space="preserve">
+    <value>Enable FieldSearching</value>
+  </data>
+  <data name="EnableFieldSearching_Desc_Key" xml:space="preserve">
+    <value>It enables the search option in the field list UI, which can be used to search specific fields at runtime.</value>
+  </data>
+  <data name="ShowValuesbutton" xml:space="preserve">
+    <value>Show Valuesbutton</value>
+  </data>
+  <data name="ShowValuesbutton_Desc_Key" xml:space="preserve">
+    <value>Allows you to create a pivot button with “Values” as a caption used to display in the grouping bar and field list UI.</value>
+  </data>
+  <data name="AllowDrillThrough" xml:space="preserve">
+    <value>Allow DrillThrough</value>
+  </data>
+  <data name="AllowDrillThrough_Desc_Key" xml:space="preserve">
+    <value>Allows to view the underlying raw data of a summarized cell in the pivot table.</value>
+  </data>
+  <data name="EnableValueSorting" xml:space="preserve">
+    <value>Enable ValueSorting</value>
+  </data>
+  <data name="EnableValueSorting_Desc_Key" xml:space="preserve">
+    <value>Allows you to sort individual value field and its aggregated values either in row or column axis to ascending or descending order.</value>
+  </data>
+  <data name="AllowGrouping" xml:space="preserve">
+    <value>Allow Grouping</value>
+  </data>
+  <data name="AllowGrouping_Desc_Key" xml:space="preserve">
+    <value>Allows you to show the grouping UI in the pivot table that automatically groups date, time, number and string at runtime.</value>
+  </data>
+  <data name="EnablePaging" xml:space="preserve">
+    <value>Enable Paging</value>
+  </data>
+  <data name="EnablePaging_Desc_Key" xml:space="preserve">
+    <value>Allows large amounts of data to be displayed page-by-page.</value>
+  </data>
+  <data name="ShowGroupingbar" xml:space="preserve">
+    <value>Show Groupingbar</value>
+  </data>
+  <data name="ShowGroupingbar_Desc_Key" xml:space="preserve">
+    <value>Allows you to show the grouping bar UI in the pivot table that automatically populates fields from the bound report.</value>
+  </data>
+  <data name="ShowToolbar" xml:space="preserve">
+    <value>Show Toolbar</value>
+  </data>
+  <data name="ShowToolbar_Desc_Key" xml:space="preserve">
+    <value>Allows you to show the toolbar UI that holds built-in toolbar options.</value>
+  </data>
+  <data name="ShowTooltip" xml:space="preserve">
+    <value>Show Tooltip</value>
+  </data>
+  <data name="ShowTooltip_Desc_Key" xml:space="preserve">
+    <value>Allows you to display the tooltip to the value cells either by mouse hovering or by touch in the pivot table.</value>
+  </data>
+  <data name="DisplayOptions" xml:space="preserve">
+    <value>Display Options</value>
+  </data>
+  <data name="DisplayOptions_Desc_Key" xml:space="preserve">
+    <value>Allows you to choose the view port as either pivot table or pivot chart or both table and chart.</value>
+  </data>
+  <data name="ChartType" xml:space="preserve">
+    <value>Chart Type</value>
+  </data>
+  <data name="ChartType_Desc_Key" xml:space="preserve">
+    <value>Defines the chart type for the Pivot Chart. It will be applied type in chartSeries property.</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>Height</value>
+  </data>
+  <data name="Height_Desc_Key" xml:space="preserve">
+    <value>Defines the height of the PivotView code component. It specifies the height of the Pivotview when rendered in PowerApps table form.</value>
+  </data>
+
+  <!-- PivotView Event Properties -->
+  <data name="EventName" xml:space="preserve">
+    <value>Event Name</value>
+  </data>
+  <data name="EventName_Desc_Key" xml:space="preserve">
+    <value>Defines the event name for the PivotView code component.</value>
+  </data>
+  <data name="OnError" xml:space="preserve">
+    <value>OnError</value>
+  </data>
+  <data name="OnError_Desc_Key" xml:space="preserve">
+    <value>Outputs error message when onError is triggered.</value>
+  </data>
+</root>

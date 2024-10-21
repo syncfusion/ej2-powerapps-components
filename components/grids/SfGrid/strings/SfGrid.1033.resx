@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root"
+    xmlns=""
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <!-- Grid Control properties -->
+  <data name="SfGrid" xml:space="preserve">
+    <value>SfGrid (27.1.48) Preview</value>
+  </data>
+  <data name="SfGrid_Desc_Key" xml:space="preserve">
+    <value>The PowerApps Data Grid is a feature-rich grid component for displaying data in a tabular format.</value>
+  </data>
+
+  <!-- Grid Datasource Properties -->
+  <data name="DataSource" xml:space="preserve">
+    <value>Data Source </value>
+  </data>
+
+  <!-- Grid Column Properties -->
+  <data name="Columns" xml:space="preserve">
+    <value>Columns </value>
+  </data>
+  <data name="ColHeaderText" xml:space="preserve">
+    <value>Header Text</value>
+  </data>
+  <data name="ColHeaderText_Desc_Key" xml:space="preserve">
+    <value>Defines the header text of column which is used to display in column header.</value>
+  </data>
+  <data name="ColType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="ColType_Desc_Key" xml:space="preserve">
+    <value>Defines the data type of the column.</value>
+  </data>
+  <data name="ColEditType" xml:space="preserve">
+    <value>Edit Type</value>
+  </data>
+  <data name="ColEditType_Desc_Key" xml:space="preserve">
+    <value>Defines the type of component for editing.</value>
+  </data>
+  <data name="ColFormat" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="ColFormat_Desc_Key" xml:space="preserve">
+    <value>It is used to change display value with the given format and does not affect the original data.</value>
+  </data>
+  <data name="ColClipMode" xml:space="preserve">
+    <value>Clip Mode</value>
+  </data>
+  <data name="ColClipMode_Desc_Key" xml:space="preserve">
+    <value>Defines the cell content's overflow mode. Also it will display tooltip while hover on ellipsis applied cell. </value>
+  </data>
+  <data name="ColTextAlign" xml:space="preserve">
+    <value>Text Align</value>
+  </data>
+  <data name="ColTextAlign_Desc_Key" xml:space="preserve">
+    <value>Defines the alignment of the column in both header and content cells. </value>
+  </data>
+  <data name="ColHeaderTextAlign" xml:space="preserve">
+    <value>Header Text Align</value>
+  </data>
+  <data name="ColHeaderTextAlign_Desc_Key" xml:space="preserve">
+    <value>Define the alignment of column header which is used to align the text of column header. </value>
+  </data>
+  <data name="ColVisible" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="ColVisible_Desc_Key" xml:space="preserve">
+    <value>If visible is set to false, hides the particular column. By default, all columns are displayed.</value>
+  </data>
+  <data name="ColIsPrimaryKey" xml:space="preserve">
+    <value>Is Primary Key</value>
+  </data>
+  <data name="ColIsPrimaryKey_Desc_Key" xml:space="preserve">
+    <value>If isPrimaryKey is set to true, considers this column as the primary key constraint.</value>
+  </data>
+  <data name="ColAllowSorting" xml:space="preserve">
+    <value>Allow Sorting</value>
+  </data>
+  <data name="ColAllowSorting_Desc_Key" xml:space="preserve">
+    <value>If allowSorting set to false, then it disables sorting option of a particular column. By default all columns are sortable.</value>
+  </data>
+  <data name="ColAllowResizing" xml:space="preserve">
+    <value>Allow Resizing</value>
+  </data>
+  <data name="ColAllowResizing_Desc_Key" xml:space="preserve">
+    <value>If allowResizing set to false, it disables resize option of a particular column.</value>
+  </data>
+  <data name="ColAllowFiltering" xml:space="preserve">
+    <value>Allow Filtering</value>
+  </data>
+  <data name="ColAllowFiltering_Desc_Key" xml:space="preserve">
+    <value>If allowFiltering set to false, then it disables filtering option and filter bar element of a particular column. By default all columns are filterable.</value>
+  </data>
+  <data name="ColAllowGrouping" xml:space="preserve">
+    <value>Allow Grouping</value>
+  </data>
+  <data name="ColAllowGrouping_Desc_Key" xml:space="preserve">
+    <value>If allowGrouping set to false, then it disables grouping of a particular column. By default all columns are groupable.</value>
+  </data>
+  <data name="ColAllowEditing" xml:space="preserve">
+    <value>Allow Editing</value>
+  </data>
+  <data name="ColAllowEditing_Desc_Key" xml:space="preserve">
+    <value>If allowEditing set to false, then it disables editing of a particular column. By default all columns are editable.</value>
+  </data>
+  <data name="ColDisableHtmlEncode" xml:space="preserve">
+    <value>Disable Html Encode</value>
+  </data>
+  <data name="ColDisableHtmlEncode_Desc_Key" xml:space="preserve">
+    <value>If disableHtmlEncode is set to true, it encodes the HTML of the header and content cells.</value>
+  </data>
+  <data name="ColEnableGroupByFormat" xml:space="preserve">
+    <value>Enable Group By Format</value>
+  </data>
+  <data name="ColEnableGroupByFormat_Desc_Key" xml:space="preserve">
+    <value>If enableGroupByFormat set to true, then it groups the particular column by formatted values. By default no columns are group by format.</value>
+  </data>
+  <data name="ColDisplayAsCheckBox" xml:space="preserve">
+    <value>Display As CheckBox</value>
+  </data>
+  <data name="ColDisplayAsCheckBox_Desc_Key" xml:space="preserve">
+    <value>If displayAsCheckBox is set to true, it displays the column value as a check box instead of Boolean value.</value>
+  </data>
+  <data name="ColAutoFit" xml:space="preserve">
+    <value>Auto Fit</value>
+  </data>
+  <data name="ColAutoFit_Desc_Key" xml:space="preserve">
+    <value>If autoFit set to true, then the particular column content width will be adjusted based on its content in the initial rendering itself. Setting this property as true is equivalent to calling autoFitColumns method in the dataBound event.</value>
+  </data>
+  <data name="ColWidth" xml:space="preserve">
+    <value>Width</value>
+  </data>
+  <data name="ColWidth_Desc_Key" xml:space="preserve">
+    <value>Defines the width of the column in pixels or percentage.</value>
+  </data>
+  <data name="ColMinWidth" xml:space="preserve">
+    <value>Min Width</value>
+  </data>
+  <data name="ColMinWidth_Desc_Key" xml:space="preserve">
+    <value>Defines the minimum width of the column in pixels or percentage.</value>
+  </data>
+  <data name="ColMaxWidth" xml:space="preserve">
+    <value>Max Width</value>
+  </data>
+  <data name="ColMaxWidth_Desc_Key" xml:space="preserve">
+    <value>Defines the maximum width of the column in pixel or percentage, which will restrict resizing beyond this pixel or percentage.</value>
+  </data>
+
+  <!-- Grid Event Properties -->
+  <data name="EventName" xml:space="preserve">
+    <value>Event Name</value>
+  </data>
+  <data name="EventName_Desc_Key" xml:space="preserve">
+    <value>Output event name when OnChange is triggered.</value>
+  </data>
+  <data name="OnError" xml:space="preserve">
+    <value>OnError</value>
+  </data>
+  <data name="OnError_Desc_Key" xml:space="preserve">
+    <value>Outputs error message when onError is triggered.</value>
+  </data>
+
+  <!-- Grid Key Properties -->
+  <data name="PrimaryKey" xml:space="preserve">
+    <value>Primary Key</value>
+  </data>
+  <data name="PrimaryKey_Desc_Key" xml:space="preserve">
+    <value>Primary Key value for auto generated columns data. </value>
+  </data>
+  <data name="AllowEditing" xml:space="preserve">
+    <value>Allow Editing</value>
+  </data>
+  <data name="AllowEditing_Desc_Key" xml:space="preserve">
+    <value>If allowEditing is set to true, values can be updated in the existing record.</value>
+  </data>
+  <data name="EditMode" xml:space="preserve">
+    <value>Edit Mode</value>
+  </data>
+  <data name="EditMode_Desc_Key" xml:space="preserve">
+    <value>Defines the mode to edit.</value>
+  </data>
+  <data name="Edit_Normal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="Edit_Normal_Desc_Key" xml:space="preserve">
+    <value>Defines normal editing mode.</value>
+  </data>
+  <data name="Edit_Dialog" xml:space="preserve">
+    <value>Dialog</value>
+  </data>
+  <data name="Edit_Dialog_Desc_Key" xml:space="preserve">
+    <value>Defines dialog editing mode.</value>
+  </data>
+  <data name="AllowPaging" xml:space="preserve">
+    <value>Allow Paging</value>
+  </data>
+  <data name="AllowPaging_Desc_Key" xml:space="preserve">
+    <value>If allowPaging is set to true, the pager renders at the footer of the Grid. It is used to handle page navigation in the Grid.</value>
+  </data>
+  <data name="PageSize" xml:space="preserve">
+    <value>Page Size</value>
+  </data>
+  <data name="PageSize_Desc_Key" xml:space="preserve">
+    <value>Defines the number of records to be displayed per page.</value>
+  </data>
+  <data name="PageCount" xml:space="preserve">
+    <value>Page Count</value>
+  </data>
+  <data name="PageCount_Desc_Key" xml:space="preserve">
+    <value>Defines the number of pages to be displayed in the pager container.</value>
+  </data>
+  <data name="AllowSorting" xml:space="preserve">
+    <value>Allow Sorting</value>
+  </data>
+  <data name="AllowSorting_Desc_Key" xml:space="preserve">
+    <value>If allowSorting is set to true, it allows sorting of grid records when column header is clicked.</value>
+  </data>
+  <data name="AllowMultiSorting" xml:space="preserve">
+    <value>Allow MultiSorting</value>
+  </data>
+  <data name="AllowMultiSorting_Desc_Key" xml:space="preserve">
+    <value>If allowMultiSorting set to true, then it will allow the user to sort multiple column in the grid.</value>
+  </data>
+  <data name="AllowGrouping" xml:space="preserve">
+    <value>Allow Grouping</value>
+  </data>
+  <data name="AllowGrouping_Desc_Key" xml:space="preserve">
+    <value>If allowGrouping set to true, then it will allow the user to dynamically group or ungroup columns. Grouping can be done by drag and drop columns from column header to group drop area.</value>
+  </data>
+  <data name="ShowGroupedColumn" xml:space="preserve">
+    <value>Show Grouped Column</value>
+  </data>
+  <data name="ShowGroupedColumn_Desc_Key" xml:space="preserve">
+    <value>If showGroupedColumn is set to false, it hides the grouped column after grouping.</value>
+  </data>
+  <data name="AllowFiltering" xml:space="preserve">
+    <value>Allow Filtering</value>
+  </data>
+  <data name="AllowFiltering_Desc_Key" xml:space="preserve">
+    <value>If allowFiltering set to true the filter bar will be displayed. If set to false the filter bar will not be displayed. Filter bar allows the user to filter grid records with required criteria.</value>
+  </data>
+  <data name="GridLines" xml:space="preserve">
+    <value>Grid Lines</value>
+  </data>
+  <data name="GridLines_Desc_Key" xml:space="preserve">
+    <value>Defines the mode of grid lines.</value>
+  </data>
+  <data name="GridLines_Default" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="GridLines_Default_Desc_Key" xml:space="preserve">
+    <value>Displays grid lines based on the theme.</value>
+  </data>
+  <data name="GridLines_Both" xml:space="preserve">
+    <value>Both</value>
+  </data>
+  <data name="GridLines_Both_Desc_key" xml:space="preserve">
+    <value>Displays both horizontal and vertical grid lines.</value>
+  </data>
+  <data name="GridLines_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="GridLines_None_Desc_Key" xml:space="preserve">
+    <value>No grid lines are displayed.</value>
+  </data>
+  <data name="GridLines_Horizontal" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="GridLines_Horizontal_Desc_Key" xml:space="preserve">
+    <value>Displays the horizontal grid lines only.</value>
+  </data>
+  <data name="GridLines_Vertical" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="GridLines_Vertical_Desc_Key" xml:space="preserve">
+    <value>Displays the vertical grid lines only.</value>
+  </data>
+  <data name="AllowTextWrap" xml:space="preserve">
+    <value>Allow Text Wrap</value>
+  </data>
+  <data name="AllowTextWrap_Desc_Key" xml:space="preserve">
+    <value>If allowTextWrap set to true, then text content will wrap to the next line when its text content exceeds the width of the Column Cells.</value>
+  </data>
+  <data name="AllowResizing" xml:space="preserve">
+    <value>Allow Resizing</value>
+  </data>
+  <data name="AllowResizing_Desc_Key" xml:space="preserve">
+    <value>If allowResizing is set to true, Grid columns can be resized.</value>
+  </data>
+  <data name="NoDataSource_Message" xml:space="preserve">
+    <value>There is no data available to display at the moment.</value>
+  </data>
+</root>

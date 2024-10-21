@@ -1,0 +1,61 @@
+OrderID,CustomerID,CustomerName,OrderDate,ShippedDate,Freight,ShipName,ShipAddress,ShipCity,ShipCountry,EmployeeID
+10248,VINET,Maria ,1996-07-04T00:00:00.000Z,1996-07-16T00:00:00.000Z,32.38,Vins et alcools Chevalier,59 rue de l Abbaye,Reims,France,3
+10249,TOMSP,Ana Trujillo,1996-07-05T00:00:00.000Z,1996-07-10T00:00:00.000Z,11.61,Toms Spezialitäten,Luisenstr. 48,Münster,Germany,5
+10250,HANAR,Antonio Moreno,1996-07-08T00:00:00.000Z,1996-07-12T00:00:00.000Z,65.83,Hanari Carnes,Rua do Paço 67,Rio de Janeiro,Brazil,1
+10251,VICTE,Thomas Hardy,1996-07-08T00:00:00.000Z,1996-07-15T00:00:00.000Z,41.34,Victuailles en stock,2 rue du Commerce,Lyon,France,6
+10252,SUPRD,Christina Berglund,1996-07-09T00:00:00.000Z,1996-07-11T00:00:00.000Z,51.3,Suprêmes délices,Boulevard Tirou 255,Charleroi,Belgium,2
+10253,HANAR,Hanna Moos,1996-07-10T00:00:00.000Z,1996-07-16T00:00:00.000Z,58.17,Hanari Carnes,Rua do Paço 67,Rio de Janeiro,Brazil,4
+10254,CHOPS,Frédérique Citeaux,1996-07-11T00:00:00.000Z,1996-07-23T00:00:00.000Z,22.98,Chop-suey Chinese,Hauptstr. 31,Bern,Switzerland,9
+10255,RICSU,Martín Sommer,1996-07-12T00:00:00.000Z,1996-07-15T00:00:00.000Z,148.33,Richter Supermarkt,Starenweg 5,Genève,Switzerland,7
+10256,WELLI,Laurence Lebihan,1996-07-15T00:00:00.000Z,1996-07-17T00:00:00.000Z,13.97,Wellington Importadora,Rua do Mercado 12,Resende,Brazil,8
+10257,HILAA,Elizabeth Lincoln,1996-07-16T00:00:00.000Z,1996-07-22T00:00:00.000Z,81.91,HILARION-Abastos,Carrera 22 con Ave. Carlos Soublette #8-35,San Cristóbal,Venezuela,5
+10258,ERNSH,Victoria Ashworth,1996-07-17T00:00:00.000Z,1996-07-23T00:00:00.000Z,140.51,Ernst Handel,Kirchgasse 6,Graz,Austria,1
+10259,CENTC,Patricio Simpson,1996-07-18T00:00:00.000Z,1996-07-25T00:00:00.000Z,3.25,Centro comercial Moctezuma,Sierras de Granada 9993,México D.F.,Mexico,6
+10260,OTTIK,Francisco Chang,1996-07-19T00:00:00.000Z,1996-07-29T00:00:00.000Z,55.09,Ottilies Käseladen,Mehrheimerstr. 369,Köln,Germany,2
+10261,QUEDE,Yang Wang,1996-07-19T00:00:00.000Z,1996-07-30T00:00:00.000Z,3.05,Que Delícia,Rua da Panificadora 12,Rio de Janeiro,Brazil,7
+10262,RATTC,Pedro Afonso,1996-07-22T00:00:00.000Z,1996-07-25T00:00:00.000Z,48.29,Rattlesnake Canyon Grocery,2817 Milton Dr.,Albuquerque,USA,4
+10263,ERNSH,Elizabeth Brown,1996-07-23T00:00:00.000Z,1996-07-31T00:00:00.000Z,146.06,Ernst Handel,Kirchgasse 6,Graz,Austria,3
+10264,FOLKO,Sven Ottlieb,1996-07-24T00:00:00.000Z,1996-08-23T00:00:00.000Z,3.67,Folk och fä HB,Åkergatan 24,Bräcke,Sweden,8
+10265,BLONP,Ann Devon,1996-07-25T00:00:00.000Z,1996-08-12T00:00:00.000Z,55.28,Blondel père et fils,24 place Kléber,Strasbourg,France,3
+10266,WARTH,Roland Mendel,1996-07-26T00:00:00.000Z,1996-07-31T00:00:00.000Z,25.73,Wartian Herkku,Torikatu 38,Oulu,Finland,2
+10267,FRANK,Aria Cruz,1996-07-29T00:00:00.000Z,1996-08-06T00:00:00.000Z,208.58,Frankenversand,Berliner Platz 43,München,Germany,4
+10268,GROSR,Diego Roel,1996-07-30T00:00:00.000Z,1996-08-02T00:00:00.000Z,66.29,GROSELLA-Restaurante,5ª Ave. Los Palos Grandes,Caracas,Venezuela,2
+10269,WHITC,Martine Rancé,1996-07-31T00:00:00.000Z,1996-08-09T00:00:00.000Z,4.56,White Clover Markets,1029 - 12th Ave. S.,Seattle,USA,1
+10270,WARTH,Maria Larsson,1996-08-01T00:00:00.000Z,1996-08-02T00:00:00.000Z,136.54,Wartian Herkku,Torikatu 38,Oulu,Finland,4
+10271,SPLIR,Peter Franken,1996-08-01T00:00:00.000Z,1996-08-30T00:00:00.000Z,4.54,Split Rail Beer & Ale,P.O. Box 555,Lander,USA,5
+10272,RATTC,Carine Schmitt,1996-08-02T00:00:00.000Z,1996-08-06T00:00:00.000Z,98.03,Rattlesnake Canyon Grocery,2817 Milton Dr.,Albuquerque,USA,3
+10273,QUICK,Paolo Accorti,1996-08-05T00:00:00.000Z,1996-08-12T00:00:00.000Z,76.07,QUICK-Stop,Taucherstraße 10,Cunewalde,Germany,6
+10274,VINET,Lino Rodriguez,1996-08-06T00:00:00.000Z,1996-08-16T00:00:00.000Z,6.01,Vins et alcools Chevalier,59 rue de l Abbaye,Reims,France,1
+10275,MAGAA,Eduardo Saavedra,1996-08-07T00:00:00.000Z,1996-08-09T00:00:00.000Z,26.93,Magazzini Alimentari Riuniti,Via Ludovico il Moro 22,Bergamo,Italy,3
+10276,TORTU,José Pedro Freyre,1996-08-08T00:00:00.000Z,1996-08-14T00:00:00.000Z,13.84,Tortuga Restaurante,Avda. Azteca 123,México D.F.,Mexico,5
+10277,MORGK,André Fonseca,1996-08-09T00:00:00.000Z,1996-08-13T00:00:00.000Z,125.77,Morgenstern Gesundkost,Heerstr. 22,Leipzig,Germany,7
+10278,BERGS,Howard Snyder,1996-08-12T00:00:00.000Z,1996-08-16T00:00:00.000Z,92.69,Berglunds snabbköp,Berguvsvägen  8,Luleå,Sweden,9
+10279,LEHMS,Manuel Pereira,1996-08-13T00:00:00.000Z,1996-08-16T00:00:00.000Z,25.83,Lehmanns Marktstand,Magazinweg 7,Frankfurt a.M.,Germany,2
+10280,BERGS,Mario Pontes,1996-08-14T00:00:00.000Z,1996-09-12T00:00:00.000Z,8.98,Berglunds snabbköp,Berguvsvägen  8,Luleå,Sweden,4
+10281,ROMEY,Carlos Hernández,1996-08-14T00:00:00.000Z,1996-08-21T00:00:00.000Z,2.94,Romero y tomillo,Gran Vía 1,Madrid,Spain,6
+10282,ROMEY,Yoshi Latimer,1996-08-15T00:00:00.000Z,1996-08-21T00:00:00.000Z,12.69,Romero y tomillo,Gran Vía 1,Madrid,Spain,8
+10283,LILAS,Patricia McKenna,1996-08-16T00:00:00.000Z,1996-08-23T00:00:00.000Z,84.81,LILA-Supermercado,Carrera 52 con Ave. Bolívar #65-98 Llano Largo,Barquisimeto,Venezuela,9
+10284,LEHMS,Helen Bennett,1996-08-19T00:00:00.000Z,1996-08-27T00:00:00.000Z,76.56,Lehmanns Marktstand,Magazinweg 7,Frankfurt a.M.,Germany,6
+10285,QUICK,Philip Cramer,1996-08-20T00:00:00.000Z,1996-08-26T00:00:00.000Z,76.83,QUICK-Stop,Taucherstraße 10,Cunewalde,Germany,3
+10286,QUICK,Daniel Tonini,1996-08-21T00:00:00.000Z,1996-08-30T00:00:00.000Z,229.24,QUICK-Stop,Taucherstraße 10,Cunewalde,Germany,1
+10287,RICAR,Annette Roulet,1996-08-22T00:00:00.000Z,1996-08-28T00:00:00.000Z,12.76,Ricardo Adocicados,Av. Copacabana 267,Rio de Janeiro,Brazil,8
+10288,REGGC,Yoshi Tannamuri,1996-08-23T00:00:00.000Z,1996-09-03T00:00:00.000Z,7.45,Reggiani Caseifici,Strada Provinciale 124,Reggio Emilia,Italy,4
+10289,BSBEV,John Steel,1996-08-26T00:00:00.000Z,1996-08-28T00:00:00.000Z,22.77,B s Beverages,Fauntleroy Circus,London,UK,2
+10290,COMMI,Renate Messner,1996-08-27T00:00:00.000Z,1996-09-03T00:00:00.000Z,79.7,Comércio Mineiro,Av. dos Lusíadas 23,Sao Paulo,Brazil,5
+10291,QUEDE,Jaime Yorres,1996-08-27T00:00:00.000Z,1996-09-04T00:00:00.000Z,6.4,Que Delícia,Rua da Panificadora 12,Rio de Janeiro,Brazil,7
+10292,TRADH,Carlos González,1996-08-28T00:00:00.000Z,1996-09-02T00:00:00.000Z,1.35,Tradiçao Hipermercados,Av. Inês de Castro 414,Sao Paulo,Brazil,3
+10293,TORTU,Felipe Izquierdo,1996-08-29T00:00:00.000Z,1996-09-11T00:00:00.000Z,21.18,Tortuga Restaurante,Avda. Azteca 123,México D.F.,Mexico,1
+10294,RATTC,Fran Wilson,1996-08-30T00:00:00.000Z,1996-09-05T00:00:00.000Z,147.26,Rattlesnake Canyon Grocery,2817 Milton Dr.,Albuquerque,USA,2
+10295,VINET,Giovanni Rovelli,1996-09-02T00:00:00.000Z,1996-09-10T00:00:00.000Z,1.15,Vins et alcools Chevalier,59 rue de l Abbaye,Reims,France,3
+10296,LILAS,Catherine Dewey,1996-09-03T00:00:00.000Z,1996-09-11T00:00:00.000Z,0.12,LILA-Supermercado,Carrera 52 con Ave. Bolívar #65-98 Llano Largo,Barquisimeto,Venezuela,4
+10297,BLONP,Jean Fresnière,1996-09-04T00:00:00.000Z,1996-09-10T00:00:00.000Z,5.74,Blondel père et fils,24 place Kléber,Strasbourg,France,5
+10298,HUNGO,Alexander Feuer,1996-09-05T00:00:00.000Z,1996-09-11T00:00:00.000Z,168.22,Hungry Owl All-Night Grocers,8 Johnstown Road,Cork,Ireland,6
+10299,RICAR,Simon Crowther,1996-09-06T00:00:00.000Z,1996-09-13T00:00:00.000Z,29.76,Ricardo Adocicados,Av. Copacabana 267,Rio de Janeiro,Brazil,7
+10300,MAGAA,Yvonne Moncada,1996-09-09T00:00:00.000Z,1996-09-18T00:00:00.000Z,17.68,Magazzini Alimentari Riuniti,Via Ludovico il Moro 22,Bergamo,Italy,8
+10301,WANDK,Rene Phillips,1996-09-09T00:00:00.000Z,1996-09-17T00:00:00.000Z,45.08,Die Wandernde Kuh,Adenauerallee 900,Stuttgart,Germany,9
+10302,SUPRD,Pirkko Koskitalo,1996-09-10T00:00:00.000Z,1996-10-09T00:00:00.000Z,6.27,Suprêmes délices,Boulevard Tirou 255,Charleroi,Belgium,2
+10303,GODOS,Paula Parente,1996-09-11T00:00:00.000Z,1996-09-18T00:00:00.000Z,107.83,Godos Cocina Típica,C/ Romero 33,Sevilla,Spain,4
+10304,TORTU,Karl Jablonski,1996-09-12T00:00:00.000Z,1996-09-17T00:00:00.000Z,63.79,Tortuga Restaurante,Avda. Azteca 123,México D.F.,Mexico,8
+10305,OLDWO,Matti Karttunen,1996-09-13T00:00:00.000Z,1996-10-09T00:00:00.000Z,257.62,Old World Delicatessen,2743 Bering St.,Anchorage,USA,6
+10306,ROMEY,Zbyszek Piestrzeniewicz,1996-09-16T00:00:00.000Z,1996-09-23T00:00:00.000Z,7.56,Romero y tomillo,Gran Vía 1,Madrid,Spain,3
+10307,LONEP,Zbyszek Piestrzeniewicz,1996-09-17T00:00:00.000Z,1996-09-25T00:00:00.000Z,0.56,Lonesome Pine Restaurant,89 Chiaroscuro Rd.,Portland,USA,1
