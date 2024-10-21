@@ -1,0 +1,37 @@
+[
+  {
+    "marker": { "isFilled": true, "shape": "Circle", "visible": true },
+    "name": "Vietnam",
+    "width": 2,
+    "xName": "VietnamX",
+    "yName": "VietnamY"
+  },
+  {
+    "marker": { "isFilled": true, "shape": "Triangle", "visible": true },
+    "name": "Canada",
+    "width": 2,
+    "xName": "CanadaX",
+    "yName": "CanadaY"
+  },
+  {
+    "marker": { "isFilled": true, "shape": "Diamond", "visible": true },
+    "name": "Malaysia",
+    "width": 2,
+    "xName": "MalaysiaX",
+    "yName": "MalaysiaY"
+  },
+  {
+    "marker": { "isFilled": true, "shape": "Rectangle", "visible": true },
+    "name": "Egypt",
+    "width": 2,
+    "xName": "EgyptX",
+    "yName": "EgyptY"
+  },
+  {
+    "marker": { "isFilled": true, "shape": "Pentagon", "visible": true },
+    "name": "Indonesia",
+    "width": 2,
+    "xName": "IndonesiaX",
+    "yName": "IndonesiaY"
+  }
+]

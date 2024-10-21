@@ -1,0 +1,55 @@
+@import "../../node_modules/@syncfusion/ej2-base/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-buttons/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-calendars/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-dropdowns/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-inputs/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-navigations/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-popups/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-splitbuttons/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-notifications/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-react-grids/styles/fluent2.css";
+
+/* Unset the default text alignment and border styles */
+.control-pane {
+  text-align: unset;
+}
+.control-container {
+  border-width: unset;
+  border-style: unset;
+}
+
+/* Fix for dialog overlay issue due to default zIndex in Model-Driven app */
+body > div > div[aria-modal="true"].e-control {
+  z-index: inherit !important;
+}
+
+/* Fix for code component max width issue in Power Pages app */
+#grid.flexbox {
+  max-width: 100%;
+}
+
+/* Fix for vertical-align issue in Model-Driven app */
+.e-grid th {
+  vertical-align: inherit;
+}
+
+/* Fix for font family issue in Model-Driven app */
+.e-grid table {
+  font-family: inherit;
+}
+
+/* NoDataSouce component styles */
+#NoDataSource {
+  display: flex;
+  width: inherit;
+  height: inherit;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+#NoDataSource h3 {
+  color: #575757;
+  font-size: 16px;
+}

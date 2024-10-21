@@ -1,0 +1,45 @@
+@import "../../node_modules/@syncfusion/ej2-base/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-buttons/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-dropdowns/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-grids/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-inputs/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-lists/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-navigations/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-popups/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-splitbuttons/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-calendars/styles/fluent2.css";
+@import "../../node_modules/@syncfusion/ej2-react-pivotview/styles/fluent2.css";
+
+/* Unset the default text alignment and border styles */
+.control-pane {
+  text-align: unset;
+}
+
+.control-container {
+  border-width: unset;
+  border-style: unset;
+}
+
+/* Add hyperLinkSettings Styles */
+.e-custom-class {
+  color: blue;
+  text-decoration: none;
+}
+
+.e-custom-class:hover {
+  color: red;
+}
+
+/* Fix for dialog overlay issue due to default zIndex in Model-Driven app */
+body > div > div[aria-modal="true"].e-control {
+  z-index: inherit !important;
+}
+
+/* Fix for Grouping bar rendering issue in Model-Driven app */
+.e-pivotview .e-axis-value .e-group-values {
+  display: grid;
+}
+
+.e-pivotview .e-group-row .e-group-rows {
+  display: grid;
+}

@@ -1,0 +1,15 @@
+{
+  "Environment": "Syncfusion",
+  "solutionData": {
+    "solutionName": "SyncfusionPowerAppsComponents_27_1_48",
+    "publisherName": "Syncfusion",
+    "publisherPrefix": "Sf",
+    "solutionVersion": "27.1.48",
+    "excludeComponentsFolderInSolutionBundle": ["Add your component folder name here"]
+  },
+  "componentData": {
+    "sampleLocation": "grids",
+    "componentName": "SfGrid",
+    "componentNameSpace": "Syncfusion"
+  }
+}

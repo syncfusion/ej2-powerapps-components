@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="Syncfusion" constructor="SfPivotView" version="27.1.48" display-name-key="SfPivotView" description-key="SfPivotView_Desc_Key" control-type="virtual">
+    <!--external-service-usage node declares whether this 3rd party PCF control is using external service or not, if yes, this control will be considered as premium and please also add the external domain it is using.
+    If it is not using any external service, please set the enabled="false" and DO NOT add any domain below. The "enabled" will be false by default.
+    Example1:
+      <external-service-usage enabled="true">
+        <domain>www.Microsoft.com</domain>
+      </external-service-usage>
+    Example2:
+      <external-service-usage enabled="false">
+      </external-service-usage>
+    -->
+    <external-service-usage enabled="false">
+      <!--UNCOMMENT TO ADD EXTERNAL DOMAINS
+      <domain></domain>
+      <domain></domain>
+      -->
+    </external-service-usage>
+
+    <!-- PivotView DataSource Property -->
+    <data-set name="DataSource" display-name-key="DataSource"></data-set>
+
+    <!-- PivotView Config -->
+    <property name="PivotViewConfig" of-type="Multiple" default-value="" display-name-key="PivotViewConfig" description-key="PivotViewConfig_Desc_Key" usage="input" required="true" />
+
+    <!-- PivotView Properties -->
+    <property name="ShowFieldsList" of-type="TwoOptions" default-value="false" display-name-key="ShowFieldsList" description-key="ShowFieldsList_Desc_Key" usage="input" required="false" />
+    <property name="AllowCalculatedField" of-type="TwoOptions" default-value="false" display-name-key="AllowCalculatedField" description-key="AllowCalculatedField_Desc_Key" usage="input" required="false" />
+    <property name="AllowDeferLayoutUpdate" of-type="TwoOptions" default-value="false" display-name-key="AllowDeferLayoutUpdate" description-key="AllowDeferLayoutUpdate_Desc_Key" usage="input" required="false" />
+    <property name="EnableFieldSearching" of-type="TwoOptions" default-value="false" display-name-key="EnableFieldSearching" description-key="EnableFieldSearching_Desc_Key" usage="input" required="false" />
+    <property name="ShowValuesbutton" of-type="TwoOptions" default-value="false" display-name-key="ShowValuesbutton" description-key="ShowValuesbutton_Desc_Key" usage="input" required="false" />
+    <property name="AllowDrillThrough" of-type="TwoOptions" default-value="false" display-name-key="AllowDrillThrough" description-key="AllowDrillThrough_Desc_Key" usage="input" required="false" />
+    <property name="EnableValueSorting" of-type="TwoOptions" default-value="false" display-name-key="EnableValueSorting" description-key="EnableValueSorting_Desc_Key" usage="input" required="false" />
+    <property name="AllowGrouping" of-type="TwoOptions" default-value="false" display-name-key="AllowGrouping" description-key="AllowGrouping_Desc_Key" usage="input" required="false" />
+    <property name="EnablePaging" of-type="TwoOptions" default-value="false" display-name-key="EnablePaging" description-key="EnablePaging_Desc_Key" usage="input" required="false" />
+    <property name="ShowGroupingbar" of-type="TwoOptions" default-value="false" display-name-key="ShowGroupingbar" description-key="ShowGroupingbar_Desc_Key" usage="input" required="false" />
+    <property name="ShowToolbar" of-type="TwoOptions" default-value="false" display-name-key="ShowToolbar" description-key="ShowToolbar_Desc_Key" usage="input" required="false" />
+    <property name="ShowTooltip" of-type="TwoOptions" default-value="false" display-name-key="ShowTooltip" description-key="ShowTooltip_Desc_Key" usage="input" required="false" />
+
+    <!-- PivotView DisplayOptions Properties -->
+    <property name="DisplayOptions" of-type="Enum" default-value="Table" display-name-key="DisplayOptions" description-key="DisplayOptions_Desc_Key" usage="input" required="false">
+      <value name="Table" display-name-key="Table">Table</value>
+      <value name="Chart" display-name-key="Chart">Chart</value>
+      <value name="Both" display-name-key="Both">Both</value>
+    </property>
+
+    <!-- PivotView ChartSettings Properties -->
+    <property name="ChartType" of-type="Enum" default-value="Line" display-name-key="ChartType" description-key="ChartType_Desc_Key" usage="input" required="false">
+      <value name="Line" display-name-key="Line">Line</value>
+      <value name="Column" display-name-key="Column">Column</value>
+      <value name="Area" display-name-key="Area">Area</value>
+      <value name="Bar" display-name-key="Bar">Bar</value>
+      <value name="StackingColumn" display-name-key="StackingColumn">StackingColumn</value>
+      <value name="StackingArea" display-name-key="StackingArea">StackingArea</value>
+      <value name="StackingBar" display-name-key="StackingBar">StackingBar</value>
+      <value name="StepLine" display-name-key="StepLine">StepLine</value>
+      <value name="StepArea" display-name-key="StepArea">StepArea</value>
+      <value name="SplineArea" display-name-key="SplineArea">SplineArea</value>
+      <value name="Scatter" display-name-key="Scatter">Scatter</value>
+      <value name="Spline" display-name-key="Spline">Spline</value>
+      <value name="StackingLine100" display-name-key="StackingLine100">StackingLine100</value>
+      <value name="StackingColumn100" display-name-key="StackingColumn100">StackingColumn100</value>
+      <value name="StackingBar100" display-name-key="StackingBar100">StackingBar100</value>
+      <value name="StackingArea100" display-name-key="StackingArea100">StackingArea100</value>
+      <value name="Bubble" display-name-key="Bubble">Bubble</value>
+      <value name="Pareto" display-name-key="Pareto">Pareto</value>
+      <value name="Polar" display-name-key="Polar">Polar</value>
+      <value name="Radar" display-name-key="Radar">Radar</value>
+    </property>
+
+    <property name="Height" of-type="Whole.None" default-value="200" display-name-key="Height" description-key="Height_Desc_Key" usage="input" required="false" />
+
+    <!-- PivotView Events Property -->
+    <property name="EventName" of-type="SingleLine.Text" default-value="" display-name-key="EventName" description-key="EventName_Desc_Key" usage="output" />
+    <property name="OnError" of-type="SingleLine.Text" default-value="" display-name-key="OnError" description-key="OnError_Desc_Key" usage="output" />
+
+    <resources>
+      <code path="index.ts" order="1"/>
+      <platform-library name="React" version="16.8.6" />
+      <resx path="strings/SfPivotView.1033.resx" version="1.0.0" />
+      <!-- <css path="styles/theme.css" order="1" /> -->
+    </resources>
+    <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
+    <feature-usage>
+      <uses-feature name="Device.captureAudio" required="true" />
+      <uses-feature name="Device.captureImage" required="true" />
+      <uses-feature name="Device.captureVideo" required="true" />
+      <uses-feature name="Device.getBarcodeValue" required="true" />
+      <uses-feature name="Device.getCurrentPosition" required="true" />
+      <uses-feature name="Device.pickFile" required="true" />
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+    -->
+  </control>
+</manifest>

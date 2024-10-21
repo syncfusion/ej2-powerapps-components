@@ -1,0 +1,8 @@
+/* Apply pointer events to SVG elements inside the e-chart class */
+.e-chart svg {
+  pointer-events: inherit;
+}
+
+.control-container {
+  border-style: unset;
+}

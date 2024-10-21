@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <control namespace="Syncfusion" constructor="SfSchedule" version="27.1.48" display-name-key="SfSchedule" description-key="SfSchedule_Desc_Key" control-type="virtual">
+    <!--external-service-usage node declares whether this 3rd party PCF control is using external service or not, if yes, this control will be considered as premium and please also add the external domain it is using.
+    If it is not using any external service, please set the enabled="false" and DO NOT add any domain below. The "enabled" will be false by default.
+    Example1:
+      <external-service-usage enabled="true">
+        <domain>www.Microsoft.com</domain>
+      </external-service-usage>
+    Example2:
+      <external-service-usage enabled="false">
+      </external-service-usage>
+    -->
+    <external-service-usage enabled="false">
+      <!--UNCOMMENT TO ADD EXTERNAL DOMAINS
+      <domain></domain>
+      <domain></domain>
+      -->
+    </external-service-usage>
+
+    <!-- Schedule DataSource Property -->
+    <data-set name="DataSource" display-name-key="DataSource"></data-set>
+
+    <!-- Schedule Config -->
+    <property name="ScheduleConfig" of-type="Multiple" default-value="" display-name-key="ScheduleConfig" description-key="ScheduleConfig_Desc_Key" usage="input" required="false" />
+
+    <!-- Schedule Properties -->
+    <property name="CurrentView" of-type="Enum" default-value="Week" display-name-key="CurrentView" description-key="CurrentView_Desc_Key" usage="input" required="false">
+      <value name="Day" display-name-key="Day" description-key="Denotes Day view of the scheduler">Day</value>
+      <value name="Week" display-name-key="Week" description-key="Denotes Week view of the scheduler">Week</value>
+      <value name="WorkWeek" display-name-key="WorkWeek" description-key="Denotes Work Week view of the scheduler">WorkWeek</value>
+      <value name="Month" display-name-key="Month" description-key="Denotes Month view of the scheduler">Month</value>
+      <value name="Year" display-name-key="Year" description-key="Denotes Year view of the scheduler">Year</value>
+      <value name="Agenda" display-name-key="Agenda" description-key="Denotes Agenda view of the scheduler">Agenda</value>
+      <value name="MonthAgenda" display-name-key="MonthAgenda" description-key="Denotes Month Agenda view of the scheduler">MonthAgenda</value>
+      <value name="TimelineDay" display-name-key="TimelineDay" description-key="Denotes Timeline Day view of the scheduler">TimelineDay</value>
+      <value name="TimelineWeek" display-name-key="TimelineWeek" description-key="Denotes Timeline Week view of the scheduler">TimelineWeek</value>
+      <value name="TimelineWorkWeek" display-name-key="TimelineWorkWeek" description-key="Denotes Timeline Work Week view of the scheduler">TimelineWorkWeek</value>
+      <value name="TimelineMonth" display-name-key="TimelineMonth" description-key="Denotes Timeline Month view of the scheduler">TimelineMonth</value>
+      <value name="TimelineYear" display-name-key="TimelineYear" description-key="Denotes Timeline Year view of the scheduler">TimelineYear</value>
+    </property>
+    <property name="FirstDayOfWeek" of-type="Enum" default-value="0" display-name-key="FirstDayOfWeek" description-key="FirstDayOfWeek_Desc_Key" usage="input" required="false">
+      <value name="Sunday" display-name-key="Sunday">0</value>
+      <value name="Monday" display-name-key="Monday">1</value>
+      <value name="Tuesday" display-name-key="Tuesday">2</value>
+      <value name="Wednesday" display-name-key="Wednesday">3</value>
+      <value name="Thursday" display-name-key="Thursday">4</value>
+      <value name="Friday" display-name-key="Friday">5</value>
+      <value name="Saturday" display-name-key="Saturday">6</value>
+    </property>
+    <property name="SelectedDate" of-type="SingleLine.Text" default-value="" display-name-key="SelectedDate" description-key="SelectedDate_Desc_Key" usage="input" required="false" />
+    <property name="TimeZone" of-type="SingleLine.Text" default-value="" display-name-key="TimeZone" description-key="TimeZone_Desc_Key" usage="input" required="false" />
+    <property name="MinDate" of-type="SingleLine.Text" default-value="1900/01/01" display-name-key="MinDate" description-key="MinDate_Desc_Key" usage="input" required="false" />
+    <property name="MaxDate" of-type="SingleLine.Text" default-value="2099/12/31" display-name-key="MaxDate" description-key="MaxDate_Desc_Key" usage="input" required="false" />
+    <property name="TimeFormat" of-type="SingleLine.Text" default-value="" display-name-key="TimeFormat" description-key="TimeFormat_Desc_Key" usage="input" required="false" />
+    <property name="DateFormat" of-type="SingleLine.Text" default-value="" display-name-key="DateFormat" description-key="DateFormat_Desc_Key" usage="input" required="false" />
+    <property name="StartHour" of-type="SingleLine.Text" default-value="00:00" display-name-key="StartHour" description-key="StartHour_Desc_Key" usage="input" required="false" />
+    <property name="EndHour" of-type="SingleLine.Text" default-value="24:00" display-name-key="EndHour" description-key="EndHour_Desc_Key" usage="input" required="false" />
+    <property name="ShowQuickInfo" of-type="TwoOptions" default-value="true" display-name-key="ShowQuickInfo" description-key="ShowQuickInfo_Desc_Key" usage="input" required="false" />
+    <property name="showHeaderBar" of-type="TwoOptions" default-value="true" display-name-key="showHeaderBar" description-key="showHeaderBar_Desc_Key" usage="input" required="false" />
+    <property name="ShowWeekend" of-type="TwoOptions" default-value="true" display-name-key="ShowWeekend" description-key="ShowWeekend_Desc_Key" usage="input" required="false" />
+    <property name="ShowWeekNumber" of-type="TwoOptions" default-value="false" display-name-key="ShowWeekNumber" description-key="ShowWeekNumber_Desc_Key" usage="input" required="false" />
+    <property name="ShowTimeIndicator" of-type="TwoOptions" default-value="false" display-name-key="ShowTimeIndicator" description-key="ShowTimeIndicator_Desc_Key" usage="input" required="false" />
+    <property name="RowAutoHeight" of-type="TwoOptions" default-value="false" display-name-key="RowAutoHeight" description-key="RowAutoHeight_Desc_Key" usage="input" required="false" />
+
+    <!-- Schedule Events Property -->
+    <property name="EventName" of-type="SingleLine.Text" display-name-key="EventName" description-key="EventName_Desc_Key" usage="output" default-value="" />
+    <property name="OnError" of-type="SingleLine.Text" display-name-key="OnError" description-key="OnError_Desc_Key" usage="output" default-value="" />
+
+    <resources>
+      <code path="index.ts" order="1" />
+      <platform-library name="React" version="16.8.6" />
+      <resx path="strings/schedule.1033.resx" version="1.0.0" />
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      <css path="css/SfSchedule.css" order="1" />
+      -->
+    </resources>
+    <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
+    <feature-usage>
+      <uses-feature name="Device.captureAudio" required="true" />
+      <uses-feature name="Device.captureImage" required="true" />
+      <uses-feature name="Device.captureVideo" required="true" />
+      <uses-feature name="Device.getBarcodeValue" required="true" />
+      <uses-feature name="Device.getCurrentPosition" required="true" />
+      <uses-feature name="Device.pickFile" required="true" />
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+    -->
+  </control>
+</manifest>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <control namespace="Syncfusion" constructor="SfChart" version="27.1.48" display-name-key="SfChart" description-key="SfChart_Desc_Key" control-type="virtual">
+    <!--external-service-usage node declares whether this 3rd party PCF control is using external service or not, if yes, this control will be considered as premium and please also add the external domain it is using.
+    If it is not using any external service, please set the enabled="false" and DO NOT add any domain below. The "enabled" will be false by default.
+    Example1:
+      <external-service-usage enabled="true">
+        <domain>www.Microsoft.com</domain>
+      </external-service-usage>
+    Example2:
+      <external-service-usage enabled="false">
+      </external-service-usage>
+    -->
+    <external-service-usage enabled="false">
+      <!--UNCOMMENT TO ADD EXTERNAL DOMAINS
+      <domain></domain>
+      <domain></domain>
+      -->
+    </external-service-usage>
+
+    <!-- Chart DataSource Property -->
+    <data-set name="DataSource" display-name-key="DataSource"></data-set>
+
+    <!-- Chart Series & Title Property -->
+    <property name="Series" of-type="Multiple" default-value="" display-name-key="Series" description-key="Series_Desc_Key" usage="input" required="false" />
+    <property name="SeriesType" of-type="Enum" default-value="Line" display-name-key="SeriesType" description-key="SeriesType_Desc_Key" usage="input" required="false">
+      <value name="Line" display-name-key="Line">Line</value>
+      <value name="Column" display-name-key="Column">Column</value>
+      <value name="Area" display-name-key="Area">Area</value>
+      <value name="Bar" display-name-key="Bar">Bar</value>
+      <value name="Histogram" display-name-key="Histogram">Histogram</value>
+      <value name="StackingColumn" display-name-key="StackingColumn">StackingColumn</value>
+      <value name="StackingArea" display-name-key="StackingArea">StackingArea</value>
+      <value name="StackingStepArea" display-name-key="StackingStepArea">StackingStepArea</value>
+      <value name="StackingLine" display-name-key="StackingLine">StackingLine</value>
+      <value name="StackingBar" display-name-key="StackingBar">StackingBar</value>
+      <value name="StepLine" display-name-key="StepLine">StepLine</value>
+      <value name="StepArea" display-name-key="StepArea">StepArea</value>
+      <value name="SplineArea" display-name-key="SplineArea">SplineArea</value>
+      <value name="Scatter" display-name-key="Scatter">Scatter</value>
+      <value name="Spline" display-name-key="Spline">Spline</value>
+      <value name="StackingColumn100" display-name-key="StackingColumn100">StackingColumn100</value>
+      <value name="StackingBar100" display-name-key="StackingBar100">StackingBar100</value>
+      <value name="StackingLine100" display-name-key="StackingLine100">StackingLine100</value>
+      <value name="StackingArea100" display-name-key="StackingArea100">StackingArea100</value>
+      <value name="RangeColumn" display-name-key="RangeColumn">RangeColumn</value>
+      <value name="RangeStepArea" display-name-key="RangeStepArea">RangeStepArea</value>
+      <value name="Hilo" display-name-key="Hilo">Hilo</value>
+      <value name="HiloOpenClose" display-name-key="HiloOpenClose">HiloOpenClose</value>
+      <value name="Waterfall" display-name-key="Waterfall">Waterfall</value>
+      <value name="RangeArea" display-name-key="RangeArea">RangeArea</value>
+      <value name="SplineRangeArea" display-name-key="SplineRangeArea">SplineRangeArea</value>
+      <value name="Pareto" display-name-key="Pareto">Pareto</value>
+    </property>
+    <property name="Title" of-type="SingleLine.Text" default-value="" display-name-key="Title" description-key="Title_Desc_Key" usage="input" required="false" />
+
+    <!-- Chart Primary X Axis Property -->
+    <property name="PrimaryXAxisType" of-type="Enum" default-value="Double" display-name-key="PrimaryXAxisType" description-key="PrimaryXAxisType_Desc_Key" usage="input" required="false">
+      <value name="Double" display-name-key="Double">Double</value>
+      <value name="DateTime" display-name-key="DateTime">DateTime</value>
+      <value name="Category" display-name-key="Category">Category</value>
+      <value name="Logarithmic" display-name-key="Logarithmic">Logarithmic</value>
+      <value name="DateTimeCategory" display-name-key="DateTimeCategory">DateTimeCategory</value>
+    </property>
+
+    <property name="EnableCrosshair" of-type="TwoOptions" default-value="false" display-name-key="EnableCrosshair" description-key="EnableCrosshair_Desc_Key" usage="input" required="false" />
+    <property name="EnableTooltip" of-type="TwoOptions" default-value="false" display-name-key="EnableTooltip" description-key="EnableTooltip_Desc_Key" usage="input" required="false" />
+    <property name="EnableCrosshairTooltip" of-type="TwoOptions" default-value="false" display-name-key="EnableCrosshairTooltip" description-key="EnableCrosshairTooltip_Desc_Key" usage="input" required="false" />
+    <property name="EnableLegendVisibility" of-type="TwoOptions" default-value="true" display-name-key="EnableLegendVisibility" description-key="EnableLegendVisibility_Desc_Key" usage="input" required="false" />
+
+    <!-- Chart Zoom Properties -->
+    <property name="EnableMouseWheelZooming" of-type="TwoOptions" default-value="false" display-name-key="EnableMouseWheelZooming" description-key="EnableMouseWheelZooming_Desc_Key" usage="input" required="false" />
+    <property name="EnablePinchZooming" of-type="TwoOptions" default-value="false" display-name-key="EnablePinchZooming" description-key="EnablePinchZooming_Desc_Key" usage="input" required="false" />
+    <property name="EnableSelectionZooming" of-type="TwoOptions" default-value="false" display-name-key="EnableSelectionZooming" description-key="EnableSelectionZooming_Desc_Key" usage="input" required="false" />
+    <property name="Height" of-type="Whole.None" default-value="200" display-name-key="Height" description-key="Height_Desc_Key" usage="input" required="false" />
+
+    <!-- Chart Events Property -->
+    <property name="EventName" of-type="SingleLine.Text" display-name-key="EventName" description-key="EventName_Desc_Key" usage="output" default-value="" />
+    <property name="OnError" of-type="SingleLine.Text" display-name-key="OnError" description-key="OnError_Desc_Key" usage="output" default-value="" />
+
+    <resources>
+      <code path="index.ts" order="1" />
+      <platform-library name="React" version="16.8.6" />
+      <resx path="strings/SfChart.1033.resx" version="1.0.0" />
+      <css path="styles/theme.css" order="1" />
+    </resources>
+    <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
+    <feature-usage>
+      <uses-feature name="Device.captureAudio" required="true" />
+      <uses-feature name="Device.captureImage" required="true" />
+      <uses-feature name="Device.captureVideo" required="true" />
+      <uses-feature name="Device.getBarcodeValue" required="true" />
+      <uses-feature name="Device.getCurrentPosition" required="true" />
+      <uses-feature name="Device.pickFile" required="true" />
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+    -->
+  </control>
+</manifest>

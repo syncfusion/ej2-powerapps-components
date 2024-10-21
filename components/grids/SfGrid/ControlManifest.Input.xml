@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <control namespace="Syncfusion" constructor="SfGrid" version="27.1.48" display-name-key="SfGrid" description-key="SfGrid_Desc_Key" control-type="virtual">
+    <!--external-service-usage node declares whether this 3rd party PCF control is using external service or not, if yes, this control will be considered as premium and please also add the external domain it is using.
+    If it is not using any external service, please set the enabled="false" and DO NOT add any domain below. The "enabled" will be false by default.
+    Example1:
+      <external-service-usage enabled="true">
+        <domain>www.Microsoft.com</domain>
+      </external-service-usage>
+    Example2:
+      <external-service-usage enabled="false">
+      </external-service-usage>
+    -->
+    <external-service-usage enabled="false">
+      <!--UNCOMMENT TO ADD EXTERNAL DOMAINS
+      <domain></domain>
+      <domain></domain>
+      -->
+    </external-service-usage>
+
+    <!-- Grid Type Groups -->
+    <type-group name="StringAndNumber">
+      <type>SingleLine.Text</type>
+      <type>Whole.None</type>
+    </type-group>
+
+    <!-- Grid DataSource Property -->
+    <data-set name="DataSource" display-name-key="DataSource"></data-set>
+
+    <!-- Grid Columns Property -->
+    <data-set name="Columns" display-name-key="Columns">
+      <property-set name="ColHeaderText" of-type="SingleLine.Text" display-name-key="ColHeaderText" description-key="ColHeaderText_Desc_Key" usage="bound" required="false" />
+      <property-set name="ColType" of-type="SingleLine.Text" display-name-key="ColType" description-key="ColType_Desc_Key" usage="bound" required="false" />
+      <property-set name="ColEditType" of-type="SingleLine.Text" display-name-key="ColEditType" description-key="ColEditType_Desc_Key" usage="bound" required="false" />
+      <property-set name="ColClipMode" of-type="SingleLine.Text" display-name-key="ColClipMode" description-key="ColClipMode_Desc_Key" usage="bound" required="false" />
+      <property-set name="ColTextAlign" of-type="SingleLine.Text" display-name-key="ColTextAlign" description-key="ColTextAlign_Desc_Key" usage="bound" required="false" />
+      <property-set name="ColHeaderTextAlign" of-type="SingleLine.Text" display-name-key="ColHeaderTextAlign" description-key="ColHeaderTextAlign_Desc_Key" usage="bound" required="false" />
+      <property-set name="ColVisible" of-type="TwoOptions" display-name-key="ColVisible" description-key="ColVisible_Desc_Key" usage="bound" required="false" />
+      <property-set name="ColIsPrimaryKey" of-type="TwoOptions" display-name-key="ColIsPrimaryKey" description-key="ColIsPrimaryKey_Desc_Key" usage="bound" required="false" />
+      <property-set name="ColAllowSorting" of-type="TwoOptions" display-name-key="ColAllowSorting" description-key="ColAllowSorting_Desc_Key" usage="bound" required="false" />
+      <property-set name="ColAllowResizing" of-type="TwoOptions" display-name-key="ColAllowResizing" description-key="ColAllowResizing_Desc_Key" usage="bound" required="false" />
+      <property-set name="ColAllowFiltering" of-type="TwoOptions" display-name-key="ColAllowFiltering" description-key="ColAllowFiltering_Desc_Key" usage="bound" required="false" />
+      <property-set name="ColAllowGrouping" of-type="TwoOptions" display-name-key="ColAllowGrouping" description-key="ColAllowGrouping_Desc_Key" usage="bound" required="false" />
+      <property-set name="ColallowEditing" of-type="TwoOptions" display-name-key="ColallowEditing" description-key="ColallowEditing_Desc_Key" usage="bound" required="false" />
+      <property-set name="ColDisableHtmlEncode" of-type="TwoOptions" display-name-key="ColDisableHtmlEncode" description-key="ColDisableHtmlEncode_Desc_Key" usage="bound" required="false" />
+      <property-set name="ColEnableGroupByFormat" of-type="TwoOptions" display-name-key="ColEnableGroupByFormat" description-key="ColEnableGroupByFormat_Desc_Key" usage="bound" required="false" />
+      <property-set name="ColDisplayAsCheckBox" of-type="TwoOptions" display-name-key="ColDisplayAsCheckBox" description-key="ColDisplayAsCheckBox_Desc_Key" usage="bound" required="false" />
+      <property-set name="ColAutoFit" of-type="TwoOptions" display-name-key="ColAutoFit" description-key="ColAutoFit_Desc_Key" usage="bound" required="false" />
+      <property-set name="ColWidth" of-type-group="StringAndNumber" display-name-key="ColWidth" description-key="ColWidth_Desc_Key" usage="bound" required="false" />
+      <property-set name="ColMinWidth" of-type-group="StringAndNumber" display-name-key="ColMinWidth" description-key="ColMinWidth_Desc_Key" usage="bound" required="false" />
+      <property-set name="ColMaxWidth" of-type-group="StringAndNumber" display-name-key="ColMaxWidth" description-key="ColMaxWidth_Desc_Key" usage="bound" required="false" />
+      <property-set name="ColFormat" of-type="SingleLine.Text" display-name-key="ColFormat" description-key="ColFormat_Desc_Key" usage="bound" required="false" />
+    </data-set>
+
+    <property name="PrimaryKey" of-type="SingleLine.Text" default-value="" display-name-key="PrimaryKey" description-key="PrimaryKey_Desc_Key" usage="input" required="false" />
+
+    <!-- Grid Edit Property -->
+    <property name="AllowEditing" of-type="TwoOptions" default-value="false" display-name-key="AllowEditing" description-key="AllowEditing_Desc_Key" usage="input" required="false" />
+    <property name="EditMode" of-type="Enum" default-value="Normal" display-name-key="EditMode" description-key="EditMode_Desc_Key" usage="input" required="false">
+      <value name="Normal" display-name-key="Edit_Normal" description-key="Edit_Normal_Desc_Key">Normal</value>
+      <value name="Dialog" display-name-key="Edit_Dialog" description-key="Edit_Dialog_Desc_Key">Dialog</value>
+    </property>
+
+    <!-- Grid Paging Property -->
+    <property name="AllowPaging" of-type="TwoOptions" default-value="false" display-name-key="AllowPaging" description-key="AllowPaging_Desc_Key" usage="input" required="false" />
+    <property name="PageSize" of-type="Whole.None" default-value="12" display-name-key="PageSize" description-key="PageSize_Desc_Key" usage="input" required="false" />
+    <property name="PageCount" of-type="Whole.None" default-value="8" display-name-key="PageCount" description-key="PageCount_Desc_Key" usage="input" required="false" />
+
+    <!-- Grid Sorting Property -->
+    <property name="AllowSorting" of-type="TwoOptions" default-value="false" display-name-key="AllowSorting" description-key="AllowSorting_Desc_Key" usage="input" required="false" />
+    <property name="AllowMultiSorting" of-type="TwoOptions" default-value="false" display-name-key="AllowMultiSorting" description-key="AllowMultiSorting_Desc_Key" usage="input" required="false" />
+
+    <!-- Grid Grouping Property -->
+    <property name="AllowGrouping" of-type="TwoOptions" default-value="false" display-name-key="AllowGrouping" description-key="AllowGrouping_Desc_Key" usage="input" required="false" />
+    <property name="ShowGroupedColumn" of-type="TwoOptions" default-value="false" display-name-key="ShowGroupedColumn" description-key="ShowGroupedColumn_Desc_Key" usage="input" required="false" />
+
+    <!-- Grid Filtering Property -->
+    <property name="AllowFiltering" of-type="TwoOptions" default-value="false" display-name-key="AllowFiltering" description-key="AllowFiltering_Desc_Key" usage="input" required="false" />
+
+    <!-- Grid Lines Property -->
+    <property name="GridLines" of-type="Enum" default-value="Default" display-name-key="GridLines" description-key="GridLines_Desc_Key" usage="input" required="false">
+      <value name="Default" display-name-key="GridLines_Default" description-key="GridLines_Default_Desc_Key" default="true">Default</value>
+      <value name="Both" display-name-key="GridLines_Both" description-key="GridLines_Both_Desc_key">Both</value>
+      <value name="None" display-name-key="GridLines_None" description-key="GridLines_None_Desc_Key">None</value>
+      <value name="Horizontal" display-name-key="GridLines_Horizontal" description-key="GridLines_Horizontal_Desc_Key">Horizontal</value>
+      <value name="Vertical" display-name-key="GridLines_Vertical" description-key="GridLines_Vertical_Desc_Key">Vertical</value>
+    </property>
+
+    <property name="AllowTextWrap" of-type="TwoOptions" default-value="false" display-name-key="AllowTextWrap" description-key="AllowTextWrap_Desc_Key" usage="input" required="false" />
+    <property name="AllowResizing" of-type="TwoOptions" default-value="false" display-name-key="AllowResizing" description-key="AllowResizing_Desc_Key" usage="input" required="false" />
+
+    <!-- Grid Events Property -->
+    <property name="EventName" of-type="SingleLine.Text" display-name-key="EventName" description-key="EventName_Desc_Key" usage="output" default-value="" />
+    <property name="OnError" of-type="SingleLine.Text" display-name-key="OnError" description-key="OnError_Desc_Key" usage="output" default-value="" />
+
+    <resources>
+      <code path="index.ts" order="1" />
+      <platform-library name="React" version="16.8.6" />
+      <resx path="strings/SfGrid.1033.resx" version="1.0.0" />
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      <css path="css/SfGrid.css" order="1" />
+      -->
+    </resources>
+    <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
+    <feature-usage>
+      <uses-feature name="Device.captureAudio" required="true" />
+      <uses-feature name="Device.captureImage" required="true" />
+      <uses-feature name="Device.captureVideo" required="true" />
+      <uses-feature name="Device.getBarcodeValue" required="true" />
+      <uses-feature name="Device.getCurrentPosition" required="true" />
+      <uses-feature name="Device.pickFile" required="true" />
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+    -->
+  </control>
+</manifest>

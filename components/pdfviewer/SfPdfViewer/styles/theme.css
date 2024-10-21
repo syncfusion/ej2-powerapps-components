@@ -1,0 +1,32 @@
+@import '../../node_modules/@syncfusion/ej2-base/styles/fluent2.css';  
+@import '../../node_modules/@syncfusion/ej2-buttons/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-dropdowns/styles/fluent2.css';  
+@import '../../node_modules/@syncfusion/ej2-inputs/styles/fluent2.css';  
+@import '../../node_modules/@syncfusion/ej2-navigations/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-popups/styles/fluent2.css';
+@import '../../node_modules/@syncfusion/ej2-splitbuttons/styles/fluent2.css';
+@import "../../node_modules/@syncfusion/ej2-pdfviewer/styles/fluent2.css";
+
+/* Unset the default text alignment and border styles */
+.control-pane {
+  text-align: unset;
+}
+.control-container {
+  border-width: unset;
+  border-style: unset;
+}
+.e-pv-main-container{
+  min-height: 100px !important;
+}
+.e-pv-viewer-main-container{
+  min-width: 100px !important;
+}
+.e-control.e-pdfviewer.e-lib{
+  min-height: 100px !important;
+}
+.e-pdfviewer:not(.e-pv-mobile-view) .e-pv-main-container{
+  min-height: 100px !important;
+}
+.e-input-group.e-control-wrapper.e-ddl.e-readonly .e-input[readonly], .e-float-input.e-control-wrapper.e-ddl.e-readonly input[readonly] {
+  background: none;
+}
