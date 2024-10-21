@@ -57,7 +57,7 @@ npm install
 3. Place the Syncfusion license key in the [`syncfusion-license.txt`](syncfusion-license.txt) file located in the project's root folder for registration.
 
 > [!NOTE]
-> A license banner will be visible if the application is run without a Syncfusion license key. To obtain your Syncfusion license key, visit the [Get license key](https://help.syncfusion.com/common/essential-studio/licensing/licensing-faq/where-can-i-get-a-license-key) page. For detailed instructions on registering the Syncfusion license key, refer to the [registration with license key](https://ej2.syncfusion.com/react/documentation/licensing/license-key-registration#register-the-license-key-with-the-license-file) page.
+> A license banner will be visible if the application is run without a Syncfusion license key. To obtain your Syncfusion license key, visit the [Get license key](https://help.syncfusion.com/common/essential-studio/licensing/licensing-faq/where-can-i-get-a-license-key) page.
 
 4. Execute the following command to create & pack the solution package:
 
@@ -71,7 +71,7 @@ The resulting package will be created at [`SyncfusionPowerAppsComponents/bin/Deb
 
 To deploy the solution package in the PowerApps portal, follow these steps:
 
-1. Before proceeding, verify that the file size limit for email attachments in PowerApps is greater than the size of your solution bundle. For detailed instructions, refer to the [FAQ section](./faq.md#how-to-set-file-size-limit-for-email-attachments-in-powerapps).
+1. Before proceeding, verify that the file size limit for email attachments in PowerApps is greater than the size of your solution bundle. For detailed instructions, refer to the [FAQ section](./docs/common/faq.md#how-to-set-file-size-limit-for-email-attachments-in-powerapps).
 
 2. Update the `Environment` property in [config](./config.json#L2) with PowerApps solution importing environment name from [PowerApps portal](https://make.powerapps.com/).
 
@@ -102,17 +102,39 @@ To update and test the Syncfusion code components on your local machine, refer t
 
 For instance, to test the Grid code component, you can visit the [Local (TestHarness)](docs/grids/getting-started-with-code-component.md) documentation and follow the instructions provided.
 
-## Support
+## Upcoming Plans and Feedbacks
 
-For any questions or assistance, you can:
+- We are excited to announce that the following components will be included soon:
+1. Document Editor
+2. File Manager
+3. Gantt Chart
+4. Kanban
+5. Rich Text Editor
+6. Spreadsheet
+7. TreeGrid
 
-- Visit the [Syncfusion support portal](https://support.syncfusion.com/).
-- Post your queries on the [community forums](https://www.syncfusion.com/forums).
-- Renew your subscription by clicking [here](https://www.syncfusion.com/sales/products) or contacting our sales team at <salessupport@syncfusion.com>.
-- If you have specific feature requests or suggestions, please submit them through our [feedback portal](https://www.syncfusion.com/feedback/react).
+- We welcome your suggestions and improvements! Please share your feedback with us through [Github Discussions](https://github.com/syncfusion/ej2-powerapps-components/issues).
+
+## Support and feedback
+
+* For any other queries, reach our [Syncfusion support team](https://www.syncfusion.com/support/directtrac/incidents/newincident) or post the queries through the [Community forums](https://www.syncfusion.com/forums) and submit a feature request or a bug through our [Feedback portal](https://www.syncfusion.com/feedback).
+* To renew the subscription, click [renew](https://www.syncfusion.com/sales/products) or contact our sales team at salessupport@syncfusion.com | Toll Free: 1-888-9 DOTNET.
 
 ## License
 
-For detailed information about the Syncfusion Essential Studio license and copyright, please refer to the [license](LICENSE).
+Syncfusion React Components is available under the Syncfusion Essential Studio program, and can be licensed either under the Syncfusion Community License Program or the Syncfusion commercial license.
 
-© 2024 Syncfusion, Inc. All Rights Reserved.
+To be qualified for the Syncfusion Community License Program, you must have gross revenue of less than one (1) million U.S. dollars (USD 1,000,000.00) per year and have less than five (5) developers in your organization, and agree to be bound by Syncfusion’s terms and conditions.
+
+Customers who do not qualify for the community license can contact sales@syncfusion.com for commercial licensing options.
+
+You may not use this product without first purchasing a Community License or a Commercial License, as well as agreeing to and complying with Syncfusion's license terms and conditions.
+
+The Syncfusion license that contains the terms and conditions can be found at
+[https://www.syncfusion.com/content/downloads/syncfusion_license.pdf](https://www.syncfusion.com/content/downloads/syncfusion_license.pdf)
+
+## About Syncfusion
+
+Founded in 2001 and headquartered in Research Triangle Park, N.C., Syncfusion has more than 29,000 customers and more than 1 million users, including large financial institutions, Fortune 500 companies, and global IT consultancies.
+
+Today we provide 1,800+ controls and frameworks for web ([ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls), [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls), [ASP.NET WebForms](https://www.syncfusion.com/jquery/aspnet-web-forms-ui-controls), [JavaScript](https://www.syncfusion.com/javascript-ui-controls), [Angular](https://www.syncfusion.com/angular-ui-components), [React](https://www.syncfusion.com/react-ui-components), [Vue](https://www.syncfusion.com/vue-ui-components), and [Blazor](https://www.syncfusion.com/blazor-components), mobile ([Xamarin](https://www.syncfusion.com/xamarin-ui-controls), [Flutter](https://www.syncfusion.com/flutter-widgets), [UWP](https://www.syncfusion.com/uwp-ui-controls), and [JavaScript](https://www.syncfusion.com/javascript-ui-controls)), and desktop development ([WinForms](https://www.syncfusion.com/winforms-ui-controls), [WPF](https://www.syncfusion.com/wpf-ui-controls), and [UWP](https://www.syncfusion.com/uwp-ui-controls) and [WinUI](https://www.syncfusion.com/winui-controls))). We provide ready-to deploy enterprise software for dashboards, reports, data integration, and big data processing. Many customers have saved millions in licensing fees by deploying our software.
