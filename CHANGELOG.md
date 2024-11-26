@@ -7,8 +7,8 @@ We are excited to announce the addition of four new components in this release, 
 ### Added Components
 
 - [Gantt](components/gantt) `Preview`: A Gantt component for visualizing project timelines and tasks in a Gantt chart format.
-- [FileManager](components/filemanager) `Preview`: A FileManager component for navigating and managing files and folders in a hierarchical view, supporting features like file and folder viewing, searching, and organizing etc..
-- [Spreadsheet](components/spreadsheet) `Preview`: A spreadsheet component for viewing spreadsheet data, allowing users to navigate and analyze data in a grid format
+- [FileManager](components/filemanager) `Preview`: A FileManager component for navigating and managing files and folders in a hierarchical view, supporting features like file and folder viewing, searching, and organizing etc.
+- [Spreadsheet](components/spreadsheet) `Preview`: A spreadsheet component for viewing spreadsheet data, allowing users to navigate and analyze data in a grid format.
 - [Kanban](components/kanban) `Preview`: A kanban component for visualizing and organizing work in progress through customizable boards, columns, and cards.
 
 ### Improvements
