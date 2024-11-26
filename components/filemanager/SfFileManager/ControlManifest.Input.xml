@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="Syncfusion" constructor="SfFileManager" version="27.2.2" display-name-key="SfFileManager" description-key="SfFileManager_Desc_Key" control-type="virtual">
+    <!--external-service-usage node declares whether this 3rd party PCF control is using external service or not, if yes, this control will be considered as premium and please also add the external domain it is using.
+    If it is not using any external service, please set the enabled="false" and DO NOT add any domain below. The "enabled" will be false by default.
+    Example1:
+      <external-service-usage enabled="true">
+        <domain>www.Microsoft.com</domain>
+      </external-service-usage>
+    Example2:
+      <external-service-usage enabled="false">
+      </external-service-usage>
+    -->
+    <external-service-usage enabled="false">
+      <!--UNCOMMENT TO ADD EXTERNAL DOMAINS
+      <domain></domain>
+      <domain></domain>
+      -->
+    </external-service-usage>
+
+    <!-- Filemanager DataSource Property -->
+    <data-set name="FileSystemData" display-name-key="FileSystemData"></data-set>
+
+    <!-- DarkMode property -->
+    <property name="EnableDarkMode" of-type="TwoOptions" default-value="false" display-name-key="EnableDarkMode" description-key="EnableDarkMode_Desc_Key" usage="input" required="false" />
+
+    <!-- Filemanager Config Property -->
+    <property name="FileManagerConfig" of-type="Multiple" default-value="" display-name-key="FileManagerConfig" description-key="FileManagerConfig_Desc_Key" usage="input" required="false" />
+
+    <!-- Filemanager Properties -->
+    <property name="CssClass" of-type="SingleLine.Text" default-value="" display-name-key="CssClass" description-key="CssClass_Desc_Key" usage="input" required="false" />
+    <property name="Path" of-type="SingleLine.Text" default-value="/" display-name-key="Path" description-key="Path_Desc_Key" usage="input" required="false" />
+    <property name="RootAliasName" of-type="SingleLine.Text" default-value="" display-name-key="RootAliasName" description-key="RootAliasName_Desc_Key" usage="input" required="false" />
+    <property name="SortBy" of-type="SingleLine.Text" default-value="name" display-name-key="SortBy" description-key="SortBy_Desc_Key" usage="input" required="false" />
+
+    <property name="SortOrder" of-type="Enum" default-value="Ascending" display-name-key="SortOrder" description-key="SortOrder_Desc_Key" usage="input" required="false">
+      <value name="Ascending" display-name-key="Ascending">Ascending</value>
+      <value name="Descending" display-name-key="Descending">Descending</value>
+      <value name="None" display-name-key="None">None</value>
+    </property>
+    <property name="View" of-type="Enum" default-value="LargeIcons" display-name-key="View" description-key="View_Desc_Key" usage="input" required="false">
+      <value name="LargeIcons" display-name-key="LargeIcons">LargeIcons</value>
+      <value name="Details" display-name-key="Details">Details</value>
+    </property>
+
+    <property name="AllowMultiSelection" of-type="TwoOptions" default-value="true" display-name-key="AllowMultiSelection" description-key="AllowMultiSelection_Desc_Key" usage="input" required="false" />
+    <property name="EnableVirtualization" of-type="TwoOptions" default-value="false" display-name-key="EnableVirtualization" description-key="EnableVirtualization_Desc_Key" usage="input" required="false" />
+    <property name="ShowFileExtension" of-type="TwoOptions" default-value="true" display-name-key="ShowFileExtension" description-key="ShowFileExtension_Desc_Key" usage="input" required="false" />
+    <property name="ShowItemCheckBoxes" of-type="TwoOptions" default-value="true" display-name-key="ShowItemCheckBoxes" description-key="ShowItemCheckBoxes_Desc_Key" usage="input" required="false" />
+    <property name="ShowThumbnail" of-type="TwoOptions" default-value="true" display-name-key="ShowThumbnail" description-key="ShowThumbnail_Desc_Key" usage="input" required="false" />
+    <property name="Height" of-type="Whole.None" default-value="200" display-name-key="Height" description-key="Height_Desc_Key" usage="input" required="false" />
+
+    <!-- FileManager Events Property -->
+    <property name="EventName" of-type="SingleLine.Text" display-name-key="EventName" description-key="EventName_Desc_Key" usage="output" default-value="" />
+    <property name="OnError" of-type="SingleLine.Text" display-name-key="OnError" description-key="OnError_Desc_Key" usage="output" default-value="" />
+
+    <resources>
+      <code path="index.ts" order="1"/>
+      <platform-library name="React" version="16.8.6" />
+      <resx path="strings/SfFileManager.1033.resx" version="1.0.0" />
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      <css path="css/SfFileManager.css" order="1" />
+      -->
+    </resources>
+    <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
+    <feature-usage>
+      <uses-feature name="Device.captureAudio" required="true" />
+      <uses-feature name="Device.captureImage" required="true" />
+      <uses-feature name="Device.captureVideo" required="true" />
+      <uses-feature name="Device.getBarcodeValue" required="true" />
+      <uses-feature name="Device.getCurrentPosition" required="true" />
+      <uses-feature name="Device.pickFile" required="true" />
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+    -->
+  </control>
+</manifest>

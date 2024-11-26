@@ -41,6 +41,7 @@ export class SfGrid implements ComponentFramework.ReactControl<IInputs, IOutputs
       const dataSource = context.parameters?.DataSource;
       const columns = context.parameters?.Columns;
 
+      this.toggleDarkMode(this.validateBooleanProperty(context.parameters.EnableDarkMode) === true);
       const dataSourceLoaded = dataSource && !dataSource.loading && !dataSource.error;
       const columnsLoaded = columns && !columns.loading && !columns.error;
 
@@ -67,6 +68,7 @@ export class SfGrid implements ComponentFramework.ReactControl<IInputs, IOutputs
         height: allocatedHeight > 0 ? allocatedHeight : "100%",
         primaryKey: context.parameters.PrimaryKey?.raw ?? "",
         rtl: context.userSettings.isRTL ?? false,
+        enableAdaptiveUI: parseInt(context.client.getFormFactor() as unknown as string) === 3,
         allowEditing: this.validateBooleanProperty(context.parameters.AllowEditing),
         editMode: context.parameters.EditMode.raw,
         allowPaging: this.validateBooleanProperty(context.parameters.AllowPaging),
@@ -171,6 +173,22 @@ export class SfGrid implements ComponentFramework.ReactControl<IInputs, IOutputs
   public renderNoDataSource = (): React.ReactElement => {
     return React.createElement(NoDataSource, { resources: this.context.resources });
   };
+
+  /**
+   * Toggles the dark mode for the application.
+   *
+   * @param {boolean} [enable] - Optional parameter to enable or disable dark mode. 
+   * If true, dark mode will be enabled. If false or not provided, dark mode will be disabled.
+   */
+  public toggleDarkMode(enable?: boolean): void {
+    const body = document.body;
+
+    if (enable) {
+      body.classList.add('e-dark-mode');
+    } else {
+      body.classList.remove('e-dark-mode');
+    }
+  }
 
   /**
    * Called when the control is to be removed from the DOM tree. Controls should use this call for cleanup.

@@ -13,7 +13,7 @@
     "refreshTypes": "pcf-scripts refreshTypes"
   },
   "dependencies": {
-    "@syncfusion/ej2-react-pivotview": "^27.1.48",
+    "@syncfusion/ej2-react-pivotview": "^27.2.2",
     "react": "16.8.6",
     "react-dom": "16.8.6"
   },
@@ -30,9 +30,9 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.0.1",
     "eslint-plugin-react": "^7.31.8",
-    "pcf-scripts": "^1",
+    "pcf-scripts": "1.35.1",
     "pcf-start": "^1",
     "react": "^16.8",
-    "typescript": "^4.8.4"
+    "typescript": "^4.9.5"
   }
 }

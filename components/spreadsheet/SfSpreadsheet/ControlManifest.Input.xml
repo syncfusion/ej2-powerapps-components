@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="Syncfusion" constructor="SfSpreadsheet" version="27.2.2" display-name-key="SfSpreadsheet" description-key="SfSpreadsheet_Desc_Key" control-type="virtual">
+    <!--external-service-usage node declares whether this 3rd party PCF control is using external service or not, if yes, this control will be considered as premium and please also add the external domain it is using.
+    If it is not using any external service, please set the enabled="false" and DO NOT add any domain below. The "enabled" will be false by default.
+    Example1:
+      <external-service-usage enabled="true">
+        <domain>www.Microsoft.com</domain>
+      </external-service-usage>
+    Example2:
+      <external-service-usage enabled="false">
+      </external-service-usage>
+    -->
+    <external-service-usage enabled="false">
+      <!--UNCOMMENT TO ADD EXTERNAL DOMAINS
+      <domain></domain>
+      <domain></domain>
+      -->
+    </external-service-usage>
+
+    <!-- Spreadsheet DataSource Property -->
+    <data-set name="DataSource" display-name-key="DataSource"></data-set>
+
+    <!-- DarkMode property -->
+    <property name="EnableDarkMode" of-type="TwoOptions" default-value="false" display-name-key="EnableDarkMode" description-key="EnableDarkMode_Desc_Key" usage="input" required="false" />
+
+    <!-- Spreadsheet URL Property -->
+    <property name="DocumentPath" of-type="SingleLine.URL" default-value="https://cdn.syncfusion.com/scripts/spreadsheet/Sample.xlsx" display-name-key="DocumentPath" description-key="DocumentPath_Desc_Key" usage="bound" required="true" />
+
+    <!-- Spreadsheet Properties -->
+    <property name="AllowFiltering" of-type="TwoOptions" default-value="true" display-name-key="AllowFiltering" description-key="AllowFiltering_Desc_Key" usage="input" required="false" />
+    <property name="AllowFreezePane" of-type="TwoOptions" default-value="true" display-name-key="AllowFreezePane" description-key="AllowFreezePane_Desc_Key" usage="input" required="false" />
+    <property name="AllowOpen" of-type="TwoOptions" default-value="true" display-name-key="AllowOpen" description-key="AllowOpen_Desc_Key" usage="input" required="false" />
+    <property name="AllowPrint" of-type="TwoOptions" default-value="true" display-name-key="AllowPrint" description-key="AllowPrint_Desc_Key" usage="input" required="false" />
+    <property name="AllowResizing" of-type="TwoOptions" default-value="true" display-name-key="AllowResizing" description-key="AllowResizing_Desc_Key" usage="input" required="false" />
+    <property name="AllowSave" of-type="TwoOptions" default-value="true" display-name-key="AllowSave" description-key="AllowSave_Desc_Key" usage="input" required="false" />
+    <property name="AllowSorting" of-type="TwoOptions" default-value="true" display-name-key="AllowSorting" description-key="AllowSorting_Desc_Key" usage="input" required="false" />
+    <property name="AllowWrap" of-type="TwoOptions" default-value="true" display-name-key="AllowWrap" description-key="AllowWrap_Desc_Key" usage="input" required="false" />
+    <property name="ShowAggregate" of-type="TwoOptions" default-value="true" display-name-key="ShowAggregate" description-key="ShowAggregate_Desc_Key" usage="input" required="false" />
+    <property name="ShowFormulaBar" of-type="TwoOptions" default-value="true" display-name-key="ShowFormulaBar" description-key="ShowFormulaBar_Desc_Key" usage="input" required="false" />
+    <property name="ShowRibbon" of-type="TwoOptions" default-value="true" display-name-key="ShowRibbon" description-key="ShowRibbon_Desc_Key" usage="input" required="false" />
+    <property name="ShowSheetTabs" of-type="TwoOptions" default-value="true" display-name-key="ShowSheetTabs" description-key="ShowSheetTabs_Desc_Key" usage="input" required="false" />
+
+    <!-- Spreadsheet SelectionMode Properties -->
+    <property name="SelectionMode" of-type="Enum" default-value="Multiple" display-name-key="SelectionMode" description-key="SelectionMode_Desc_Key" usage="input" required="false">
+      <value name="Multiple" display-name-key="Multiple">Multiple</value>
+      <value name="Single" display-name-key="Single">Single</value>
+      <value name="None" display-name-key="None">None</value>
+    </property>
+
+    <!-- Spreadsheet Event Properties -->
+    <property name="EventName" of-type="SingleLine.Text" display-name-key="EventName" description-key="EventName_Desc_Key" usage="output" default-value="" />
+    <property name="OnError" of-type="SingleLine.Text" default-value="" display-name-key="OnError" description-key="OnError_Desc_Key" usage="output" />
+
+    <resources>
+      <code path="index.ts" order="1"/>
+      <platform-library name="React" version="16.8.6" />
+      <resx path="strings/SfSpreadsheet.1033.resx" version="1.0.0" />
+      <css path='../node_modules/@syncfusion/ej2-base/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-inputs/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-buttons/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-splitbuttons/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-lists/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-navigations/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-popups/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-dropdowns/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-grids/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-spreadsheet/styles/fluent2.css' />
+      <css path="styles/theme.css" />
+    </resources>
+    <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
+    <feature-usage>
+      <uses-feature name="Device.captureAudio" required="true" />
+      <uses-feature name="Device.captureImage" required="true" />
+      <uses-feature name="Device.captureVideo" required="true" />
+      <uses-feature name="Device.getBarcodeValue" required="true" />
+      <uses-feature name="Device.getCurrentPosition" required="true" />
+      <uses-feature name="Device.pickFile" required="true" />
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+    -->
+  </control>
+</manifest>

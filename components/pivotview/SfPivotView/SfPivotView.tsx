@@ -15,7 +15,6 @@ import * as React from "react";
 import { ISfPivotView, IPivotViewConfig, Record } from './types';
 import { ChartSettings } from "@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings";
 import { PivotZoomSettingsModel } from "@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings-model";
-import "./styles/theme.css"
 
 /**
  * Represents the SfPivotViewComponent component.
@@ -40,7 +39,7 @@ export const SfPivotViewComponent: React.FC<ISfPivotView> = React.memo((props: I
     const returnData = sortedRecordIds.map((id) => {
       const record: Record = {};
       columns.forEach((column: Record) => {
-        if (isNullOrUndefined(column.displayName)) return;
+        if (isNullOrUndefined(column.displayName) || column.dataType.includes("multiselectpicklist")) return;
 
         isModelDriven = !isNullOrUndefined(column["isPrimary"]) && !props.isTestHarness;
         if (isModelDriven && column.dataType === "TwoOptions") {
@@ -49,7 +48,7 @@ export const SfPivotViewComponent: React.FC<ISfPivotView> = React.memo((props: I
           );
           return;
         } else if (column.dataType.includes("DateAndTime")) {
-          record[column.displayName] = new Date(record[id].getValue(column.alias) as string);
+          record[column.displayName] = new Date(records[id].getValue(column.alias) as string);
         } else {
           record[column.displayName] = records[id].getValue(column.alias);
         }

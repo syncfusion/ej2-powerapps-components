@@ -34,6 +34,10 @@ Defines the column data for the Grid component. It specifies the `dataset` that 
 * `ColMaxWidth` - Defines the column max width.
 * `ColFormat` - Defines the column format.
 
+### Enable Dark Mode (TwoOptions)
+
+If `enableDarkMode` set to true, then it will enable the dark mode for the Grid code component.
+
 ### Primary Key (SingleLine.Text)
 
 Defines the column name which is the `primaryKey` of the Grid only for auto generated columns.
@@ -126,7 +130,7 @@ Defines the event name for the Grid component. It specifies the `event` of the G
 
 Outputs error message when onError is triggered. Use below PowerFx code in the **onChange** property to notify the error message in the canvas application.
 
-```
+```js
 If(
     Self.EventName="onError",
     Notify(Self.OnError, NotificationType.Error)

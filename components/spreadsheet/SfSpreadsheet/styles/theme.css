@@ -1,0 +1,15 @@
+/* Unset the default text alignment and border styles */
+.control-pane {
+  text-align: unset;
+}
+
+.control-container {
+  border-width: unset;
+  border-style: unset;
+}
+
+.e-spreadsheet {
+  min-height: 200px !important;
+  min-width: 200px !important;
+  position: relative;
+}

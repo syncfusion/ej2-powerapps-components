@@ -38,6 +38,7 @@ export class SfPdfViewer implements ComponentFramework.ReactControl<IInputs, IOu
         try {
             this.context = context;
 
+            this.toggleDarkMode(this.validateBooleanProperty(context.parameters.EnableDarkMode) === true);
             const allocatedWidth = parseInt(context.mode.allocatedWidth as unknown as string);
             const allocatedHeight = parseInt(context.mode.allocatedHeight as unknown as string);
 
@@ -120,6 +121,22 @@ export class SfPdfViewer implements ComponentFramework.ReactControl<IInputs, IOu
      */
     public validateBooleanProperty(property: ComponentFramework.PropertyTypes.TwoOptionsProperty): boolean {
         return typeof property.raw === "string" ? property.raw === "true" : property.raw;
+    }
+
+    /**
+     * Toggles the dark mode for the application.
+     *
+     * @param {boolean} [enable] - Optional parameter to enable or disable dark mode. 
+     * If true, dark mode will be enabled. If false or not provided, dark mode will be disabled.
+     */
+    public toggleDarkMode(enable?: boolean): void {
+        const body = document.body;
+
+        if (enable) {
+            body.classList.add('e-dark-mode');
+        } else {
+            body.classList.remove('e-dark-mode');
+        }
     }
 
     /**

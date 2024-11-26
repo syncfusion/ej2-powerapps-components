@@ -42,19 +42,19 @@ To add the Syncfusion PowerApps Chart code component to the Dataverse table, fol
 
 ![Dataverse Form Import 1](../images/common/MD-PP-Import1.png)
 
-5. A window will appear. Switch to the `Build by others` tab at the top and import the built code component named `SfChart` from the published solutions.
+3. A window will appear. Switch to the `Build by others` tab at the top and import the built code component named `SfChart` from the published solutions.
 
 ![Dataverse Form Import 2](../images/charts/MD-PP-Import2.png)
 
-6. Create a new section in the form, opting for a `1-column tab` from the `popular` section. Rename this tab as **Chart View** to clearly delineate its purpose. This tab will be utilized to render the Chart code component.
+4. Create a new section in the form, opting for a `1-column tab` from the `popular` section. Rename this tab as **Chart View** to clearly delineate its purpose. This tab will be utilized to render the Chart code component.
 
-7. Within the `More Components` section, select the `SfChart` component. Configure the DataSource property of the Chart code component by accessing the list of Dataverse tables created previously with respective table views. This step ensures that the Chart code component is seamlessly connected to the relevant data.
+5. Within the `More Components` section, select the `SfChart` component. Configure the DataSource property of the Chart code component by accessing the list of Dataverse tables created previously with respective table views. This step ensures that the Chart code component is seamlessly connected to the relevant data.
 
 ![Dataverse Form Import 3](../images/charts/MD-PP-Import3.png)
 
-8. Once the data is loaded, include the necessary series data for the Chart code component by accessing the `series` property and paste the [**Series config data**](../../components/charts/data/seriesConfig.json) and customize other properties in the property pane..
+6. Once the data is loaded, include the necessary series data for the Chart code component by accessing the `series` property and paste the [**Series config data**](../../components/charts/data/seriesConfig.json) and customize other properties in the property pane..
 
-9. The output of the Chart code component will appear as shown below. Click the `Save and publish` button at the top right corner of the PowerApps portal. This action commits the changes made to the form, ensuring that the Syncfusion PowerApps Chart code component is now an integral part of the Dataverse table.
+7. The output of the Chart code component will appear as shown below. Click the `Save and publish` button at the top right corner of the PowerApps portal. This action commits the changes made to the form, ensuring that the Syncfusion PowerApps Chart code component is now an integral part of the Dataverse table.
 
 ![Dataverse Form](../images/charts/MD-PP-DataverseForm.png)
 

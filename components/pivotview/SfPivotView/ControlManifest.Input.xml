@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="Syncfusion" constructor="SfPivotView" version="27.1.48" display-name-key="SfPivotView" description-key="SfPivotView_Desc_Key" control-type="virtual">
+  <control namespace="Syncfusion" constructor="SfPivotView" version="27.2.2" display-name-key="SfPivotView" description-key="SfPivotView_Desc_Key" control-type="virtual">
     <!--external-service-usage node declares whether this 3rd party PCF control is using external service or not, if yes, this control will be considered as premium and please also add the external domain it is using.
     If it is not using any external service, please set the enabled="false" and DO NOT add any domain below. The "enabled" will be false by default.
     Example1:
@@ -20,6 +20,7 @@
 
     <!-- PivotView DataSource Property -->
     <data-set name="DataSource" display-name-key="DataSource"></data-set>
+    <property name="EnableDarkMode" of-type="TwoOptions" default-value="false" display-name-key="EnableDarkMode" description-key="EnableDarkMode_Desc_Key" usage="input" required="false" />
 
     <!-- PivotView Config -->
     <property name="PivotViewConfig" of-type="Multiple" default-value="" display-name-key="PivotViewConfig" description-key="PivotViewConfig_Desc_Key" usage="input" required="true" />
@@ -76,10 +77,20 @@
     <property name="OnError" of-type="SingleLine.Text" default-value="" display-name-key="OnError" description-key="OnError_Desc_Key" usage="output" />
 
     <resources>
-      <code path="index.ts" order="1"/>
+      <code path="index.ts" order="1" />
       <platform-library name="React" version="16.8.6" />
       <resx path="strings/SfPivotView.1033.resx" version="1.0.0" />
-      <!-- <css path="styles/theme.css" order="1" /> -->
+      <css path="../node_modules/@syncfusion/ej2-base/styles/fluent2.css" />
+      <css path="../node_modules/@syncfusion/ej2-buttons/styles/fluent2.css" />
+      <css path="../node_modules/@syncfusion/ej2-dropdowns/styles/fluent2.css" />
+      <css path="../node_modules/@syncfusion/ej2-grids/styles/fluent2.css" />
+      <css path="../node_modules/@syncfusion/ej2-inputs/styles/fluent2.css" />
+      <css path="../node_modules/@syncfusion/ej2-lists/styles/fluent2.css" />
+      <css path="../node_modules/@syncfusion/ej2-navigations/styles/fluent2.css" />
+      <css path="../node_modules/@syncfusion/ej2-popups/styles/fluent2.css" />
+      <css path="../node_modules/@syncfusion/ej2-splitbuttons/styles/fluent2.css" />
+      <css path="../node_modules/@syncfusion/ej2-calendars/styles/fluent2.css" />
+      <css path="styles/theme.css" />
     </resources>
     <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
     <feature-usage>

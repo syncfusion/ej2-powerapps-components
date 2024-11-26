@@ -8,6 +8,10 @@ Below are the list of public APIs available in Schedule PowerApps code component
 
 Defines the data source for the Schedule code component. It specifies the `dataset` that the Schedule retrieves its data.
 
+### Enable Dark Mode (TwoOptions)
+
+If `enableDarkMode` set to true, then it will enable the dark mode for the Schedule code component.
+
 ### ScheduleConfig (SingleLine.Text)
 
 The configuration settings for the Schedule code component in JSON format. It specifies the `scheduleConfig` of the Schedule. The following properties are available in the `scheduleConfig` object.
@@ -128,7 +132,7 @@ Defines the event name for the Schedule code component. It specifies the `event`
 
 Outputs error message when onError is triggered. Use below PowerFx code in the **onChange** property to notify the error message in the canvas application.
 
-```
+```js
 If(
     Self.EventName="onError",
     Notify(Self.OnError, NotificationType.Error)

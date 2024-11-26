@@ -36,19 +36,19 @@ To add the Syncfusion PowerApps Pivotview code component to the Dataverse table,
 
 ![Dataverse Form Import 1](../images/common/MD-PP-Import1.png)
 
-5. A window will appear. Switch to the `Build by others` tab at the top and import the built code component named `SfPivotView` from the published solutions.
+3. A window will appear. Switch to the `Build by others` tab at the top and import the built code component named `SfPivotView` from the published solutions.
 
 ![Dataverse Form Import 2](../images/pivotview/MD-PP-Import2.png)
 
-6. Create a new section in the form, opting for a `1-column tab` from the `popular` section. Rename this tab as **Pivot View** to clearly delineate its purpose. This tab will be utilized to render the Pivotview code component.
+4. Create a new section in the form, opting for a `1-column tab` from the `popular` section. Rename this tab as **Pivot View** to clearly delineate its purpose. This tab will be utilized to render the Pivotview code component.
 
-7. Within the `More Components` section, select the `SfPivotView` component. Configure the DataSource property of the Pivotview code component by accessing the list of Dataverse tables created previously with respective table views. This step ensures that the Pivotview code component is seamlessly connected to the relevant data. Also, initialize `pivotViewConifg` property data from the [**pivotViewConfig.json**](../../components/pivotview/data/pivotViewConfig.json) file and customize other properties in the property pane.
+5. Within the `More Components` section, select the `SfPivotView` component. Configure the DataSource property of the Pivotview code component by accessing the list of Dataverse tables created previously with respective table views. This step ensures that the Pivotview code component is seamlessly connected to the relevant data. Also, initialize `pivotViewConifg` property data from the [**pivotViewConfig.json**](../../components/pivotview/data/pivotViewConfig.json) file and customize other properties in the property pane.
 
 ![Dataverse Form Import 3](../images/pivotview/MD-PP-Import3.png)
 
-8. Once the data is loaded, include the necessary pivotViewConfig data for the Pivotview code component by accessing the `pivotViewConfig` property and paste the [**PivotView config data**](../../components/pivotview/data/pivotViewConfig.json) and customize other properties in the property pane.
+6. Once the data is loaded, include the necessary pivotViewConfig data for the Pivotview code component by accessing the `pivotViewConfig` property and paste the [**PivotView config data**](../../components/pivotview/data/pivotViewConfig.json) and customize other properties in the property pane.
 
-9. The output of the Pivotview code component will appear as shown below. Click the `Save and publish` button at the top right corner of the PowerApps portal. This action commits the changes made to the form, ensuring that the Syncfusion PowerApps Pivotview code component is now an integral part of the Dataverse table.
+7. The output of the Pivotview code component will appear as shown below. Click the `Save and publish` button at the top right corner of the PowerApps portal. This action commits the changes made to the form, ensuring that the Syncfusion PowerApps Pivotview code component is now an integral part of the Dataverse table.
 
 ![Dataverse Form](../images/pivotview/MD-PP-DataverseForm.png)
 

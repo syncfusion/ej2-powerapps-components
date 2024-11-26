@@ -38,7 +38,7 @@ body > div > div[aria-modal="true"].e-control {
   font-family: inherit;
 }
 
-/* NoDataSouce component styles */
+/* NoDataSource component styles */
 #NoDataSource {
   display: flex;
   width: inherit;
@@ -46,10 +46,19 @@ body > div > div[aria-modal="true"].e-control {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 10px;
+  padding: 10px;
 }
 
 #NoDataSource h3 {
   color: #575757;
   font-size: 16px;
+}
+
+/* Dark mode styles */
+body.e-dark-mode #NoDataSource h3 {
+  color: #e0e0e0;
+}
+
+body.e-dark-mode #NoDataSource {
+  background-color: #333333;
 }

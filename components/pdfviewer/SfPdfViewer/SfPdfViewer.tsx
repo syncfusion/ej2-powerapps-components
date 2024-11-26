@@ -13,7 +13,6 @@ import {
   LinkAnnotation,
 } from "@syncfusion/ej2-react-pdfviewer";
 import * as React from "react";
-import "./styles/theme.css";
 import { ISfPdfViewer } from "./types";
 
 /**

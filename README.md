@@ -10,6 +10,7 @@ The repository is organized into the following folders:
 | -------------------------- | ------------------------------------------------ |
 | [`components`](components) | Contains the Syncfusion code components. |
 | [`docs`](docs)             | Contains the documentation for Syncfusion code components. |
+| [`gulp-tasks`](gulp-tasks) | Contains the gulp tasks for the Syncfusion code components library. |
 | [`SyncfusionPowerAppsComponents`](SyncfusionPowerAppsComponents) | Contains the generated solution project and solution file with all Syncfusion code components in the **components** folder (Available after running the `npm run pack` command). |
 
 ## Components list
@@ -22,7 +23,11 @@ The Syncfusion PowerApps Code components library includes the following componen
 | [Chart](components/charts) `Preview` | ✅ [Local (TestHarness)](docs/charts/getting-started-with-code-component.md) <br/> ✅ [Canvas](docs/charts/getting-started-with-canvas.md) <br/> ✅ [Model-Driven (Form)](docs/charts/getting-started-with-model-driven-form.md) <br/> ✅ [Model-Driven (Custom Pages)](docs/charts/getting-started-with-model-driven-custom-pages.md) <br/> ✅ [PowerPages (Portals)](./docs/charts/getting-started-with-power-pages.md) |
 | [Schedule](components/schedule) `Preview` | ✅ [Local (TestHarness)](docs/schedule/getting-started-with-code-component.md) <br/> ✅ [Canvas](docs/schedule/getting-started-with-canvas.md) <br/> ✅ [Model-Driven (Form)](docs/schedule/getting-started-with-model-driven-form.md) <br/> ✅ [Model-Driven (Custom Pages)](docs/schedule/getting-started-with-model-driven-custom-pages.md) <br/> ✅ [PowerPages (Portals)](./docs/schedule/getting-started-with-power-pages.md) |
 | [PdfViewer](components/pdfviewer) `Preview` | ✅ [Local (TestHarness)](docs/pdfviewer/getting-started-with-code-component.md) <br/> ✅ [Canvas](docs/pdfviewer/getting-started-with-canvas.md) <br/> ✅ [Model-Driven (Form)](docs/pdfviewer/getting-started-with-model-driven-form.md) <br/> ✅ [Model-Driven (Custom Pages)](docs/pdfviewer/getting-started-with-model-driven-custom-pages.md) <br/> ⬜ PowerPages (Portals) |
-| [PivotView](components/pivotview) `Preview` | ✅ [Local (TestHarness)](docs/pivotview/getting-started-with-code-component.md) <br/> ✅ [Canvas](docs/pivotview/getting-started-with-canvas.md) <br/> ✅ [Model-Driven (Form)](docs/pivotview/getting-started-with-model-driven-form.md) <br/> ✅ [Model-Driven (Custom Pages)](docs/pivotview/getting-started-with-model-driven-custom-pages.md) <br/> ✅ [PowerPages (Portals)](docs/pivotview/getting-started-with-model-driven-custom-pages.md) <br/>
+| [PivotView](components/pivotview) `Preview` | ✅ [Local (TestHarness)](docs/pivotview/getting-started-with-code-component.md) <br/> ✅ [Canvas](docs/pivotview/getting-started-with-canvas.md) <br/> ✅ [Model-Driven (Form)](docs/pivotview/getting-started-with-model-driven-form.md) <br/> ✅ [Model-Driven (Custom Pages)](docs/pivotview/getting-started-with-model-driven-custom-pages.md) <br/> ✅ [PowerPages (Portals)](docs/pivotview/getting-started-with-power-pages.md) <br/>
+| [Gantt](components/gantt) `Preview` | ✅ [Local (TestHarness)](docs/gantt/getting-started-with-code-component.md) <br/> ✅ [Canvas](docs/gantt/getting-started-with-canvas.md) <br/> ✅ [Model-Driven (Form)](docs/gantt/getting-started-with-model-driven-form.md) <br/> ✅ [Model-Driven (Custom Pages)](docs/gantt/getting-started-with-model-driven-custom-pages.md) <br/> ✅ [PowerPages (Portals)](docs/gantt/getting-started-with-power-pages.md) <br/>
+| [FileManager](components/filemanager) `Preview` | ✅ [Local (TestHarness)](docs/filemanager/getting-started-with-code-component.md) <br/> ✅ [Canvas](docs/filemanager/getting-started-with-canvas.md) <br/> ✅ [Model-Driven (Form)](docs/filemanager/getting-started-with-model-driven-form.md) <br/> ✅ [Model-Driven (Custom Pages)](docs/filemanager/getting-started-with-model-driven-custom-pages.md) <br/> ✅ [PowerPages (Portals)](docs/filemanager/getting-started-with-power-pages.md) <br/>
+| [Spreadsheet](components/spreadsheet) `Preview` | ✅ [Local (TestHarness)](docs/spreadsheet/getting-started-with-code-component.md) <br/> ✅ [Canvas](docs/spreadsheet/getting-started-with-canvas.md) <br/> ⬜ Model-Driven (Form) <br/> ✅ [Model-Driven (Custom Pages)](docs/spreadsheet/getting-started-with-model-driven-custom-pages.md) <br/> ⬜ PowerPages (Portals) |
+| [Kanban](components/kanban) `Preview` | ✅ [Local (TestHarness)](docs/kanban/getting-started-with-code-component.md) <br/> ✅ [Canvas](docs/kanban/getting-started-with-canvas.md) <br/> ⬜ Model-Driven (Form) <br/> ✅ [Model-Driven (Custom Pages)](docs/kanban/getting-started-with-model-driven-custom-pages.md) <br/> ⬜ PowerPages (Portals) |
 
 <em>Anticipate future updates to the component list. \*</em>
 
@@ -41,7 +46,7 @@ Clone the Syncfusion PowerApps components repository to your local machine.
 
 ## Creating the Syncfusion code components solution package
 
-To generate a solution project and bundle all Synfusion code components to create a solution package, follow these steps:
+To generate a solution project and bundle all Syncfusion code components to create a solution package, follow these steps:
 
 1. Open your command prompt and navigate to the [root folder](./) of this project.
 
@@ -104,21 +109,18 @@ For instance, to test the Grid code component, you can visit the [Local (TestHar
 
 ## Upcoming Plans and Feedbacks
 
-- We are excited to announce that the following components will be included soon:
-1. Document Editor
-2. File Manager
-3. Gantt Chart
-4. Kanban
-5. Rich Text Editor
-6. Spreadsheet
-7. TreeGrid
+The following components are set to be published soon:
 
-- We welcome your suggestions and improvements! Please share your feedback with us through [Github Discussions](https://github.com/syncfusion/ej2-powerapps-components/issues).
+1. Document Editor
+2. Rich Text Editor
+3. TreeGrid
+
+We welcome your suggestions and improvements! Please share your feedback with us through [Github Discussions](https://github.com/syncfusion/ej2-powerapps-components/issues).
 
 ## Support and feedback
 
-* For any other queries, reach our [Syncfusion support team](https://www.syncfusion.com/support/directtrac/incidents/newincident) or post the queries through the [Community forums](https://www.syncfusion.com/forums) and submit a feature request or a bug through our [Feedback portal](https://www.syncfusion.com/feedback).
-* To renew the subscription, click [renew](https://www.syncfusion.com/sales/products) or contact our sales team at salessupport@syncfusion.com | Toll Free: 1-888-9 DOTNET.
+- For any other queries, reach our [Syncfusion support team](https://www.syncfusion.com/support/directtrac/incidents/newincident) or post the queries through the [Community forums](https://www.syncfusion.com/forums) and submit a feature request or a bug through our [Feedback portal](https://www.syncfusion.com/feedback).
+- To renew the subscription, click [renew](https://www.syncfusion.com/sales/products) or contact our sales team at <salessupport@syncfusion.com> | Toll Free: 1-888-9 DOTNET.
 
 ## License
 
@@ -126,7 +128,7 @@ Syncfusion React Components is available under the Syncfusion Essential Studio p
 
 To be qualified for the Syncfusion Community License Program, you must have gross revenue of less than one (1) million U.S. dollars (USD 1,000,000.00) per year and have less than five (5) developers in your organization, and agree to be bound by Syncfusion’s terms and conditions.
 
-Customers who do not qualify for the community license can contact sales@syncfusion.com for commercial licensing options.
+Customers who do not qualify for the community license can contact <sales@syncfusion.com> for commercial licensing options.
 
 You may not use this product without first purchasing a Community License or a Commercial License, as well as agreeing to and complying with Syncfusion's license terms and conditions.
 

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="Syncfusion" constructor="SfGantt" version="27.2.2" display-name-key="SfGantt" description-key="SfGantt_Desc_Key" control-type="virtual">
+    <!--external-service-usage node declares whether this 3rd party PCF control is using external service or not, if yes, this control will be considered as premium and please also add the external domain it is using.
+    If it is not using any external service, please set the enabled="false" and DO NOT add any domain below. The "enabled" will be false by default.
+    Example1:
+      <external-service-usage enabled="true">
+        <domain>www.Microsoft.com</domain>
+      </external-service-usage>
+    Example2:
+      <external-service-usage enabled="false">
+      </external-service-usage>
+    -->
+    <external-service-usage enabled="false">
+      <!--UNCOMMENT TO ADD EXTERNAL DOMAINS
+      <domain></domain>
+      <domain></domain>
+      -->
+    </external-service-usage>
+
+    <!-- Gantt DataSource Property -->
+    <data-set name="DataSource" display-name-key="DataSource"></data-set>
+
+    <!-- DarkMode property -->
+    <property name="EnableDarkMode" of-type="TwoOptions" default-value="false" display-name-key="EnableDarkMode" description-key="EnableDarkMode_Desc_Key" usage="input" required="false" />
+
+    <!-- Gantt Config -->
+    <property name="GanttConfig" of-type="Multiple" default-value="" display-name-key="GanttConfig" description-key="GanttConfig_Desc_Key" usage="input" required="true" />
+
+    <!-- Gantt Properties -->
+    <property name="AllowFiltering" of-type="TwoOptions" default-value="false" display-name-key="AllowFiltering" description-key="AllowFiltering_Desc_Key" usage="input" required="false" />
+    <property name="AllowReordering" of-type="TwoOptions" default-value="false" display-name-key="AllowReordering" description-key="AllowReordering_Desc_Key" usage="input" required="false" />
+    <property name="AllowResizing" of-type="TwoOptions" default-value="false" display-name-key="AllowResizing" description-key="AllowResizing_Desc_Key" usage="input" required="false" />
+    <property name="AllowSelection" of-type="TwoOptions" default-value="true" display-name-key="AllowSelection" description-key="AllowSelection_Desc_Key" usage="input" required="false" />
+    <property name="AllowSorting" of-type="TwoOptions" default-value="false" display-name-key="AllowSorting" description-key="AllowSorting_Desc_Key" usage="input" required="false" />
+    <property name="EnableCriticalPath" of-type="TwoOptions" default-value="false" display-name-key="EnableCriticalPath" description-key="EnableCriticalPath_Desc_Key" usage="input" required="false" />
+    <property name="ShowColumnMenu" of-type="TwoOptions" default-value="false" display-name-key="ShowColumnMenu" description-key="ShowColumnMenu_Desc_Key" usage="input" required="false" />
+    <property name="ShowToolbar" of-type="TwoOptions" default-value="false" display-name-key="ShowToolbar" description-key="ShowToolbar_Desc_Key" usage="input" required="false" />
+
+    <!-- Gantt GridLines Properties -->
+    <property name="GridLines" of-type="Enum" default-value="Horizontal" display-name-key="GridLines" description-key="GridLines_Desc_Key" usage="input" required="false">
+      <value name="Horizontal" display-name-key="Horizontal">Horizontal</value>
+      <value name="Vertical" display-name-key="Vertical">Vertical</value>
+      <value name="Both" display-name-key="Both">Both</value>
+      <value name="None" display-name-key="None">None</value>
+    </property>
+
+    <!-- Gantt TimeZone Properties -->
+    <property name="TimeZone" of-type="SingleLine.Text" default-value="" display-name-key="TimeZone" description-key="TimeZone_Desc_Key" usage="input" required="false" />
+
+    <!-- Gantt TreeColumnIndex Properties -->
+    <property name="TreeColumnIndex" of-type="Whole.None" default-value="1" display-name-key="TreeColumnIndex" description-key="TreeColumnIndex_Desc_Key" usage="input" required="false" />
+
+    <!-- Gantt ViewType Properties -->
+    <property name="ViewType" of-type="Enum" default-value="ProjectView" display-name-key="ViewType" description-key="ViewType_Desc_Key" usage="input" required="false">
+      <value name="ProjectView" display-name-key="ProjectView">ProjectView</value>
+      <value name="ResourceView" display-name-key="ResourceView">ResourceView</value>
+    </property>
+
+    <!-- Gantt Event Properties -->
+    <property name="EventName" of-type="SingleLine.Text" display-name-key="EventName" description-key="EventName_Desc_Key" usage="output" default-value="" />
+    <property name="OnError" of-type="SingleLine.Text" default-value="" display-name-key="OnError" description-key="OnError_Desc_Key" usage="output" />
+
+    <resources>
+      <code path="index.ts" order="1"/>
+      <platform-library name="React" version="16.8.6" />
+      <resx path="strings/SfGantt.1033.resx" version="1.0.0" />
+      <css path='../node_modules/@syncfusion/ej2-base/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-buttons/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-calendars/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-dropdowns/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-gantt/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-grids/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-inputs/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-layouts/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-lists/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-navigations/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-popups/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-richtexteditor/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-treegrid/styles/fluent2.css' />
+      <css path="styles/theme.css" />
+    </resources>
+    <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
+    <feature-usage>
+      <uses-feature name="Device.captureAudio" required="true" />
+      <uses-feature name="Device.captureImage" required="true" />
+      <uses-feature name="Device.captureVideo" required="true" />
+      <uses-feature name="Device.getBarcodeValue" required="true" />
+      <uses-feature name="Device.getCurrentPosition" required="true" />
+      <uses-feature name="Device.pickFile" required="true" />
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+    -->
+  </control>
+</manifest>

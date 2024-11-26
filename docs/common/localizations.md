@@ -2,7 +2,7 @@
 
 The localization feature in Syncfusion code components allows you to customize the display language of the component according to your preferences. Here's a detailed guide on how to localize Syncfusion code components:
 
-## Add `ej2-locale` package:
+## Add `ej2-locale` package
 
 Begin by adding the `ej2-locale` package to your project. For that, navigate to the code components folder and execute the following command:
 
@@ -12,17 +12,17 @@ npm install @syncfusion/ej2-locale --save
 
 For instance, if you want to localize the Grid component, run this command in the [components/grids/](../../components/grids/) folder.
 
-## Copy `locale.tsx` file:
+## Copy `locale.tsx` file
 
 Copy the `locale.tsx` file from the [components/common/](../../components/common/locale.tsx) folder to your desired code components folder.
 
 For example, copy the `locale.tsx` file from the [components/common/](../../components/common/locale.tsx) folder to the [components/grids/SfGrid/](../../components/grids/SfGrid/) to localize Grid code component.
 
-## Update the `locale.tsx` file:
+## Update the `locale.tsx` file
 
 Modify the `locale.tsx` file with the necessary locale values according to your localization requirements.
 
-## Add imports in the `index.tsx` file:
+## Add imports in the `index.tsx` file
 
 Include the following imports in the `index.tsx` file of the code component.
 
@@ -32,7 +32,7 @@ import { IUserSettings } from "./types";
 import Locale from "./locale";
 ```
 
-## Add locale setting function:
+## Add locale setting function
 
 Insert the following function in the `index.tsx` file to set the locale for the code component.
 
@@ -61,7 +61,7 @@ Insert the following function in the `index.tsx` file to set the locale for the 
     }
 ```
 
-## Invoke the `setLocale` function:
+## Invoke the `setLocale` function
 
 Call the `setLocale` function within the `updateView` function to apply the locale settings:
 
@@ -69,7 +69,7 @@ Call the `setLocale` function within the `updateView` function to apply the loca
 this.setLocale();
 ```
 
-## Update locale based on PowerApps application locale:
+## Update locale based on PowerApps application locale
 
 Once implemented, the locale values will be automatically updated based on the PowerApps application locale.
 

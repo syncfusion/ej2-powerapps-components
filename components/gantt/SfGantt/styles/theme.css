@@ -1,0 +1,43 @@
+/* Unset the default text alignment and border styles */
+.control-pane {
+  text-align: unset;
+}
+
+.control-container {
+  border-width: unset;
+  border-style: unset;
+}
+
+/* Fix for dialog overlay issue due to default zIndex in Model-Driven app */
+body>div>div[aria-modal="true"].e-control {
+  z-index: inherit !important;
+}
+
+/* NoDataSource component styles */
+#NoDataSource,
+#NoConfigData {
+  display: flex;
+  width: inherit;
+  height: inherit;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#NoDataSource h3,
+#NoConfigData h3 {
+  color: #575757;
+  font-size: 16px;
+}
+
+/* Dark mode styles */
+body.e-dark-mode #NoDataSource h3,
+body.e-dark-mode #NoConfigData h3 {
+  color: #e0e0e0;
+}
+
+body.e-dark-mode #NoDataSource,
+body.e-dark-mode #NoConfigData {
+  background-color: #333333;
+}

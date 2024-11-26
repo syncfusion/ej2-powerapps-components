@@ -27,3 +27,4 @@ generated/
 !/components/
 !/docs/
 !/.images/
+!/gulp-tasks/

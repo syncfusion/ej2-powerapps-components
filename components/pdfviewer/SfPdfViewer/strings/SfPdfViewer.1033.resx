@@ -123,11 +123,18 @@
 
     <!-- PdfViewer Control properties -->
     <data name="SfPdfViewer" xml:space="preserve">
-        <value>SfPdfViewer (27.1.48) Preview</value>
+        <value>SfPdfViewer (27.2.2) Preview</value>
     </data>
     <data name="SfPdfViewer_Desc_Key" xml:space="preserve">
         <value>The PowerApps PdfViewer is a lightweight and modular component for viewing and printing PDF files.</value>
     </data>
+
+    <data name="EnableDarkMode" xml:space="preserve">
+        <value>Enable Dark Mode</value>
+      </data>
+    <data name="EnableDarkMode_Desc_Key" xml:space="preserve">
+        <value>Toggle this option to switch the application interface to Dark Mode</value>
+      </data>
 
     <!-- PdfViewer Documentpath Properties -->
     <data name="DocumentPath" xml:space="preserve">

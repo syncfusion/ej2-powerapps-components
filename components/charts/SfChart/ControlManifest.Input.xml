@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest>
-  <control namespace="Syncfusion" constructor="SfChart" version="27.1.48" display-name-key="SfChart" description-key="SfChart_Desc_Key" control-type="virtual">
+  <control namespace="Syncfusion" constructor="SfChart" version="27.2.2" display-name-key="SfChart" description-key="SfChart_Desc_Key" control-type="virtual">
     <!--external-service-usage node declares whether this 3rd party PCF control is using external service or not, if yes, this control will be considered as premium and please also add the external domain it is using.
     If it is not using any external service, please set the enabled="false" and DO NOT add any domain below. The "enabled" will be false by default.
     Example1:
@@ -20,6 +20,7 @@
 
     <!-- Chart DataSource Property -->
     <data-set name="DataSource" display-name-key="DataSource"></data-set>
+    <property name="EnableDarkMode" of-type="TwoOptions" default-value="false" display-name-key="EnableDarkMode" description-key="EnableDarkMode_Desc_Key" usage="input" required="false" />
 
     <!-- Chart Series & Title Property -->
     <property name="Series" of-type="Multiple" default-value="" display-name-key="Series" description-key="Series_Desc_Key" usage="input" required="false" />
