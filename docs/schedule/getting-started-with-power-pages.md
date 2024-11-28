@@ -37,17 +37,17 @@ To integrate the Syncfusion PowerApps Schedule code component to the Dataverse t
 
 ![Dataverse Form Import 1](../images/common/MD-PP-Import1.png)
 
-5. A window will appear. Switch to the `Build by others` tab at the top and import the built code component named `SfSchedule` from the published solutions.
+3. A window will appear. Switch to the `Build by others` tab at the top and import the built code component named `SfSchedule` from the published solutions.
 
 ![Dataverse Form Import 2](../images/schedule/MD-PP-Import2.png)
 
-6. Create a new section in the form, choosing for a `1-column tab` from the `popular` section. Rename this tab as **Schedule View** to clearly delineate its purpose. This tab will be utilized to render the Schedule code component.
+4. Create a new section in the form, choosing for a `1-column tab` from the `popular` section. Rename this tab as **Schedule View** to clearly delineate its purpose. This tab will be utilized to render the Schedule code component.
 
-7. In the `More Components` section, choose the `SfSchedule` component. Connect the Schedule code component to your Dataverse tables to ensure smooth data integration. We can also use the optional [ScheduleConfig](../../components/schedule/data/scheduleConfig.json) JSON configuration to configure the Schedule code component. Also, customize other properties as needed.
+5. In the `More Components` section, choose the `SfSchedule` component. Connect the Schedule code component to your Dataverse tables to ensure smooth data integration. We can also use the optional [ScheduleConfig](../../components/schedule/data/scheduleConfig.json) JSON configuration to configure the Schedule code component. Also, customize other properties as needed.
 
 ![Dataverse Form Import 3](../images/schedule/MD-PP-Import3.png)
 
-8. The output of the Schedule code component will be displayed as shown below after updating `selected date` property with `2023/01/04`. Then click the `Save and publish` button at the top right corner of the PowerApps portal. This action commits the changes made to the form, ensuring that the Syncfusion PowerApps Schedule code component is now an integral part of the Dataverse table.
+6. The output of the Schedule code component will be displayed as shown below after updating `selected date` property with `2023/01/04`. Then click the `Save and publish` button at the top right corner of the PowerApps portal. This action commits the changes made to the form, ensuring that the Syncfusion PowerApps Schedule code component is now an integral part of the Dataverse table.
 
 ![Dataverse Form](../images/schedule/MD-PP-DataverseForm.png)
 

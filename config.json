@@ -1,11 +1,13 @@
 {
   "Environment": "Syncfusion",
   "solutionData": {
-    "solutionName": "SyncfusionPowerAppsComponents_27_1_48",
+    "solutionName": "SyncfusionPowerAppsComponents",
     "publisherName": "Syncfusion",
     "publisherPrefix": "Sf",
-    "solutionVersion": "27.1.48",
-    "excludeComponentsFolderInSolutionBundle": ["Add your component folder name here"]
+    "solutionVersion": "27.2.2",
+    "includeComponents": ["Add your component folder name here to include"],
+    "excludeComponents": ["Add your component folder name here to exclude"],
+    "publishManagedSolution": true
   },
   "componentData": {
     "sampleLocation": "grids",

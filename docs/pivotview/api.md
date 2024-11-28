@@ -8,6 +8,10 @@ Below are the list of public APIs available in Pivotview PowerApps code componen
 
 Defines the data source for the Pivotview code component. It specifies the `datasources` that the Pivotview retrieves its data.
 
+### Enable Dark Mode (TwoOptions)
+
+If `enableDarkMode` set to true, then it will enable the dark mode for the Pivotview code component.
+
 ### PivotViewConfig (Multiple)
 
 The configuration settings for the Pivotview code component in JSON format. It specifies the `pivotViewConfig` of the Pivotview. The following properties are available in the `pivotViewConfig` object.
@@ -159,7 +163,7 @@ Defines the event name for the Pivotview code component. It specifies the `event
 
 Outputs error message when onError is triggered. Use below PowerFx code in the **onChange** property to notify the error message in the canvas application.
 
-```
+```js
 If(
     Self.EventName="onError",
     Notify(Self.OnError, NotificationType.Error)

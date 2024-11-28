@@ -1,0 +1,28 @@
+{
+  "contextMenuSettings": {
+    "file": ["Open", "|", "Details"],
+    "folder": ["Open", "|", "Details"],
+    "layout": ["SortBy", "View", "Refresh", "|", "Details", "|"],
+    "visible": true
+  },
+  "detailsViewSettings": {
+    "columns": [
+      { "field": "name", "headerText": "File Name", "minWidth": 120, "width": "auto", "customAttributes": { "class": "e-fe-grid-name" }, "template": "${name}" },
+      { "field": "size", "headerText": "File Size", "minWidth": 50, "width": "110", "template": "${size}" },
+      { "field": "_fm_modified", "headerText": "Date Modified", "minWidth": 50, "width": "190" }
+  ]
+  },
+  "navigationPaneSettings": {
+    "maxWidth": "850px",
+    "minWidth": "140px",
+    "visible": true
+  },
+  "searchSettings": {
+    "allowSearchOnTyping": true,
+    "filterType": "contains",
+    "ignoreCase": true
+  },
+  "toolbarSettings": {
+    "items": ["SortBy", "Refresh", "View", "Details"]
+  }
+}

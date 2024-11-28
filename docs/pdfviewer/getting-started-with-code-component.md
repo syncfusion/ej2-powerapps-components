@@ -2,7 +2,7 @@
 
 This article provides a step-by-step guide to run the Syncfusion PdfViewer code component in local (TestHarness).
 
-## Prerequisites:
+## Prerequisites
 
 Before getting started with the Syncfusion PdfViewer code component, ensure the following prerequisites are satisfied:
 
@@ -31,7 +31,7 @@ npm start watch
 
 ![Output1](../images/pdfviewer/CC-Output1.png)
 
-7. The PdfViewer code component will be displayed with default properties. Customize the PdfViewer code component properties in the right property pane.
+5. The PdfViewer code component will be displayed with default properties. Customize the PdfViewer code component properties in the right property pane.
 
 > [!NOTE]
 > Additionally, explore the [API documentation](./api.md) for comprehensive details on the properties, methods, and events of the PdfViewer code component.

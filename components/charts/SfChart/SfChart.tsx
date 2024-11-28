@@ -83,7 +83,8 @@ export const SfChartComponent: React.FC<ISfChart> = React.memo((props: ISfChart)
   return (
     <ChartComponent
       ref={chartRef}
-      theme="Fluent2"
+      theme={`Fluent2${props.enableDarkMode ? "Dark" : ""}`}
+      background={props.enableDarkMode ? "#292929" : "#fff"}
       width={props.width}
       height={props.height}
       enableRtl={props.rtl}

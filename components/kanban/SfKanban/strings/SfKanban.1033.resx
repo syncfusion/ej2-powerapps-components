@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root"
+    xmlns=""
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <!-- Kanban Control properties -->
+  <data name="SfKanban" xml:space="preserve">
+    <value>SfKanban (27.2.2) Preview</value>
+  </data>
+  <data name="SfKanban_Desc_Key" xml:space="preserve">
+    <value>The EJ2 Kanban component in PowerApps allows you to integrate Syncfusion's Kanban board into your PowerApps application. It visually organizes tasks into columns representing different workflow stages, enabling better task management and tracking. The component is highly customizable and supports features like drag-and-drop, swimlanes, providing an efficient way to manage tasks in a PowerApps environment.</value>
+  </data>
+
+  <!-- Kanban Datasource Properties -->
+  <data name="DataSource" xml:space="preserve">
+    <value> DataSource </value>
+  </data>
+
+  <!-- Kanban Config -->
+  <data name="KanbanConfig" xml:space="preserve">
+    <value>Kanban Config</value>
+  </data>
+  <data name="KanbanConfig_Desc_Key" xml:space="preserve">
+    <value>The configuration settings for the Kanban component allows you to customize its features and behavior. The dataSource property will be automatically updated based on your data. For refrence, you can find the default configuration in the JSON file located in the "components/kanban/data" folder in the repository.</value>
+  </data>
+
+  <!-- Kanban Property -->
+  <data name="EnableDarkMode" xml:space="preserve">
+    <value>Enable Dark Mode</value>
+  </data>
+  <data name="EnableDarkMode_Desc_Key" xml:space="preserve">
+    <value>Toggle this option to switch the application interface to Dark Mode</value>
+  </data> 
+  <data name="KeyField" xml:space="preserve">
+    <value>Key Field</value>
+  </data>
+  <data name="KeyField_Desc_Key" xml:space="preserve">
+    <value>Defines the key field of Kanban board. The Kanban renders its layout based on this key field.</value>
+  </data>
+  <data name="CardHeight" xml:space="preserve">
+    <value>Card Height</value>
+  </data>
+  <data name="CardHeight_Desc_Key" xml:space="preserve">
+    <value>Sets the height of the each card in the kanban. The string type includes pixel. When height is set with specific pixel value, then the card will be rendered to that specified height. In case, if auto value is set, then the height of the card gets auto-adjusted based on the content.</value>
+  </data>
+  <data name="CssClass" xml:space="preserve">
+    <value>Css Class</value>
+  </data>
+  <data name="CssClass_Desc_Key" xml:space="preserve">
+    <value>It is used to customize the Kanban, which accepts custom CSS class names that defines specific user-defined styles and themes to be applied on the Kanban element.</value>
+  </data>
+  <data name="EnableTooltip" xml:space="preserve">
+    <value>Enable Tooltip</value>
+  </data>
+  <data name="EnableTooltip_Desc_Key" xml:space="preserve">
+    <value>If enableTooltip set to true, then it will enables the tooltip in Kanban board. The property relates to the tooltipTemplate property</value>
+  </data>
+  <data name="NoDataSource_Message" xml:space="preserve">
+    <value>There is no data available to display at the moment.</value>
+  </data>
+
+  <!-- Kanban Event Properties -->
+  <data name="EventName" xml:space="preserve">
+    <value>Event Name</value>
+  </data>
+  <data name="EventName_Desc_Key" xml:space="preserve">
+    <value>Output event name when OnChange is triggered.</value>
+  </data>
+  <data name="OnError" xml:space="preserve">
+    <value>OnError</value>
+  </data>
+  <data name="OnError_Desc_Key" xml:space="preserve">
+    <value>Outputs error message when onError is triggered.</value>
+  </data>
+</root>

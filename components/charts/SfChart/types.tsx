@@ -7,6 +7,7 @@ export interface ISfChart {
   dataSource: Record[] | undefined;
   width: string;
   height: string;
+  enableDarkMode: boolean;
   rtl: boolean;
   series: SeriesModel[];
   seriesType: ChartSeriesType;

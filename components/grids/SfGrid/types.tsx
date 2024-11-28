@@ -10,6 +10,7 @@ export interface ISfGrid {
   height: string | number;
   primaryKey: string;
   rtl: boolean;
+  enableAdaptiveUI: boolean;
   allowEditing: boolean;
   editMode: EditMode;
   allowPaging: boolean;

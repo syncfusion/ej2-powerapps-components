@@ -148,3 +148,61 @@ To create a new Dataverse table, follow these steps:
 > Ensure whether the table is created with all rows and columns of the CSV file. If not, try [importing the data](#how-to-import-data-in-a-dataverse-table) into the table.
 
 ![FAQ6-7](../images/faq/FAQ6-7.png)
+
+## How to Create a Dataverse Table with a File Column for Storing Files
+
+Follow these simple steps to create a Dataverse table with a file column, allowing you to securely store files:
+
+1. **Access Power Apps**: Go to the [PowerApps portal](https://make.powerapps.com/) and open the Table tab on the left menu. This is your workspace for creating and managing Dataverse tables.
+
+2. **Start Your Table:** Click on `Create new tables` and choose the `Start from blank` option to start a fresh table.
+
+   ![FAQ6-1](../images/faq/FAQ6-1.png)
+
+   ![FAQ7-1](../images/faq/FAQ7-1.png)
+
+3. **Set Up the Basics**: Name your new table `SF File`. Add a `Name` column with a data type of `Single Line Text`.
+
+   ![FAQ7-2](../images/faq/FAQ7-2.png)
+
+4. **Save the Table**: Click `Save and exit` to finalize the setup. You’ll find the table listed under the `Tables` section in the `custom` category.
+
+   ![FAQ7-3](../images/faq/FAQ7-3.png)
+
+5. **Add the File Column**: Now, click the `+` icon to add a new column. Name it `File`, set the data type to `File`, and save your changes.
+
+   ![FAQ7-4](../images/faq/FAQ7-4.png)
+
+   ![FAQ7-5](../images/faq/FAQ7-5.png)
+
+6. **Configure the Form**: Head to the `Data experiences` tab of your table and select `Forms`. Open the Information form (make sure it’s a `main` type).
+
+   ![FAQ7-6](../images/faq/FAQ7-6.png)
+
+   ![FAQ7-7](../images/faq/FAQ7-7.png)
+
+7. **Add the File Column to the Form**: In the form editor, click `Table columns`, choose `File` from the list, and add it to the form. `Save and publish` your changes.
+
+   ![FAQ7-8](../images/faq/FAQ7-8.png)
+
+8. **Update the Views and Forms**: In the table page, select `Update forms and views` and click `Edit` to make adjustments if needed.
+
+   ![FAQ7-9](../images/faq/FAQ7-9.png)
+
+9. **Add a New Row**: To test the setup, click on `New row using form` in the edit page. The form will open in a new tab.
+
+   ![FAQ7-10](../images/faq/FAQ7-10.png)
+
+10. **Upload a File**: In the form, enter a `Name`, click `Save`, and then select `Choose File` to upload a file to the table.
+
+   ![FAQ7-11](../images/faq/FAQ7-11.png)
+
+   ![FAQ7-12](../images/faq/FAQ7-12.png)
+
+11. **Confirm the Upload**: Your file is now stored in the Dataverse table. Success!
+
+   ![FAQ7-13](../images/faq/FAQ7-13.png)
+
+12. All Done! You’ve now created a Dataverse table with a file column ready for secure file storage.
+
+   ![FAQ7-14](../images/faq/FAQ7-14.png)

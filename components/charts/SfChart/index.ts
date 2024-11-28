@@ -48,6 +48,7 @@ export class SfChart implements ComponentFramework.ReactControl<IInputs, IOutput
         dataSource: this.getChartData(context.parameters?.DataSource),
         width: allocatedWidth > 0 ? allocatedWidth + "px" : "100%",
         height: allocatedHeight > 0 ? allocatedHeight + "px" : "100%",
+        enableDarkMode: this.validateBooleanProperty(context.parameters?.EnableDarkMode),
         rtl: this.context.userSettings.isRTL ?? false,
         series: this.parseJSONConfig(context.parameters?.Series),
         seriesType: context.parameters?.SeriesType?.raw,
@@ -95,7 +96,7 @@ export class SfChart implements ComponentFramework.ReactControl<IInputs, IOutput
     const returnData = sortedRecordIds.map((id) => {
       const record: Record = {};
       columns.forEach((column: Record) => {
-        if (isNullOrUndefined(column.displayName)) return;
+        if (isNullOrUndefined(column.displayName) || column.dataType.includes("multiselectpicklist")) return;
 
         isModelDriven = !isNullOrUndefined(column["isPrimary"]) && !this.isTestHarness;
         if (isModelDriven && column.dataType === "TwoOptions") {

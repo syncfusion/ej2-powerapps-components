@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root"
+    xmlns=""
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <!-- Gantt Control properties -->
+  <data name="SfGantt" xml:space="preserve">
+    <value>SfGantt (27.2.2) Preview</value>
+  </data>
+  <data name="SfGantt_Desc_Key" xml:space="preserve">
+    <value>The EJ2 PowerApps Gantt allows users to track project progress, manage resources, and visualize task relationships in a clear and interactive format. Ideal for project management and planning.</value>
+  </data>
+
+  <!-- Gantt Datasource Properties -->
+  <data name="DataSource" xml:space="preserve">
+    <value> DataSource </value>
+  </data>
+
+  <!-- Gantt Config -->
+  <data name="GanttConfig" xml:space="preserve">
+    <value>Gantt Config</value>
+  </data>
+  <data name="GanttConfig_Desc_Key" xml:space="preserve">
+    <value>The configuration settings for the Gantt component allows you to customize its features and behavior. The dataSource property will be automatically updated based on your data. For refrence, you can find the default configuration in the JSON file located in the "components/gantt/data" folder in the repository.</value>
+  </data>
+
+  <!-- Gantt Property -->
+  <data name="EnableDarkMode" xml:space="preserve">
+    <value>Enable Dark Mode</value>
+  </data>
+  <data name="EnableDarkMode_Desc_Key" xml:space="preserve">
+    <value>Toggle this option to switch the application interface to Dark Mode</value>
+  </data>
+  <data name="AllowFiltering" xml:space="preserve">
+    <value>Allow Filtering</value>
+  </data>
+  <data name="AllowFiltering_Desc_Key" xml:space="preserve">
+    <value>It enables or disables filtering support in Gantt.</value>
+  </data>
+  <data name="AllowReordering" xml:space="preserve">
+    <value>Allow Reordering</value>
+  </data>
+  <data name="AllowReordering_Desc_Key" xml:space="preserve">
+    <value>If it enables Gantt columns can be reordered. Reordering can be done by drag and drop of a particular column from one index to another index.</value>
+  </data>
+  <data name="AllowResizing" xml:space="preserve">
+    <value>Allow Resizing</value>
+  </data>
+  <data name="AllowResizing_Desc_Key" xml:space="preserve">
+    <value>Allows you to Gantt columns to be resized.</value>
+  </data>
+  <data name="AllowSelection" xml:space="preserve">
+    <value>Allow Selection</value>
+  </data>
+  <data name="AllowSelection_Desc_Key" xml:space="preserve">
+    <value>Allows you to selection of (highlight row) Gantt chart rows by clicking it.</value>
+  </data>
+  <data name="AllowSorting" xml:space="preserve">
+    <value>Allow Sorting</value>
+  </data>
+  <data name="AllowSorting_Desc_Key" xml:space="preserve">
+    <value>It allows sorting of gantt chart tasks when column header is clicked.</value>
+  </data>
+  <data name="EnableCriticalPath" xml:space="preserve">
+    <value>Enable CriticalPath</value>
+  </data>
+  <data name="EnableCriticalPath_Desc_Key" xml:space="preserve">
+    <value>It highlights the critical tasks in the Gantt Chart that affect the project’s end date.</value>
+  </data>
+  <data name="ShowColumnMenu" xml:space="preserve">
+    <value>Show ColumnMenu</value>
+  </data>
+  <data name="ShowColumnMenu_Desc_Key" xml:space="preserve">
+    <value>Allows you to enable the column menu options in each columns.</value>
+  </data>
+  <data name="ShowToolbar" xml:space="preserve">
+    <value>Show Toolbar</value>
+  </data>
+  <data name="ShowToolbar_Desc_Key" xml:space="preserve">
+    <value>Allows you to enable the toolbar options in Gantt Chart.</value>
+  </data>
+  <data name="GridLines" xml:space="preserve">
+    <value>GridLines</value>
+  </data>
+  <data name="GridLines_Desc_Key" xml:space="preserve">
+    <value>Defines the mode of grid lines.</value>
+  </data>
+  <data name="TimeZone" xml:space="preserve">
+    <value>TimeZone</value>
+  </data>
+  <data name="TimeZone_Desc_Key" xml:space="preserve">
+    <value>Assigning specific timezones to schedule dates are calculated as given time zone date value.</value>
+  </data>
+  <data name="TreeColumnIndex" xml:space="preserve">
+    <value>Tree ColumnIndex</value>
+  </data>
+  <data name="TreeColumnIndex_Desc_Key" xml:space="preserve">
+    <value>Defines the expander column index in Grid.</value>
+  </data>
+  <data name="ViewType" xml:space="preserve">
+    <value>View Type</value>
+  </data>
+  <data name="ViewType_Desc_Key" xml:space="preserve">
+    <value>Defines the view type of the Gantt.</value>
+  </data>
+
+  <data name="NoDataSource_Message" xml:space="preserve">
+    <value>There is no data available to display at the moment.</value>
+  </data>
+  <data name="NoConfigData_Message" xml:space="preserve">
+    <value>GanttConfig data is required to render the Gantt chart. Please ensure the GanttConfig property is properly configured.</value>
+  </data>
+
+  <!-- Gantt Event Properties -->
+  <data name="EventName" xml:space="preserve">
+    <value>Event Name</value>
+  </data>
+  <data name="EventName_Desc_Key" xml:space="preserve">
+    <value>Output event name when OnChange is triggered.</value>
+  </data>
+  <data name="OnError" xml:space="preserve">
+    <value>OnError</value>
+  </data>
+  <data name="OnError_Desc_Key" xml:space="preserve">
+    <value>Outputs error message when onError is triggered.</value>
+  </data>
+</root>

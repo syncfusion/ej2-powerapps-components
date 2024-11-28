@@ -193,6 +193,7 @@ export const SfGridComponent: React.FC<ISfGrid> = React.memo((props: ISfGrid) =>
         const rowRecord: Record = {};
         dataSet.columns.forEach((column: Record) => {
           const { alias, displayName, dataType } = column;
+          if (column.dataType.includes("multiselectpicklist")) return;
           let isNonPrimaryDataset: boolean = alias.substring(0, 3) === "Col" || alias.includes("_col");
           let isModelDriven: boolean = !isNullOrUndefined(column["isPrimary"]) && !isTestHarness;
 
@@ -272,7 +273,7 @@ export const SfGridComponent: React.FC<ISfGrid> = React.memo((props: ISfGrid) =>
   }, [allowEditing, allowPaging, allowGrouping, allowFiltering, allowResizing, allowTextWrap]);
 
   return (
-    <div style={{ height: height, width: width }}>
+    <div style={{ height: height, width: width }} className={props.enableAdaptiveUI ? "e-bigger" : ""}>
       {gridColumns.length > 0 && (
         <GridComponent
           ref={gridRef}
@@ -281,6 +282,7 @@ export const SfGridComponent: React.FC<ISfGrid> = React.memo((props: ISfGrid) =>
           height={"100%"}
           columns={gridColumns}
           enableRtl={rtl}
+          enableAdaptiveUI={props.enableAdaptiveUI}
           editSettings={{ allowEditing: allowEditing, mode: editMode }}
           actionBegin={actionBegin}
           toolbar={toolbarOptions}

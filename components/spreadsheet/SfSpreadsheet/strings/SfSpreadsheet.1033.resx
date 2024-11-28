@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root"
+    xmlns=""
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <!-- Spreadsheet Control properties -->
+  <data name="SfSpreadsheet" xml:space="preserve">
+    <value>SfSpreadsheet (27.2.2) Preview</value>
+  </data>
+  <data name="SfSpreadsheet_Desc_Key" xml:space="preserve">
+    <value>The EJ2 Spreadsheet component is a feature-rich web-based Excel-like spreadsheet control. It allows users to manage data in a grid-like interface, supporting a wide range of functionalities such as formulas, sorting, filtering, and more.</value>
+  </data>
+
+  <!-- Spreadsheet Datasource Properties -->
+  <data name="DataSource" xml:space="preserve">
+    <value> DataSource </value>
+  </data>
+
+  <!-- Spreadsheet DocumentPath Property -->
+  <data name="DocumentPath" xml:space="preserve">
+    <value>Document Path</value>
+  </data>
+  <data name="DocumentPath_Desc_Key" xml:space="preserve">
+    <value>Sets the Spreadsheet document path for initial loading.</value>
+  </data>
+
+  <!-- Spreadsheet Property -->
+  <data name="EnableDarkMode" xml:space="preserve">
+    <value>Enable Dark Mode</value>
+  </data>
+  <data name="EnableDarkMode_Desc_Key" xml:space="preserve">
+    <value>Toggle this option to switch the application interface to Dark Mode</value>
+  </data>
+  <data name="AllowFiltering" xml:space="preserve">
+    <value>Allow Filtering</value>
+  </data>
+  <data name="AllowFiltering_Desc_Key" xml:space="preserve">
+    <value>If allowFiltering set to true, then it will allows you to enable filter and its functionalities.</value>
+  </data>
+  <data name="AllowFreezePane" xml:space="preserve">
+    <value>Allow FreezePane</value>
+  </data>
+  <data name="AllowFreezePane_Desc_Key" xml:space="preserve">
+    <value>If allowFreezePane set to true, then it will allows you to enable freeze pane functionality in spreadsheet</value>
+  </data>
+  <data name="AllowOpen" xml:space="preserve">
+    <value>Allow Open</value>
+  </data>
+  <data name="AllowOpen_Desc_Key" xml:space="preserve">
+    <value>If allowOpen set to true, then it will allows you to open an Excel file (.xlsx, .xls, and .csv) in Spreadsheet.</value>
+  </data>
+  <data name="AllowPrint" xml:space="preserve">
+    <value>Allow Print</value>
+  </data>
+  <data name="AllowPrint_Desc_Key" xml:space="preserve">
+    <value>If allowPrint set to true, then it will allows you to enable printing functionality in the spreadsheet</value>
+  </data>
+  <data name="AllowResizing" xml:space="preserve">
+    <value>Allow Resizing</value>
+  </data>
+  <data name="AllowResizing_Desc_Key" xml:space="preserve">
+    <value>If allowResizing set to true, then it will allows you to spreadsheet columns and rows can be resized.</value>
+  </data>
+  <data name="AllowSave" xml:space="preserve">
+    <value>Allow Save</value>
+  </data>
+  <data name="AllowSave_Desc_Key" xml:space="preserve">
+    <value>If allowSave set to true, then it will allows you to save Spreadsheet with all data as Excel file (.xlsx, .xls, and .csv).</value>
+  </data>
+  <data name="AllowSorting" xml:space="preserve">
+    <value>Allow Sorting</value>
+  </data>
+  <data name="AllowSorting_Desc_Key" xml:space="preserve">
+    <value>If allowSorting set to true, then it will allows you to enable sort and its functionalities</value>
+  </data>
+  <data name="AllowWrap" xml:space="preserve">
+    <value>Allow Wrap</value>
+  </data>
+  <data name="AllowWrap_Desc_Key" xml:space="preserve">
+    <value>If allowWrap set to true, then it will allows you to enable wrap text feature. By using this feature the wrapping applied cell text can wrap to the next line, if the text width exceeds the column width.</value>
+  </data>
+  <data name="ShowAggregate" xml:space="preserve">
+    <value>Show Aggregate</value>
+  </data>
+  <data name="ShowAggregate_Desc_Key" xml:space="preserve">
+    <value>If showAggregate set to true, spreadsheet will show the AVERAGE, SUM, COUNT, MIN and MAX values based on the selected cells.</value>
+  </data>
+  <data name="ShowFormulaBar" xml:space="preserve">
+    <value>Show FormulaBar</value>
+  </data>
+  <data name="ShowFormulaBar_Desc_Key" xml:space="preserve">
+    <value>It shows or hides the formula bar and its features.</value>
+  </data>
+  <data name="ShowRibbon" xml:space="preserve">
+    <value>Show Ribbon</value>
+  </data>
+  <data name="ShowRibbon_Desc_Key" xml:space="preserve">
+    <value>It shows or hides the ribbon in spreadsheet.</value>
+  </data>
+  <data name="ShowSheetTabs" xml:space="preserve">
+    <value>Show SheetTabs</value>
+  </data>
+  <data name="ShowSheetTabs_Desc_Key" xml:space="preserve">
+    <value>It shows or hides the sheets tabs, this is used to navigate among the sheets and create or delete sheets by UI interaction.</value>
+  </data>
+  <data name="SelectionMode" xml:space="preserve">
+    <value>Selection Mode</value>
+  </data>
+  <data name="SelectionMode_Desc_Key" xml:space="preserve">
+    <value>It Specifies the selection mode.</value>
+  </data>
+
+  <!-- Spreadsheet Event Properties -->
+  <data name="EventName" xml:space="preserve">
+    <value>Event Name</value>
+  </data>
+  <data name="EventName_Desc_Key" xml:space="preserve">
+    <value>Output event name when OnChange is triggered.</value>
+  </data>
+  <data name="OnError" xml:space="preserve">
+    <value>OnError</value>
+  </data>
+  <data name="OnError_Desc_Key" xml:space="preserve">
+    <value>Outputs error message when onError is triggered.</value>
+  </data>
+</root>

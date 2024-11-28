@@ -17,6 +17,7 @@ export interface ISfSchedule {
   width: string;
   height: string;
   enableRtl: boolean;
+  enableAdaptiveUI: boolean;
   scheduleConfig: IScheduleConfig | undefined;
   currentView: View;
   selectedDate: Date;

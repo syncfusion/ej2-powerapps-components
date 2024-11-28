@@ -1,0 +1,30 @@
+{
+"cardSettings": {
+    "contentField": "Summary",
+    "headerField": "Id",
+    "selectionType": "Single",
+    "showHeader": true,
+    "tagsField": "Tags",
+    "grabberField": "Color",
+    "footerCssField": "ClassName"
+},
+"columns": [
+    { "headerText": "To Do", "keyField": "Open", "allowToggle": false, "isExpanded": true, "showItemCount": true },
+    { "headerText": "In Progress", "keyField": "InProgress", "allowToggle": false, "isExpanded": true, "showItemCount": true },
+    { "headerText": "Testing", "keyField": "Testing", "allowToggle": false, "isExpanded": true, "showItemCount": true },
+    { "headerText": "Done", "keyField": "Close", "allowToggle": false, "isExpanded": true, "showItemCount": true }
+],
+"sortSettings": {
+    "sortBy": "Index",
+    "direction": "Ascending"
+},
+"swimlaneSettings": {
+    "enableFrozenRows": false,
+    "keyField": "",
+    "showEmptyRow": false,
+    "showItemCount": true,
+    "showUnassignedRow": true,
+    "sortDirection": "Ascending",
+    "textField": ""
+}
+}

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest>
-  <control namespace="Syncfusion" constructor="SfPdfViewer" version="27.1.48" display-name-key="SfPdfViewer" description-key="SfPdfViewer_Desc_Key" control-type="virtual">
+  <control namespace="Syncfusion" constructor="SfPdfViewer" version="27.2.2" display-name-key="SfPdfViewer" description-key="SfPdfViewer_Desc_Key" control-type="virtual">
     <!--external-service-usage node declares whether this 3rd party PCF control is using external service or not, if yes, this control will be considered as premium and please also add the external domain it is using.
     If it is not using any external service, please set the enabled="false" and DO NOT add any domain below. The "enabled" will be false by default.
     Example1:
@@ -23,7 +23,7 @@
       <type>SingleLine.URL</type>
     </type-group>
 
-    <!-- PdfViewer ServiceURL & Documentpath Properties -->
+    <property name="EnableDarkMode" of-type="TwoOptions" default-value="false" display-name-key="EnableDarkMode" description-key="EnableDarkMode_Desc_Key" usage="input" required="false" />
     <property name="DocumentPath" of-type-group="SingleLineTypeGroup" default-value="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf" display-name-key="DocumentPath" description-key="DocumentPath_Desc_Key" usage="bound" required="false" />
 
     <!-- PdfViewer Toolbar Properties -->
@@ -55,9 +55,15 @@
       <code path="index.ts" order="1" />
       <platform-library name="React" version="16.8.6" />
       <resx path="strings/SfPdfViewer.1033.resx" version="1.0.0" />
-      <!-- UNCOMMENT TO ADD MORE RESOURCES
-      <css path="css/SfPdfViewer.css" order="1" />
-      -->
+      <css path='../node_modules/@syncfusion/ej2-base/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-buttons/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-dropdowns/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-inputs/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-navigations/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-popups/styles/fluent2.css' />
+      <css path='../node_modules/@syncfusion/ej2-splitbuttons/styles/fluent2.css' />
+      <css path="../node_modules/@syncfusion/ej2-pdfviewer/styles/fluent2.css" />
+      <css path="styles/theme.css" />
     </resources>
     <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
     <feature-usage>

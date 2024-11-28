@@ -123,7 +123,7 @@
 
   <!-- Chart Control properties -->
   <data name="SfChart" xml:space="preserve">
-    <value>SfChart (27.1.48) Preview</value>
+    <value>SfChart (27.2.2) Preview</value>
   </data>
   <data name="SfChart_Desc_Key" xml:space="preserve">
     <value>The EJ2 PowerApps Chart Component delivers dynamic and animated HTML5 graphs, seamlessly integrating real-time data for visually impactful presentations.</value>
@@ -132,6 +132,13 @@
   <!-- Chart Datasource Properties -->
   <data name="DataSource" xml:space="preserve">
     <value>Data Source </value>
+  </data>
+
+  <data name="EnableDarkMode" xml:space="preserve">
+    <value>Enable Dark Mode</value>
+  </data>
+  <data name="EnableDarkMode_Desc_Key" xml:space="preserve">
+    <value>Toggle this option to switch the application interface to Dark Mode</value>
   </data>
 
   <!-- Chart Series & Title Properties -->

@@ -8,6 +8,10 @@ Below are the list of public APIs available in Chart PowerApps code component.
 
 Defines the data source for the Chart code component. It specifies the `datasources` that the Chart receives its series data.
 
+### Enable Dark Mode (TwoOptions)
+
+If `enableDarkMode` set to true, then it will enable the dark mode for the Chart code component.
+
 ### Series (Multiple)
 
 Defines configuration options for the chart's series. The dataSource will be updated automatically.
@@ -124,7 +128,7 @@ Defines the event name for the Chart code component. It specifies the `event` of
 
 Outputs error message when onError is triggered. Use below PowerFx code in the **onChange** property to notify the error message in the canvas application.
 
-```
+```js
 If(
     Self.EventName="onError",
     Notify(Self.OnError, NotificationType.Error)

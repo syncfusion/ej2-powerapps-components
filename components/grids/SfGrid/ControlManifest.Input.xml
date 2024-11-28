@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest>
-  <control namespace="Syncfusion" constructor="SfGrid" version="27.1.48" display-name-key="SfGrid" description-key="SfGrid_Desc_Key" control-type="virtual">
+  <control namespace="Syncfusion" constructor="SfGrid" version="27.2.2" display-name-key="SfGrid" description-key="SfGrid_Desc_Key" control-type="virtual">
     <!--external-service-usage node declares whether this 3rd party PCF control is using external service or not, if yes, this control will be considered as premium and please also add the external domain it is using.
     If it is not using any external service, please set the enabled="false" and DO NOT add any domain below. The "enabled" will be false by default.
     Example1:
@@ -41,7 +41,7 @@
       <property-set name="ColAllowResizing" of-type="TwoOptions" display-name-key="ColAllowResizing" description-key="ColAllowResizing_Desc_Key" usage="bound" required="false" />
       <property-set name="ColAllowFiltering" of-type="TwoOptions" display-name-key="ColAllowFiltering" description-key="ColAllowFiltering_Desc_Key" usage="bound" required="false" />
       <property-set name="ColAllowGrouping" of-type="TwoOptions" display-name-key="ColAllowGrouping" description-key="ColAllowGrouping_Desc_Key" usage="bound" required="false" />
-      <property-set name="ColallowEditing" of-type="TwoOptions" display-name-key="ColallowEditing" description-key="ColallowEditing_Desc_Key" usage="bound" required="false" />
+      <property-set name="ColAllowEditing" of-type="TwoOptions" display-name-key="ColAllowEditing" description-key="ColAllowEditing_Desc_Key" usage="bound" required="false" />
       <property-set name="ColDisableHtmlEncode" of-type="TwoOptions" display-name-key="ColDisableHtmlEncode" description-key="ColDisableHtmlEncode_Desc_Key" usage="bound" required="false" />
       <property-set name="ColEnableGroupByFormat" of-type="TwoOptions" display-name-key="ColEnableGroupByFormat" description-key="ColEnableGroupByFormat_Desc_Key" usage="bound" required="false" />
       <property-set name="ColDisplayAsCheckBox" of-type="TwoOptions" display-name-key="ColDisplayAsCheckBox" description-key="ColDisplayAsCheckBox_Desc_Key" usage="bound" required="false" />
@@ -52,6 +52,7 @@
       <property-set name="ColFormat" of-type="SingleLine.Text" display-name-key="ColFormat" description-key="ColFormat_Desc_Key" usage="bound" required="false" />
     </data-set>
 
+    <property name="EnableDarkMode" of-type="TwoOptions" default-value="false" display-name-key="EnableDarkMode" description-key="EnableDarkMode_Desc_Key" usage="input" required="false" />
     <property name="PrimaryKey" of-type="SingleLine.Text" default-value="" display-name-key="PrimaryKey" description-key="PrimaryKey_Desc_Key" usage="input" required="false" />
 
     <!-- Grid Edit Property -->

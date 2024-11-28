@@ -1,7 +1,5 @@
 # Ignore Node.js dependencies
 node_modules/
-package-lock.json
-yarn.lock
 
 # Ignore compiled output and generated files
 obj/
@@ -27,3 +25,4 @@ generated/
 !/components/
 !/docs/
 !/.images/
+!/gulp-tasks/

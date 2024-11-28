@@ -2,7 +2,7 @@
 
 This article provides a step-by-step guide to run the Schedule code component sample in local (TestHarness).
 
-## Prerequisites:
+## Prerequisites
 
 Before getting started with the Schedule code component, ensure the following prerequisites are satisfied:
 

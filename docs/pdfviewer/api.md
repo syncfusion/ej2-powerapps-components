@@ -4,6 +4,10 @@ Below are the list of public APIs available in PdfViewer PowerApps code componen
 
 ## Properties
 
+### Enable Dark Mode (TwoOptions)
+
+If `enableDarkMode` set to true, then it will enable the dark mode for the PdfViewer code component.
+
 ### DocumentPath (SingleLine.Text)
 
 Defines the path of the document to be loaded in the PdfViewer code component.
@@ -84,7 +88,7 @@ Defines the event name for the PdfViewer code component. It specifies the `event
 
 Outputs error message when onError is triggered. Use below PowerFx code in onChange property to notify the error message.
 
-```
+```js
 If(
     Self.EventName="onError",
     Notify(Self.OnError, NotificationType.Error)

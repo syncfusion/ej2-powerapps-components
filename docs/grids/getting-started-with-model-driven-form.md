@@ -22,19 +22,19 @@ To integrate the Syncfusion PowerApps Grid code component to the Dataverse table
 
 ![Dataverse Form Import 1](../images/common/MD-PP-Import1.png)
 
-5. A window will appear. Switch to the `Build by others` tab at the top and import the built code component named `SfGrid` from the published solutions.
+3. A window will appear. Switch to the `Build by others` tab at the top and import the built code component named `SfGrid` from the published solutions.
 
 ![Dataverse Form Import 2](../images/grids/MD-PP-Import2.png)
 
-6. Create a new section in the form, choosing for a `1-column tab` from the `popular` section. Rename this tab as **Grid View** to clearly delineate its purpose. This tab will be utilized to render the Grid code component.
+4. Create a new section in the form, choosing for a `1-column tab` from the `popular` section. Rename this tab as **Grid View** to clearly delineate its purpose. This tab will be utilized to render the Grid code component.
 
-7. Within the `More Components` section, select the `SfGrid` component. Configure the DataSource and Columns property of the Grid code component by accessing the list of Dataverse tables created previously with respective table views. This step ensures that the Grid code component is seamlessly connected to the relevant data. Also, customize the Grid code component properties in the property pane.
+5. Within the `More Components` section, select the `SfGrid` component. Configure the DataSource and Columns property of the Grid code component by accessing the list of Dataverse tables created previously with respective table views. This step ensures that the Grid code component is seamlessly connected to the relevant data. Also, customize the Grid code component properties in the property pane.
 
    > **Note**: It is optional to map Columns property with the Dataverse table columns. If you skip this step, the Grid code component will automatically map the columns based on the data source.
 
 ![Dataverse Form Import 3](../images/grids/MD-PP-Import3.png)
 
-8. The output of the Grid code component will be displayed as shown below. Click the `Save and publish` button at the top right corner of the PowerApps portal. This action commits the changes made to the form, ensuring that the Syncfusion PowerApps Grid code component is now an integral part of the Dataverse table.
+6. The output of the Grid code component will be displayed as shown below. Click the `Save and publish` button at the top right corner of the PowerApps portal. This action commits the changes made to the form, ensuring that the Syncfusion PowerApps Grid code component is now an integral part of the Dataverse table.
 
 ![Dataverse Form](../images/grids/MD-DataverseForm.png)
 
