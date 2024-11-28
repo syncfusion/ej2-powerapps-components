@@ -1,6 +1,6 @@
 # Changelog
 
-## v27.2.2 (November 26, 2024)
+## v27.2.2 (November 28, 2024)
 
 We are excited to announce the addition of four new components in this release, enhancing the capabilities of PowerApps with even more flexibility and functionality.
 
@@ -19,7 +19,7 @@ We are excited to announce the addition of four new components in this release, 
 
 ### Documentation Updates
 
-- **PDF Viewer Guide**: Added instructions on loading PDFs from Dataverse into the pdfviewer using PowerAutomate within Canvas applications.
+- **PDF Viewer Guide**: Added instructions on loading PDFs from Dataverse into the pdfviewer using PowerAutomate within Canvas applications. [Link](./docs/pdfviewer/how-to-load-dataverse-file-in-pdfviewer.md)
 
 ## v27.1.48 (October 21, 2024)
 
