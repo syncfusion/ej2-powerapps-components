@@ -36,7 +36,7 @@ To store files in Dataverse, you’ll need to set up a table with a file column.
 
   ![PowerAutomate Dataverse](../images/pdfviewer/PA-Flow-Dataverse.png)
 
-  ![PowerAutomate Dataverse Load](../images/pdfviewer/PA-Flow-Dataverse-load.png)
+  ![PowerAutomate Dataverse Load](../images/pdfviewer/PA-Flow-Dataverse-Load.png)
 
 6. **Set Up the Output**: Add the **Respond to a Power App or flow** action. Add an output of type `Text` and use the following expression to fetch file content:
 
@@ -50,7 +50,7 @@ To store files in Dataverse, you’ll need to set up a table with a file column.
   body('File')?['$content']
   ```
 
-  ![PowerAutomate Flow PowerApps Expression](../images/pdfviewer/PA-Flow-Powerapps-Expression.png)
+  ![PowerAutomate Flow PowerApps Expression](../images/pdfviewer/PA-Flow-PowerApps-Expression.png)
 
 7. **Save and Load the Flow**: Click `Save` to finalize your flow. Ensure the flow is accessible in your PowerApps canvas application by loading it through the `Power Automate` tab.
 
