@@ -185,79 +185,84 @@ function getUserInput(
 }
 
 /**
- * Extracts the tag name from a given regular expression.
+ * Extracts content data based on a given regex pattern from the provided content string.
  *
- * @param {RegExp} tagRegex - The regular expression to extract the tag name from.
- * @returns {string|null} The extracted tag name, or null if no match is found.
+ * @param {RegExp|string} tagPattern - The regex pattern to match the tag. Can be a RegExp object or a string.
+ * @param {string} [Content=""] - The content string to search within.
+ * @returns {{ tagName: string|null, tagValue: string }} An object containing the tag name and its corresponding value.
  */
-function getTagDataFromRegex(tagPattern, xmlContent = "") {
+function getContentDataFromRegex(tagPattern, Content = "") {
   const tagPatternStr = tagPattern instanceof RegExp ? tagPattern.source : tagPattern;
   const tagNameMatch = tagPatternStr.match(/<(\w+)\b/);
   const tagName = tagNameMatch ? tagNameMatch[1] : null;
 
   if (!tagName) return { tagName: null, tagValues: "" };
 
-  const match = new RegExp(tagPatternStr, "g").exec(xmlContent);
+  const match = new RegExp(tagPatternStr, "g").exec(Content);
   const tagValue = match ? match[1] : "";
   return { tagName, tagValue };
 }
 
 /**
- * Updates or removes an XML tag in the specified XML file.
+ * Updates the content of a file based on a regex pattern.
  *
- * @param {string} xmlFilePath - The path to the XML file.
- * @param {RegExp} tagRegex - The regular expression to match the XML tag.
- * @param {string} newValueToUpdate - The new value to update the XML tag with.
+ * @param {string} filePath - The path to the file to be updated.
+ * @param {RegExp} contentRegex - The regex pattern to match the content to be updated.
+ * @param {string} newValue - The new value to replace the matched content.
  * @param {Object} taskDetails - Additional details about the task.
  * @param {Function} done - Callback function to be called upon completion.
- * @param {boolean} [isReplace=true] - Flag indicating whether to replace the tag value or remove the tag.
- * @returns {Promise<void>} - A promise that resolves when the operation is complete.
+ * @param {boolean} [isReplace=true] - Flag indicating whether to replace the content or not.
+ * @returns {Promise<void>} - A promise that resolves when the file content is updated.
  */
-async function updateXmlTag(
-  xmlFilePath,
-  tagRegex,
-  newValueToUpdate,
+async function updateFileContent(
+  filePath,
+  contentRegex,
+  newValue,
   taskDetails,
   done,
   isReplace = true
 ) {
-  const { tagName, tagValue } = getTagDataFromRegex(tagRegex, newValueToUpdate);
-  taskDetails = { functionName: "updateXmlTag", ...taskDetails };
+  const { contentName, currentContent } = getContentDataFromRegex(contentRegex, newValue);
+  taskDetails = { functionName: "updateFileContent", ...taskDetails };
 
   try {
-    if (!newValueToUpdate && isReplace) {
-      const errorMsg = `Value not provided for ${tagName} XML tag in ${taskDetails.name} task to update.`;
+    if (!newValue && isReplace) {
+      const errorMsg = `Value not provided for ${contentName} in ${taskDetails.name} task to update.`;
       await logError(errorMsg, taskDetails, done);
       return;
     }
 
-    if (!fs.existsSync(xmlFilePath)) {
-      const errorMsg = `XML file not found at path: ${xmlFilePath}`;
+    if (!fs.existsSync(filePath)) {
+      const errorMsg = `File not found at path: ${filePath}`;
       await logError(errorMsg, taskDetails, false);
       return;
     }
 
-    const xmlContent = await fsPromises.readFile(xmlFilePath, "utf8");
-    const currentValueMatch = xmlContent.match(tagRegex);
+    const fileContent = await fsPromises.readFile(filePath, "utf8");
+    const currentValueMatch = fileContent.match(contentRegex);
 
-    if (isReplace && currentValueMatch && currentValueMatch[1] === newValueToUpdate) {
-      const infoMsg = `The value is already up to date: ${tagValue}`;
-      await logToFile(infoMsg, taskDetails, "INFO");
+    if (isReplace && currentValueMatch && (currentValueMatch[1] === newValue || currentValueMatch[0] === newValue)) {
+      const infoMsg = `The value is already up to date "${filePath}".`;
+      await logToFile(infoMsg, taskDetails, "INFO", false);
       return;
     }
 
-    const updatedXmlContent = xmlContent
-      .replace(tagRegex, newValueToUpdate)
-      .replace(/\n\s*\n/g, "\n");
+    let updatedFileContent = fileContent.replace(contentRegex, newValue);
+    if (contentName) updatedFileContent = updatedFileContent.replace(/\n\s*\n/g, "\n");
 
-    await fsPromises.writeFile(xmlFilePath, updatedXmlContent);
+    await fsPromises.writeFile(filePath, updatedFileContent);
+
     let updateMessage = "updated";
-    if (tagValue) {
-      updateMessage += ` to ${tagValue}`;
+    let successMsg;
+    if (currentContent) {
+      updateMessage += ` to ${currentContent}`;
     }
-    const successMsg = `\n${tagName} is ${
-      isReplace ? updateMessage : "removed"
-    } in solution project.`;
+    if (filePath.includes("xml") && contentName)
+      successMsg = `\n${contentName} is ${
+        isReplace ? updateMessage : "removed"
+      } in solution project.`;
+    else successMsg = `Updated "${filePath}"`;
+
     await logToFile(successMsg, taskDetails, "INFO");
   } catch ({ message }) {
     await logError(message, taskDetails, done);
@@ -395,14 +400,15 @@ async function openUrl(url, taskDetails, done) {
  * Logs an error message to a file and completes the task with an error message.
  *
  * @param {string} message - The error message to log.
- * @param {Object} taskDetails - The details of the task that failed.
+ * @param {Object} taskDetails - Additional details about the task.
  * @param {Function} done - The callback function to call when done.
- * @returns {Promise<void>} A promise that resolves when the error has been logged and the task is completed.
+ * @param {boolean} [printLog=false] - Whether to print the log to the console.
+ * @returns {Promise<void>} - A promise that resolves when the logging is complete.
  */
-const logError = async (message, taskDetails, done) => {
+const logError = async (message, taskDetails, done, printLog = false) => {
   taskDetails = { functionName: "logError", ...taskDetails };
   const errorMessage = `⚠️\u0020 ${taskDetails.name} task failed: ${message}`;
-  await logToFile(errorMessage, taskDetails, "ERROR", false);
+  await logToFile(errorMessage, taskDetails, "ERROR", printLog);
   done(
     `${errorMessage}\n\nCheckout log file for more details: ${require("./config").LOG_FILE_PATH}`
   );
@@ -443,7 +449,7 @@ module.exports = {
   logError,
   logToFile,
   getUserInput,
-  updateXmlTag,
+  updateFileContent,
   getAbsolutePath,
   execShellCommand,
   generateAuthListFromLog,

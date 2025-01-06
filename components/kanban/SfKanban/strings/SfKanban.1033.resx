@@ -123,7 +123,7 @@
 
   <!-- Kanban Control properties -->
   <data name="SfKanban" xml:space="preserve">
-    <value>SfKanban (27.2.2) Preview</value>
+    <value>SfKanban (28.1.33) Preview</value>
   </data>
   <data name="SfKanban_Desc_Key" xml:space="preserve">
     <value>The EJ2 Kanban component in PowerApps allows you to integrate Syncfusion's Kanban board into your PowerApps application. It visually organizes tasks into columns representing different workflow stages, enabling better task management and tracking. The component is highly customizable and supports features like drag-and-drop, swimlanes, providing an efficient way to manage tasks in a PowerApps environment.</value>
@@ -148,7 +148,7 @@
   </data>
   <data name="EnableDarkMode_Desc_Key" xml:space="preserve">
     <value>Toggle this option to switch the application interface to Dark Mode</value>
-  </data> 
+  </data>
   <data name="KeyField" xml:space="preserve">
     <value>Key Field</value>
   </data>

@@ -66,7 +66,7 @@ export const SfGanttComponent: React.FC<ISfGantt> = React.memo((props: ISfGantt)
           timezone={props.timeZone}
           treeColumnIndex={props.treeColumnIndex}
           viewType={props.viewType}
-          columns={props.ganttConfig?.columns.map(column => ({
+          columns={props.ganttConfig?.columns?.map(column => ({
             field: column.field,
             headerText: column.headerText,
             width: column.width,
@@ -80,7 +80,7 @@ export const SfGanttComponent: React.FC<ISfGantt> = React.memo((props: ISfGantt)
             group: props.ganttConfig?.resourceFields?.group
           }}
           dayWorkingTime={props.ganttConfig?.dayWorkingTime}
-          eventMarkers={props.ganttConfig?.eventMarkers.map(event => ({
+          eventMarkers={props.ganttConfig?.eventMarkers?.map(event => ({
             day: event.day,
             label: event.label
           }))}
@@ -93,7 +93,7 @@ export const SfGanttComponent: React.FC<ISfGantt> = React.memo((props: ISfGantt)
               predicate: column.predicate
             }))
           } : undefined}
-          holidays={props.ganttConfig?.holidays.map(holiday => ({
+          holidays={props.ganttConfig?.holidays?.map(holiday => ({
             from: holiday.from,
             to: holiday.to,
             label: holiday.label

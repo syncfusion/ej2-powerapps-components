@@ -123,7 +123,7 @@
 
   <!-- Spreadsheet Control properties -->
   <data name="SfSpreadsheet" xml:space="preserve">
-    <value>SfSpreadsheet (27.2.2) Preview</value>
+    <value>SfSpreadsheet (28.1.33) Preview</value>
   </data>
   <data name="SfSpreadsheet_Desc_Key" xml:space="preserve">
     <value>The EJ2 Spreadsheet component is a feature-rich web-based Excel-like spreadsheet control. It allows users to manage data in a grid-like interface, supporting a wide range of functionalities such as formulas, sorting, filtering, and more.</value>

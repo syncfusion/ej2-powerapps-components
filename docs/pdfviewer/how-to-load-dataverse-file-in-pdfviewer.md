@@ -16,77 +16,77 @@ To store files in Dataverse, you’ll need to set up a table with a file column.
 
 2. **Access Power Automate Tab**: In Canvas application, click `Power Automate` from the left navigation pane in the PowerApps portal in three dots menu.
 
-  ![PowerAutomate](../images/pdfviewer//CV-PowerAutomate.png)
+    ![PowerAutomate](../images/pdfviewer//CV-PowerAutomate.png)
 
 3. **Create New Flow**: In that, click on `Create new flow` and select `+ Create from blank` option.
 
-  ![PowerAutomate Tab](../images/pdfviewer/CV-PowerAutomate-Tab.png)
+    ![PowerAutomate Tab](../images/pdfviewer/CV-PowerAutomate-Tab.png)
 
-  ![PowerAutomate Create](../images/pdfviewer/CV-PowerAutomate-Create.png)
+    ![PowerAutomate Create](../images/pdfviewer/CV-PowerAutomate-Create.png)
 
 4. **Name Your Flow and Add Input**: Rename the flow to `GetFileFromDataverse`. In the `PowerApps v2` step, click **Add an input**, choose `Text`, and name the variable `ID`.
 
-  ![PowerAutomate Flow Name](../images/pdfviewer/PA-Flow-Name.png)
+    ![PowerAutomate Flow Name](../images/pdfviewer/PA-Flow-Name.png)
 
-  ![PowerAutomate Flow Input type](../images/pdfviewer/PA-Flow-Input-Type.png)
+    ![PowerAutomate Flow Input type](../images/pdfviewer/PA-Flow-Input-Type.png)
 
-  ![PowerAutomate Flow Input](../images/pdfviewer/PA-Flow-Input.png)
+    ![PowerAutomate Flow Input](../images/pdfviewer/PA-Flow-Input.png)
 
 5. **Retrieve the File from Dataverse**: Add the **Download a file or an image** action from Dataverse. Select the table (`SF Files`), file column (`File`), and input variable (`ID`) as the Row ID. Rename the step as `File`.
 
-  ![PowerAutomate Dataverse](../images/pdfviewer/PA-Flow-Dataverse.png)
+    ![PowerAutomate Dataverse](../images/pdfviewer/PA-Flow-Dataverse.png)
 
-  ![PowerAutomate Dataverse Load](../images/pdfviewer/PA-Flow-Dataverse-Load.png)
+    ![PowerAutomate Dataverse Load](../images/pdfviewer/PA-Flow-Dataverse-load.png)
 
 6. **Set Up the Output**: Add the **Respond to a Power App or flow** action. Add an output of type `Text` and use the following expression to fetch file content:
 
-  ![PowerAutomate PowerApps](../images/pdfviewer/PA-Flow-PowerApps.png)
+    ![PowerAutomate PowerApps](../images/pdfviewer/PA-Flow-PowerApps.png)
 
-  ![PowerAutomate Flow Input type](../images/pdfviewer/PA-Flow-Input-Type.png)
+    ![PowerAutomate Flow Input type](../images/pdfviewer/PA-Flow-Input-Type.png)
 
-  ![PowerAutomate Flow Input type Empty](../images/pdfviewer/PA-Flow-PowerApps-Input-Empty.png)
+    ![PowerAutomate Flow Input type Empty](../images/pdfviewer/PA-Flow-PowerApps-Input-Empty.png)
 
-  ```json
-  body('File')?['$content']
-  ```
+    ```json
+    body('File')?['$content']
+    ```
 
-  ![PowerAutomate Flow PowerApps Expression](../images/pdfviewer/PA-Flow-PowerApps-Expression.png)
+    ![PowerAutomate Flow PowerApps Expression](../images/pdfviewer/PA-Flow-Powerapps-Expression.png)
 
 7. **Save and Load the Flow**: Click `Save` to finalize your flow. Ensure the flow is accessible in your PowerApps canvas application by loading it through the `Power Automate` tab.
 
-  ![PowerAutomate Flow](../images/pdfviewer/PA-Flow.png)
+    ![PowerAutomate Flow](../images/pdfviewer/PA-Flow.png)
 
-  ![PowerAutomate Flow Load](../images/pdfviewer/CV-PowerAutomate-Load-Flow.png)
+    ![PowerAutomate Flow Load](../images/pdfviewer/CV-PowerAutomate-Load-Flow.png)
 
 ## Load Dataverse files in PdfViewer Code Component using PowerAutomate flow
 
 1. **Add a Gallery for File Selection**: In your PowerApps Canvas application, insert a Vertical Gallery control and connect it to the `SF Files` table. Set the `OnSelect` property of the gallery to trigger the flow using this expression:
 
-  ```json
-  Set(
-    DataverseFile,
-    GetFileFromDataverse.Run(
-        Match(
-            Gallery1.Selected.File.Value,
-            "rows/(?<value>[^/]+)/fileimageurl"
-        ).value
-    )
-  );
-  ```
+    ```json
+    Set(
+      DataverseFile,
+      GetFileFromDataverse.Run(
+          Match(
+              Gallery1.Selected.File.Value,
+              "rows/(?<value>[^/]+)/fileimageurl"
+          ).value
+      )
+    );
+    ```
 
-  ![Canvas Gallery](../images/pdfviewer/CV-PowerAutomate-Gallery.png)
+    ![Canvas Gallery](../images/pdfviewer/CV-PowerAutomate-Gallery.png)
 
 2. **Configure the PDF Viewer**: Add the SfPdfViewer component to your app layout. Set the Document property to load the file content using:
 
-  ```json
-  DataverseFile.filecontent
-  ```
+    ```json
+    DataverseFile.filecontent
+    ```
 
-  ![Canvas PowerAutomate PdfViewer](../images/pdfviewer/CV-PowerAutomate-PdfViewer.png)
+    ![Canvas PowerAutomate PdfViewer](../images/pdfviewer/CV-PowerAutomate-PdfViewer.png)
 
 3. **Preview the Application**: Click the `Preview` button in the PowerApps portal. Select a file from the gallery to display it in the PDF Viewer component.
 
-  ![Canvas PowerAutomate Output](../images/pdfviewer/CV-PowerAutomate-Output.png)
+    ![Canvas PowerAutomate Output](../images/pdfviewer/CV-PowerAutomate-Output.png)
 
 ## See also
 

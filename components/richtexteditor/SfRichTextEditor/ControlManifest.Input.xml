@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="Syncfusion" constructor="SfRichTextEditor" version="28.1.33" display-name-key="SfRichTextEditor" description-key="SfRichTextEditor_Desc_Key" control-type="virtual">
+    <!--external-service-usage node declares whether this 3rd party PCF control is using external service or not, if yes, this control will be considered as premium and please also add the external domain it is using.
+    If it is not using any external service, please set the enabled="false" and DO NOT add any domain below. The "enabled" will be false by default.
+    Example1:
+      <external-service-usage enabled="true">
+        <domain>www.Microsoft.com</domain>
+      </external-service-usage>
+    Example2:
+      <external-service-usage enabled="false">
+      </external-service-usage>
+    -->
+    <external-service-usage enabled="false">
+    </external-service-usage>
+
+    <!-- RTE Value Group -->
+    <type-group name="SingleMultipleText">
+      <type>SingleLine.Text</type>
+      <type>SingleLine.TextArea</type>
+      <type>Multiple</type>
+    </type-group>
+
+    <!-- DarkMode property -->
+    <property name="EnableDarkMode" of-type="TwoOptions" default-value="false" display-name-key="EnableDarkMode" description-key="EnableDarkMode_Desc_Key" usage="input" required="false" />
+
+    <!-- Rich Text Editor Properties -->
+    <property name="Value" of-type-group="SingleMultipleText" default-value="" display-name-key="Value" description-key="Value_Desc_Key" usage="bound" required="false" />
+    <property name="RTEConfig" of-type-group="SingleMultipleText" default-value="" display-name-key="RTEConfig" description-key="RTEConfig_Desc_Key" usage="input" required="false" />
+    <property name="CssClass" of-type="SingleLine.Text" default-value="" display-name-key="CssClass" description-key="CssClass_Desc_Key" usage="input" required="false" />
+    <property name="MaxLength" of-type="Whole.None" default-value="-1" display-name-key="MaxLength" description-key="MaxLength_Desc_Key" usage="input" required="false" />
+    <property name="Placeholder" of-type="SingleLine.Text" default-value="" display-name-key="Placeholder" description-key="Placeholder_Desc_Key" usage="input" required="false" />
+    <property name="EnterKey" of-type="Enum" default-value="P" display-name-key="EnterKey" description-key="EnterKey_Desc_Key" usage="input" required="false">
+      <value name="P" display-name-key="P">P</value>
+      <value name="DIV" display-name-key="DIV">DIV</value>
+      <value name="BR" display-name-key="BR">BR</value>
+    </property>
+    <property name="ShowCharCount" of-type="TwoOptions" default-value="false" display-name-key="ShowCharCount" description-key="ShowCharCount_Desc_Key" usage="input" required="false" />
+    <property name="EnableResize" of-type="TwoOptions" default-value="false" display-name-key="EnableResize" description-key="EnableResize_Desc_Key" usage="input" required="false" />
+    <property name="EnableXhtml" of-type="TwoOptions" default-value="false" display-name-key="EnableXhtml" description-key="EnableXhtml_Desc_Key" usage="input" required="false" />
+    <property name="Enabled" of-type="TwoOptions" default-value="true" display-name-key="Enabled" description-key="Enabled_Desc_Key" usage="input" required="false" />
+
+    <!-- Rich Text Editor Events Property -->
+    <property name="EventName" of-type="SingleLine.Text" default-value="" display-name-key="EventName" description-key="EventName_Desc_Key" usage="output" />
+    <property name="OnError" of-type="SingleLine.Text" default-value="" display-name-key="OnError" description-key="OnError_Desc_Key" usage="output" />
+
+    <resources>
+      <code path="index.ts" order="1"/>
+      <platform-library name="React" version="16.8.6" />
+      <resx path="strings/SfRichTextEditor.1033.resx" version="1.0.0" />
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      <css path="css/SfRichTextEditor.css" order="1" />
+      -->
+    </resources>
+    <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
+    <feature-usage>
+      <uses-feature name="Device.captureAudio" required="true" />
+      <uses-feature name="Device.captureImage" required="true" />
+      <uses-feature name="Device.captureVideo" required="true" />
+      <uses-feature name="Device.getBarcodeValue" required="true" />
+      <uses-feature name="Device.getCurrentPosition" required="true" />
+      <uses-feature name="Device.pickFile" required="true" />
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+    -->
+  </control>
+</manifest>

@@ -51,7 +51,7 @@ If `enableFieldSearching` set to true, then it enables the search option in the 
 
 Defaults to `false`
 
-### Show Valuesbutton (TwoOptions)
+### Show ValuesButton (TwoOptions)
 
 If `showValuesButton` set to true, then its create a pivot button with “Values” as a caption used to display in the grouping bar and field list UI.
 
@@ -77,7 +77,7 @@ Defaults to `false`
 
 ### Enable Paging (TwoOptions)
 
-If `enablePaging` set to true, then its allows large amounts of data to be displayed page-by-page. 
+If `enablePaging` set to true, then its allows large amounts of data to be displayed page-by-page.
 
 Defaults to `false`
 
@@ -87,7 +87,7 @@ If `enableRtl` set to true, then enable rendering component in right to left dir
 
 Defaults to `false`
 
-### Show Groupingbar (TwoOptions)
+### Show GroupingBar (TwoOptions)
 
 If `showGroupingBar` set to true, then its Allows you to show the grouping bar UI in the pivot table that automatically populates fields from the bound report.
 
@@ -109,9 +109,9 @@ Defaults to `false`
 
 Defines the type of the view port as either pivot table or pivot chart or both table and chart.. The available types are,
 
-* **Table** - Allows you to display the view port as Pivot table.
-* **Chart** - Allows you to display the view port as Pivot chart.
-* **Both** - Allows you to display the view port as both Pivot table and Pivot chart.
+- **Table** - Allows you to display the view port as Pivot table.
+- **Chart** - Allows you to display the view port as Pivot chart.
+- **Both** - Allows you to display the view port as both Pivot table and Pivot chart.
 
 Defaults to `Table`
 
@@ -119,33 +119,33 @@ Defaults to `Table`
 
 Defines the chart type for the Pivot Chart. It will be applied type in chartSeries property. The available types are,
 
- * **Line** - Renders the line series.
- * **Column** - Renders the column series.
- * **Area** - Renders the area series.
- * **Bar** - Renders the stacking column series
- * **Histogram** - Renders the histogram series
- * **StackingColumn** - Renders the stacking column series.
- * **StackingArea** - Renders the stacking area series.
- * **StackingStepArea** - Renders the stacking step area series.
- * **StackingLine** - Renders the stacking line series.
- * **StackingBar** - Renders the stacking bar series.
- * **StepLine** -  Renders the step line series.
- * **StepArea** -  Renders the step area series.
- * **SplineArea** - Renders the spline area series.
- * **Scatter** - Renders the scatter series.
- * **Spline** - Renders the spline series
- * **StackingColumn100** - Renders the stacking column series.
- * **StackingBar100** - Renders the stacking bar 100 percent series.
- * **StackingLine100** - Renders the stacking line 100 percent series.
- * **StackingArea100** - Renders the stacking area 100 percent series
- * **RangeColumn** - Renders the rangeColumn series.
- * **RangeStepArea** - Renders the rangeStepArea series.
- * **Hilo** - Renders the hilo series
- * **HiloOpenClose** - Renders the HiloOpenClose Series
- * **Waterfall** - Renders the Waterfall Series
- * **RangeArea** - Renders the rangeArea series.
- * **SplineRangeArea** - Renders the splineRangeArea series.
- * **Pareto** - Render the Pareto series.
+- **Line** - Renders the line series.
+- **Column** - Renders the column series.
+- **Area** - Renders the area series.
+- **Bar** - Renders the stacking column series
+- **Histogram** - Renders the histogram series
+- **StackingColumn** - Renders the stacking column series.
+- **StackingArea** - Renders the stacking area series.
+- **StackingStepArea** - Renders the stacking step area series.
+- **StackingLine** - Renders the stacking line series.
+- **StackingBar** - Renders the stacking bar series.
+- **StepLine** -  Renders the step line series.
+- **StepArea** -  Renders the step area series.
+- **SplineArea** - Renders the spline area series.
+- **Scatter** - Renders the scatter series.
+- **Spline** - Renders the spline series
+- **StackingColumn100** - Renders the stacking column series.
+- **StackingBar100** - Renders the stacking bar 100 percent series.
+- **StackingLine100** - Renders the stacking line 100 percent series.
+- **StackingArea100** - Renders the stacking area 100 percent series
+- **RangeColumn** - Renders the rangeColumn series.
+- **RangeStepArea** - Renders the rangeStepArea series.
+- **Hilo** - Renders the hilo series
+- **HiloOpenClose** - Renders the HiloOpenClose Series
+- **Waterfall** - Renders the Waterfall Series
+- **RangeArea** - Renders the rangeArea series.
+- **SplineRangeArea** - Renders the splineRangeArea series.
+- **Pareto** - Render the Pareto series.
 
 Defaults to `Line`
 

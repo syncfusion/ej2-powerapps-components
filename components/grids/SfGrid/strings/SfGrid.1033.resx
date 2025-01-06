@@ -123,7 +123,7 @@
 
   <!-- Grid Control properties -->
   <data name="SfGrid" xml:space="preserve">
-    <value>SfGrid (27.2.2) Preview</value>
+    <value>SfGrid (28.1.33) Preview</value>
   </data>
   <data name="SfGrid_Desc_Key" xml:space="preserve">
     <value>The PowerApps Data Grid is a feature-rich grid component for displaying data in a tabular format.</value>

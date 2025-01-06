@@ -1,14 +1,14 @@
-@import '../../node_modules/@syncfusion/ej2-base/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-icons/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-inputs/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-popups/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-buttons/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-splitbuttons/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-navigations/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-layouts/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-grids/styles/fluent2.css';
-@import '../../node_modules/@syncfusion/ej2-notifications/styles/material.css';
-@import "../../node_modules/@syncfusion/ej2-react-filemanager/styles/fluent2.css";
+@import "../../../../node_modules/@syncfusion/ej2-base/styles/fluent2.css";
+@import "../../../../node_modules/@syncfusion/ej2-icons/styles/fluent2.css";
+@import "../../../../node_modules/@syncfusion/ej2-inputs/styles/fluent2.css";
+@import "../../../../node_modules/@syncfusion/ej2-popups/styles/fluent2.css";
+@import "../../../../node_modules/@syncfusion/ej2-buttons/styles/fluent2.css";
+@import "../../../../node_modules/@syncfusion/ej2-splitbuttons/styles/fluent2.css";
+@import "../../../../node_modules/@syncfusion/ej2-navigations/styles/fluent2.css";
+@import "../../../../node_modules/@syncfusion/ej2-layouts/styles/fluent2.css";
+@import "../../../../node_modules/@syncfusion/ej2-grids/styles/fluent2.css";
+@import "../../../../node_modules/@syncfusion/ej2-notifications/styles/material.css";
+@import "../../../../node_modules/@syncfusion/ej2-react-filemanager/styles/fluent2.css";
 
 /* Unset the default text alignment and border styles */
 .control-pane {

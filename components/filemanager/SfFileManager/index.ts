@@ -7,7 +7,8 @@ import {
   DataSet,
   IFileManagerConfig,
   ISfFileManager,
-  Record
+  Record,
+  IFolder
 } from "./types";
 
 export class SfFileManager implements ComponentFramework.ReactControl<IInputs, IOutputs> {
@@ -15,7 +16,7 @@ export class SfFileManager implements ComponentFramework.ReactControl<IInputs, I
   private notifyOutputChanged: () => void;
   private OnError: string;
   private eventName: string;
-  private isTestHarness: boolean = false;
+  private isTestHarness = false;
 
   /**
    * Empty constructor.
@@ -96,9 +97,9 @@ export class SfFileManager implements ComponentFramework.ReactControl<IInputs, I
   /**
    * Fetches the data source records and returns them as an array of records.
    * @param dataSource - The data source to fetch records from.
-   * @returns The data source records as an array of records.
+   * @returns A promise that resolves to an array of records, or directly the records if no folder structure is needed.
    */
-  public fetchDataSource(dataSource: DataSet): any {
+  public fetchDataSource(dataSource: DataSet): Promise<Record[]> | Record[] {
     const { columns, sortedRecordIds, records } = dataSource;
     const recordsArray: Record[] = [];
     const isModelDriven = !isNullOrUndefined(columns[0]?.["isPrimary"]) && !this.isTestHarness;
@@ -125,7 +126,117 @@ export class SfFileManager implements ComponentFramework.ReactControl<IInputs, I
 
       if (Object.keys(record).length > 0) recordsArray.push(record);
     });
+    // Check if any record requires fetching records from Sharepoint structure
+    const shouldGetFolderStructure = recordsArray.length > 0 && recordsArray.every(
+      (record: any) =>
+        record?.createdOnSharepoint &&
+        record?.sharepointDocumentLocation &&
+        record?.sharepointDocument?.guid
+    );
+    if (shouldGetFolderStructure) {
+      return this.fetchAndCombineFolderStructure(recordsArray);
+    }
     return recordsArray;
+  }
+
+  /**
+   * Fetches the folder structure and combines it with the provided records.
+   * The folder structure is retrieved from SharePoint, and if found, is combined with the records.
+   * If no folder structure is found or an error occurs, the original records are returned.
+   * 
+   * @param recordsArray - The array of records to combine with the folder structure.
+   * @returns A promise that resolves to an array of records combined with the folder structure.
+   */
+  public async fetchAndCombineFolderStructure(recordsArray: Record[]): Promise<Record[]> {
+    return this.getFolderStructure(this.context)
+      .then((folderStructure) => {
+        if (!folderStructure || Object.keys(folderStructure).length === 0) {
+          return recordsArray; // Return original records if no folder structure is found
+        }
+
+        const addRootParentId = {
+          ...folderStructure,
+          id: 0,
+        };
+
+        const dataSourceRecords = recordsArray.map((record: any) => ({
+          id: record.documentId,
+          name: record.name,
+          type: `.${record.fileType}`,
+          isFile: true,
+          filterPath: record.path,
+          dateCreated: record.createdOnSharepoint,
+          dateModified: record.modified,
+          parentId: 0,
+        }));
+
+        return [addRootParentId, ...dataSourceRecords];
+      })
+      .catch((error) => {
+        this.handleEventAction({ name: "onError", error }, "fetchAndCombineFolderStructure");
+        return recordsArray; // Fallback to original records in case of error
+      });
+  }
+
+  /**
+   * Fetches the SharePoint folder structure for the current context, based on the location of a document.
+   * It constructs a FetchXML query to retrieve the relevant SharePoint document location records,
+   * and then returns the folder structure details if found.
+   * 
+   * @param context - The context object that provides information about the current environment.
+   * @returns A promise that resolves to an object containing folder structure details, or null if no structure is found.
+   */
+  public getFolderStructure(context: ComponentFramework.Context<IInputs>): Promise<IFolder | null> {
+    return new Promise((resolve, reject) => {
+      this.context = context;
+      const entityName = "sharepointdocumentlocation";
+      const contextPage = (context as any).page;
+
+      // Define FetchXML to query SharePoint document locations
+      const locationFetchXml = `
+        <fetch mapping="logical">
+          <entity name="sharepointdocumentlocation">
+            <attribute name="name" />
+            <attribute name="relativeurl" />
+            <attribute name="sitecollectionid" />
+            <attribute name="sharepointdocumentlocationid" />
+            <filter type="and">
+              ${contextPage?.entityId
+          ? `<condition attribute="regardingobjectid" operator="eq" value="${contextPage.entityId}" />`
+          : `<condition attribute="regardingobjectid" operator="null" />`}
+              <condition attribute="statecode" operator="eq" value="0" />
+              <condition attribute="statuscode" operator="eq" value="1" />
+              <condition attribute="sitecollectionid" operator="not-null" />
+              <condition attribute="absoluteurl" operator="null" />
+            </filter>
+            <filter type="or">
+              <condition attribute="servicetype" operator="eq" value="0" />
+            </filter>
+          </entity>
+        </fetch>
+        `;
+
+      // Retrieve SharePoint location records using the WebAPI
+      context.webAPI.retrieveMultipleRecords(entityName, `?fetchXml=${encodeURIComponent(locationFetchXml)}`)
+        .then((result) => {
+          const locationData = result?.entities?.[0] ?? null;
+
+          // Build and return the folder structure if a SharePoint location was found
+          if (locationData) {
+            resolve({
+              name: locationData.name,
+              path: locationData.relativeurl,
+              key: locationData.relativeurl,
+            });
+          } else {
+            resolve(null); // Return null if no SharePoint location was found
+          }
+        })
+        .catch((error) => {
+          this.handleEventAction({ name: "onError", error }, "getFolderStructure");
+          reject(null); // Reject with null in case of error
+        });
+    });
   }
 
   /**

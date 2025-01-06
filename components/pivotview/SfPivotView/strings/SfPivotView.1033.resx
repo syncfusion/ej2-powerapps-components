@@ -124,7 +124,7 @@
 
   <!-- PivotView Control properties -->
   <data name="SfPivotView" xml:space="preserve">
-    <value>SfPivotView (27.2.2) Preview</value>
+    <value>SfPivotView (28.1.33) Preview</value>
   </data>
   <data name="SfPivotView_Desc_Key" xml:space="preserve">
     <value>The EJ2 PowerApps Pivot View Component provides interactive tables with rows, columns, and values that can be dynamically adjusted, offering powerful insights through data aggregation and visualization. This component supports features like filtering, sorting, conditional formatting, and drill-down capabilities, making it an essential tool for data analysis within PowerApps.</value>

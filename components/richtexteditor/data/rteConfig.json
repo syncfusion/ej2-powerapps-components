@@ -1,0 +1,67 @@
+{
+  "iframeSettings": {
+    "enable": false
+  },
+  "inlineMode": {
+    "enable": false
+  },
+  "insertImageSettings": {
+    "saveFormat": "Base64"
+  },
+  "pasteCleanupSettings": {
+    "prompt": true
+  },
+  "fontFamily": {
+    "default": "Segoe UI"
+  },
+  "fontSize": {
+    "default": "10pt"
+  },
+  "toolbarSettings": {
+    "enable": true,
+    "items": [
+      "Undo", "Redo", "|",
+      "Bold", "Italic", "Underline", "StrikeThrough", "SuperScript", "SubScript", "|",
+      "FontName", "FontSize", "FontColor", "BackgroundColor", "|",
+      "LowerCase", "UpperCase", "|",
+      "Blockquote", "|",
+      "Outdent", "Indent", "|",
+      "OrderedList", "UnorderedList", "|",
+      "CreateLink", "Image", "CreateTable", "|",
+      "SourceCode", "EmojiPicker", "Print", "FullScreen"
+    ]
+  },
+  "quickToolbarSettings": {
+    "actionOn": ["Selection", "Link", "Image", "Table"],
+    "link": ["Open", "Edit", "UnLink"],
+    "audio": ["AudioReplace", "AudioRemove", "AudioLayoutOption"],
+    "video": ["VideoReplace", "VideoAlign", "VideoRemove", "VideoLayoutOption", "VideoDimension"],
+    "image": ["Replace", "Align", "Caption", "Remove", "InsertLink"],
+    "table": ["TableHeader", "TableRows", "TableColumns", "BackgroundColor", "-", "TableRemove", "Alignments", "TableCellVerticalAlign", "Styles"]
+  },
+  "numberFormatList": {
+    "types": [
+      { "text": "None", "value": "none" },
+      { "text": "Number", "value": "decimal" },
+      { "text": "Lower Greek", "value": "lowerGreek" },
+      { "text": "Lower Roman", "value": "lowerRoman" },
+      { "text": "Upper Alpha", "value": "upperAlpha" },
+      { "text": "Lower Alpha", "value": "lowerAlpha" },
+      { "text": "Upper Roman", "value": "upperRoman" }
+    ]
+  },
+  "bulletFormatList":{
+    "types": [
+      { "text": "None", "value": "none" },
+      { "text": "Disc", "value": "disc" },
+      { "text": "Circle", "value": "circle" },
+      { "text": "Square", "value": "square" }
+    ]
+  },
+  "tableSettings": {
+    "width": "100%",
+    "resize": true,
+    "minWidth": "100px",
+    "maxWidth": "100%"
+  }
+}

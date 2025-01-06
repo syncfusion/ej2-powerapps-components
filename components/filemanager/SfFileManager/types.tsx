@@ -15,7 +15,7 @@ import {
 export interface ISfFileManager {
   width: string;
   height: string;
-  fileSystemData: Record[];
+  fileSystemData: Record[] | Promise<Record[]>;
   enableRtl: boolean;
   fileManagerConfig: IFileManagerConfig;
   cssClass: string;
@@ -54,4 +54,13 @@ export interface IFileManagerConfig {
   selectedItems: string[];
   toolbarItems: ToolbarItemModel[];
   toolbarSettings: ToolbarSettingsModel;
+}
+
+/**
+ * Interface for folders presented by Sharepoint folder
+ */
+export interface IFolder {
+  name: string;
+  key: string;
+  path: string;
 }

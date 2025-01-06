@@ -1,5 +1,27 @@
 # Changelog
 
+## v28.1.33 (January 06, 2025)
+
+We are excited to announce the addition of three new components in this release, bringing enhanced functionality and versatility to PowerApps. This release also includes improvements to existing components and updated documentation to streamline your integration processes.
+
+### Added Components
+
+- [RichTextEditor](components/richtexteditor) `Preview`: A rich text editor component that allows users to format text, insert images, and create lists, enhancing the text input experience. It supports rich text formatting options, making it ideal for applications that require enhanced text input capabilities.
+- [TreeGrid](components/treegrid) `Preview`: A versatile tree grid component that allows for hierarchical data representation, enabling users to display and interact with complex data structures in a tree format.
+- [Accordion](components/accordion) `Preview`: A Accordion component designed to organize and display content within collapsible panels. The Accordion is ideal for creating a clean and structured UI, allowing users to navigate through sections of content efficiently.
+
+### Improvements
+
+- **FileManager SharePoint Integration in Model-Driven Apps**: Introduced support for loading SharePoint documents into the FileManager component within Model-Driven applications, enhancing document management capabilities.
+- **Auto Type for Chart Primary X-Axis**: Added support for automatically determining the default Primary X-Axis type based on the `xName` property of the chart series when the "Auto" type is selected for the `PrimaryXAxisType` property.
+- **Updated PCF Projects Dependency Versions**: Updated dependency versions across all PCF project `package.json` files to ensure compatibility, improve stability, and streamline integration.
+- **Performance Improvement**: Introduced workspace support in the PowerApps repository, consolidating multiple PCF code components. This reduced npm installation size and time by 75%, streamlining the build process.
+
+### Documentation Updates
+
+- **FileManager Guide**: Added comprehensive instructions for loading SharePoint documents into the FileManager component in Model-Driven applications. [Link](./docs/filemanager/how-to-load-sharepoint-document-in-filemanager.md)
+- Moved code component markdown files to respective PCF README files, formatted documentation, and resolved linting issues.
+
 ## v27.2.2 (November 28, 2024)
 
 We are excited to announce the addition of four new components in this release, enhancing the capabilities of PowerApps with even more flexibility and functionality.

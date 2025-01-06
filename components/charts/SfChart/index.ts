@@ -1,8 +1,10 @@
+import { isNullOrUndefined } from "@syncfusion/ej2-base";
+import { SeriesModel } from "@syncfusion/ej2-charts";
 import * as React from "react";
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
 import { SfChartComponent } from "./SfChart";
-import { ISfChart, Record } from "./types";
-import { isNullOrUndefined } from "@syncfusion/ej2-base";
+import { Record as IRecord, ISfChart } from "./types";
+type ValueType = "Double" | "DateTime" | "Category" | "DateTimeCategory";
 type DataSet = ComponentFramework.PropertyTypes.DataSet;
 
 export class SfChart implements ComponentFramework.ReactControl<IInputs, IOutputs> {
@@ -71,11 +73,57 @@ export class SfChart implements ComponentFramework.ReactControl<IInputs, IOutput
         props.height = height && height > 0 ? height + "px" : "450px";
       }
 
+      if (props.dataSource && props.primaryXAxisType === "Auto") {
+        props.primaryXAxisType = this.getMajorityXAxisType(props.dataSource, props.series);
+      }
+
       return React.createElement(SfChartComponent, props);
     } catch (error: any) {
       console.error(error);
       return React.createElement("div", null, "Error at UpdateView: " + error.message);
     }
+  }
+
+  /**
+   * Determine the primary X-axis type based on the majority data type of the series xName property.
+   *
+   * @param {IRecord[]} dataSource - The array of data objects.
+   * @param {SeriesModel[]} seriesConfig - The array of series configurations.
+   * @returns {ValueType} The most common X-axis type.
+   */
+  public getMajorityXAxisType(dataSource: IRecord[], seriesConfig: SeriesModel[]): ValueType {
+    if (!dataSource?.length || !seriesConfig?.length) return "Category";
+
+    const typeCounts: Record<ValueType, number> = {
+      Double: 0,
+      DateTime: 0,
+      Category: 0,
+      DateTimeCategory: 0
+    };
+
+    const determineValueType = (value: unknown): ValueType => {
+      if (typeof value === "number") return "Double";
+      if (value instanceof Date) return "DateTime";
+      if (typeof value === "string" && !isNaN(Date.parse(value))) return "DateTimeCategory";
+      return "Category";
+    };
+
+    for (const { xName } of seriesConfig) {
+      if (!xName) continue;
+      for (const data of dataSource) {
+        if (xName in data) {
+          const type = determineValueType(data[xName]);
+          typeCounts[type]++;
+          break;
+        }
+      }
+    }
+
+    return Object.entries(typeCounts).reduce<ValueType>(
+      (majorityType, [type, count]) =>
+        count > typeCounts[majorityType] ? (type as ValueType) : majorityType,
+      "Category"
+    );
   }
 
   /**
@@ -85,7 +133,7 @@ export class SfChart implements ComponentFramework.ReactControl<IInputs, IOutput
    * @remarks
    * This method is used to map the dataset records to the schedule data. It also loads all records for PowerPages application at once.
    */
-  public getChartData(dataSource: DataSet): Record[] | [] {
+  public getChartData(dataSource: DataSet): IRecord[] | [] {
     if (!dataSource || dataSource.loading) return [];
 
     const { columns, paging, sortedRecordIds, records } = dataSource;
@@ -94,14 +142,13 @@ export class SfChart implements ComponentFramework.ReactControl<IInputs, IOutput
 
     // Map the dataset records to the schedule data
     const returnData = sortedRecordIds.map((id) => {
-      const record: Record = {};
-      columns.forEach((column: Record) => {
+      const record: IRecord = {};
+      columns.forEach((column: IRecord) => {
         if (isNullOrUndefined(column.displayName) || column.dataType.includes("multiselectpicklist")) return;
 
         isModelDriven = !isNullOrUndefined(column["isPrimary"]) && !this.isTestHarness;
         if (isModelDriven && column.dataType === "TwoOptions") {
           record[column.displayName] = Boolean(parseInt(records[id].getValue(column.alias) as string));
-          return;
         } else if (column.dataType.includes("DateAndTime")) {
           record[column.displayName] = new Date(records[id].getValue(column.alias) as string);
         } else {
@@ -113,7 +160,7 @@ export class SfChart implements ComponentFramework.ReactControl<IInputs, IOutput
 
     if (paging.hasNextPage && paging.pageSize !== paging.totalResultCount) {
       // Load all records for PowerPages application at once
-      if (!isNullOrUndefined((columns[0] as Record)?.["attributes"]?.["SourceType"]))
+      if (!isNullOrUndefined((columns[0] as IRecord)?.["attributes"]?.["SourceType"]))
         paging.setPageSize(paging.totalResultCount);
       paging.loadNextPage();
     }

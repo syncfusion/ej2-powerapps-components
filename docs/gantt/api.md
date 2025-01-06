@@ -90,10 +90,10 @@ Defaults to `false`
 
 It Configures the grid lines in tree grid and gantt chart. The available types are,
 
-* **Horizontal** - Define horizontal lines.
-* **Vertical** - Define vertical lines.
-* **Both** - Define both horizontal and vertical lines.
-* **None** - Define no lines.
+- **Horizontal** - Define horizontal lines.
+- **Vertical** - Define vertical lines.
+- **Both** - Define both horizontal and vertical lines.
+- **None** - Define no lines.
 
 Defaults to `Horizontal`
 
@@ -111,8 +111,8 @@ Defaults to `0`
 
 Defines the view type of the Gantt. The available types are,
 
- * **ProjectView** - Defines the project view type of the Gantt.
- * **ResourceView** - Defines the resource view type of the Gantt.
+- **ProjectView** - Defines the project view type of the Gantt.
+- **ResourceView** - Defines the resource view type of the Gantt.
 
 Defaults to `ProjectView`
 

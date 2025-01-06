@@ -5,12 +5,11 @@ const {
   rem,
   logError,
   logToFile,
-  updateXmlTag,
+  updateFileContent,
   execShellCommand,
   getFilesAndFoldersByPattern
 } = require("../util");
 const {
-  SOLUTION_XML_PATH,
   CODE_COMPONENTS_PATH,
   SOLUTION_CDS_FILE_PATH,
   PAC_SOLUTION_INIT_COMMAND,
@@ -19,13 +18,7 @@ const {
   SOLUTION_DATA
 } = require("../config");
 
-let {
-  solutionName,
-  solutionVersion,
-  includeComponents,
-  excludeComponents,
-  publishManagedSolution
-} = SOLUTION_DATA;
+let { solutionName, includeComponents, excludeComponents, publishManagedSolution } = SOLUTION_DATA;
 const { create_solution, solution_exists, adding_to_solution, folder_path_contains_spaces } =
   CREATE_SOLUTION_MESSAGE;
 
@@ -55,7 +48,7 @@ gulp.task("create-solution", async (done) => {
       await execShellCommand(PAC_SOLUTION_INIT_COMMAND, taskDetails, done);
     } else {
       if (excludeComponents.length > 0 || includeComponents.length > 0) {
-        await updateXmlTag(
+        await updateFileContent(
           SOLUTION_CDS_FILE_PATH,
           /<ProjectReference\b[^>]*\/>/g,
           "",
@@ -63,7 +56,7 @@ gulp.task("create-solution", async (done) => {
           done,
           false
         );
-        await updateXmlTag(
+        await updateFileContent(
           SOLUTION_CDS_FILE_PATH,
           /<ItemGroup>\s*<\/ItemGroup>|<ItemGroup\s*\/>/g,
           "",
@@ -74,14 +67,6 @@ gulp.task("create-solution", async (done) => {
       }
       await logToFile(solution_exists, taskDetails, "INFO");
     }
-
-    await updateXmlTag(
-      SOLUTION_XML_PATH,
-      /<Version>(.*)<\/Version>/,
-      `<Version>${solutionVersion}</Version>`,
-      taskDetails,
-      done
-    );
 
     const excludedFolders = exclusionPatterns.concat(
       excludeComponents.map((comp) => comp.toLowerCase())
@@ -105,14 +90,14 @@ gulp.task("create-solution", async (done) => {
       await execShellCommand(PAC_SOLUTION_ADD_REFERENCE_COMMAND(pcfProjectPath), taskDetails, done);
     }
 
-    await updateXmlTag(
+    await updateFileContent(
       SOLUTION_CDS_FILE_PATH,
       /<!--\s*<PropertyGroup>[\s\S]*?<\/PropertyGroup>\s*-->/g,
       (match) => match.replace(/<!--|-->/g, ""),
       taskDetails,
       done
     );
-    await updateXmlTag(
+    await updateFileContent(
       SOLUTION_CDS_FILE_PATH,
       /<SolutionPackageType>Managed<\/SolutionPackageType>/g,
       `<SolutionPackageType>${

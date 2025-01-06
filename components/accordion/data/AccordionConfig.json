@@ -1,0 +1,7 @@
+{
+    "animation": {
+      "expand": { "effect": "SlideDown", "duration": 400, "easing": "linear" },
+      "collapse": { "effect": "SlideUp", "duration": 400, "easing": "linear" }
+    },
+    "expandedIndices": [0]
+}

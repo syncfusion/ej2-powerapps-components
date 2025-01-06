@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest>
-  <control namespace="Syncfusion" constructor="SfChart" version="27.2.2" display-name-key="SfChart" description-key="SfChart_Desc_Key" control-type="virtual">
+  <control namespace="Syncfusion" constructor="SfChart" version="28.1.33" display-name-key="SfChart" description-key="SfChart_Desc_Key" control-type="virtual">
     <!--external-service-usage node declares whether this 3rd party PCF control is using external service or not, if yes, this control will be considered as premium and please also add the external domain it is using.
     If it is not using any external service, please set the enabled="false" and DO NOT add any domain below. The "enabled" will be false by default.
     Example1:
@@ -56,7 +56,8 @@
     <property name="Title" of-type="SingleLine.Text" default-value="" display-name-key="Title" description-key="Title_Desc_Key" usage="input" required="false" />
 
     <!-- Chart Primary X Axis Property -->
-    <property name="PrimaryXAxisType" of-type="Enum" default-value="Double" display-name-key="PrimaryXAxisType" description-key="PrimaryXAxisType_Desc_Key" usage="input" required="false">
+    <property name="PrimaryXAxisType" of-type="Enum" default-value="Auto" display-name-key="PrimaryXAxisType" description-key="PrimaryXAxisType_Desc_Key" usage="input" required="false">
+      <value name="Auto" display-name-key="Auto">Auto</value>
       <value name="Double" display-name-key="Double">Double</value>
       <value name="DateTime" display-name-key="DateTime">DateTime</value>
       <value name="Category" display-name-key="Category">Category</value>
