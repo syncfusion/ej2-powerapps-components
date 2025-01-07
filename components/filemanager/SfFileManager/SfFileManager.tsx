@@ -11,7 +11,7 @@ import {
 } from "@syncfusion/ej2-react-filemanager";
 import * as React from "react";
 import "./styles/theme.css";
-import { ISfFileManager } from "./types";
+import { ISfFileManager, Record } from "./types";
 
 /**
  * Renders SfFileManager component.
@@ -22,16 +22,32 @@ import { ISfFileManager } from "./types";
 export const SfFileManagerComponent: React.FC<ISfFileManager> = React.memo((props: ISfFileManager) => {
 
   const filemanagerRef = React.useRef<FileManagerComponent>(null);
+  const [fileSystemData, setFileSystemData] = React.useState<Record[]>([]);
+
+  // React useEffect hook to fetch data whenever the `fileSystemData` prop changes
+  React.useEffect(() => {
+    const fetchData = async () => {
+      try {
+        // Wait for the promise to resolve and get the data
+        const data = await props.fileSystemData;
+        setFileSystemData(data);
+      } catch (error) {
+        console.error("Error fetching data", error);
+      }
+    };
+    // Call the fetchData function to initiate the fetch process
+    fetchData();
+  }, [props.fileSystemData]);
 
   return (
     <>
-      {props.fileSystemData.length > 0 && (
+      {fileSystemData.length > 0 && (
         <FileManagerComponent
           ref={filemanagerRef}
           width={props.width}
           height={props.height}
           enableRtl={props.enableRtl}
-          fileSystemData={props.fileSystemData}
+          fileSystemData={fileSystemData}
           contextMenuSettings={{
             file: props.fileManagerConfig?.contextMenuSettings?.file?.filter(option => ["Open", "|", "Details"].includes(option)) || ["Open", "|", "Details"],
             folder: props.fileManagerConfig?.contextMenuSettings?.folder?.filter(option => ["Open", "|", "Details"].includes(option)) || ["Open", "|", "Details"],
@@ -85,7 +101,7 @@ export const SfFileManagerComponent: React.FC<ISfFileManager> = React.memo((prop
           />
         </FileManagerComponent>
       )}
-      {props.fileSystemData.length === 0 && (props.renderNoDataSource())}
+      {fileSystemData.length === 0 && (props.renderNoDataSource())}
     </>
   );
 }

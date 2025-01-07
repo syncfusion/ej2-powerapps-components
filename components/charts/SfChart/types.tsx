@@ -12,7 +12,7 @@ export interface ISfChart {
   series: SeriesModel[];
   seriesType: ChartSeriesType;
   title: string;
-  primaryXAxisType: ValueType;
+  primaryXAxisType: ValueType | "Auto";
   enableCrosshair: boolean;
   enableCrosshairTooltip: boolean;
   enableTooltip: boolean;

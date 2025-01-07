@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="Syncfusion" constructor="SfTreeGrid" version="28.1.33" display-name-key="SfTreeGrid" description-key="SfTreeGrid_Desc_Key" control-type="virtual">
+    <!--external-service-usage node declares whether this 3rd party PCF control is using external service or not, if yes, this control will be considered as premium and please also add the external domain it is using.
+    If it is not using any external service, please set the enabled="false" and DO NOT add any domain below. The "enabled" will be false by default.
+    Example1:
+      <external-service-usage enabled="true">
+        <domain>www.Microsoft.com</domain>
+      </external-service-usage>
+    Example2:
+      <external-service-usage enabled="false">
+      </external-service-usage>
+    -->
+    <external-service-usage enabled="false">
+      <!--UNCOMMENT TO ADD EXTERNAL DOMAINS
+      <domain></domain>
+      <domain></domain>
+      -->
+    </external-service-usage>
+
+    <!-- TreeGrid DataSource Property -->
+    <data-set name="DataSource" display-name-key="DataSource"></data-set>
+
+    <property name="EnableDarkMode" of-type="TwoOptions" default-value="false" display-name-key="EnableDarkMode" description-key="EnableDarkMode_Desc_Key" usage="input" required="false" />
+
+    <property name="TreeGridConfig" of-type="Multiple" default-value="" display-name-key="TreeGridConfig" description-key="TreeGridConfig_Desc_Key" usage="input" required="false" />
+    <property name="IdMapping" of-type="SingleLine.Text" default-value="" display-name-key="IdMapping" description-key="IdMapping_Desc_Key" usage="input" required="false" />
+    <property name="ParentIdMapping" of-type="SingleLine.Text" default-value="" display-name-key="ParentIdMapping" description-key="ParentIdMapping_Desc_Key" usage="input" required="false" />
+
+    <property name="FrozenColumns" of-type="Whole.None" default-value="0" display-name-key="FrozenColumns" description-key="FrozenColumns_Desc_Key" usage="input" required="false" />
+    <property name="FrozenRows" of-type="Whole.None" default-value="0" display-name-key="FrozenRows" description-key="FrozenRows_Desc_Key" usage="input" required="false" />
+    <property name="RowHeight" of-type="Whole.None" default-value="-1" display-name-key="RowHeight" description-key="RowHeight_Desc_Key" usage="input" required="false" />
+    <property name="TreeColumnIndex" of-type="Whole.None" default-value="0" display-name-key="TreeColumnIndex" description-key="TreeColumnIndex_Desc_Key" usage="input" required="false" />
+
+    <property name="ClipMode" of-type="Enum" default-value="Ellipsis" display-name-key="ClipMode" description-key="ClipMode_Desc_Key" usage="input" required="false">
+      <value name="Clip" display-name-key="Clip">Clip</value>
+      <value name="Ellipsis" display-name-key="Ellipsis">Ellipsis</value>
+      <value name="EllipsisWithTooltip" display-name-key="EllipsisWithTooltip">EllipsisWithTooltip</value>
+    </property>
+    <property name="CopyHierarchyMode" of-type="Enum" default-value="Parent" display-name-key="CopyHierarchyMode" description-key="CopyHierarchyMode_Desc_Key" usage="input" required="false">
+      <value name="Parent" display-name-key="Parent">Parent</value>
+      <value name="Child" display-name-key="Child">Child</value>
+      <value name="Both" display-name-key="Both">Both</value>
+      <value name="None" display-name-key="None">None</value>
+    </property>
+    <property name="GridLines" of-type="Enum" default-value="Default" display-name-key="GridLines" description-key="GridLines_Desc_Key" usage="input" required="false">
+      <value name="Both" display-name-key="Both">Both</value>
+      <value name="None" display-name-key="None">None</value>
+      <value name="Horizontal" display-name-key="Horizontal">Horizontal</value>
+      <value name="Vertical" display-name-key="Vertical">Vertical</value>
+      <value name="Default" display-name-key="Default">Default</value>
+    </property>
+    <property name="PrintMode" of-type="Enum" default-value="AllPages" display-name-key="PrintMode" description-key="PrintMode_Desc_Key" usage="input" required="false">
+      <value name="AllPages" display-name-key="AllPages">AllPages</value>
+      <value name="CurrentPage" display-name-key="CurrentPage">CurrentPage</value>
+    </property>
+
+    <property name="AllowExcelExport" of-type="TwoOptions" default-value="false" display-name-key="AllowExcelExport" description-key="AllowExcelExport_Desc_Key" usage="input" required="false" />
+    <property name="AllowPdfExport" of-type="TwoOptions" default-value="false" display-name-key="AllowPdfExport" description-key="AllowPdfExport_Desc_Key" usage="input" required="false" />
+    <property name="AllowFiltering" of-type="TwoOptions" default-value="false" display-name-key="AllowFiltering" description-key="AllowFiltering_Desc_Key" usage="input" required="false" />
+    <property name="AllowSorting" of-type="TwoOptions" default-value="false" display-name-key="AllowSorting" description-key="AllowSorting_Desc_Key" usage="input" required="false" />
+    <property name="AllowMultiSorting" of-type="TwoOptions" default-value="true" display-name-key="AllowMultiSorting" description-key="AllowMultiSorting_Desc_Key" usage="input" required="false" />
+    <property name="AllowPaging" of-type="TwoOptions" default-value="false" display-name-key="AllowPaging" description-key="AllowPaging_Desc_Key" usage="input" required="false" />
+    <property name="AllowReordering" of-type="TwoOptions" default-value="false" display-name-key="AllowReordering" description-key="AllowReordering_Desc_Key" usage="input" required="false" />
+    <property name="AllowResizing" of-type="TwoOptions" default-value="false" display-name-key="AllowResizing" description-key="AllowResizing_Desc_Key" usage="input" required="false" />
+    <property name="AllowSelection" of-type="TwoOptions" default-value="true" display-name-key="AllowSelection" description-key="AllowSelection_Desc_Key" usage="input" required="false" />
+    <property name="AllowTextWrap" of-type="TwoOptions" default-value="false" display-name-key="AllowTextWrap" description-key="AllowTextWrap_Desc_Key" usage="input" required="false" />
+    <property name="AutoCheckHierarchy" of-type="TwoOptions" default-value="false" display-name-key="AutoCheckHierarchy" description-key="AutoCheckHierarchy_Desc_Key" usage="input" required="false" />
+    <property name="EnableAltRow" of-type="TwoOptions" default-value="true" display-name-key="EnableAltRow" description-key="EnableAltRow_Desc_Key" usage="input" required="false" />
+    <property name="EnableAutoFill" of-type="TwoOptions" default-value="false" display-name-key="EnableAutoFill" description-key="EnableAutoFill_Desc_Key" usage="input" required="false" />
+    <property name="EnableCollapseAll" of-type="TwoOptions" default-value="false" display-name-key="EnableCollapseAll" description-key="EnableCollapseAll_Desc_Key" usage="input" required="false" />
+    <property name="EnableHover" of-type="TwoOptions" default-value="false" display-name-key="EnableHover" description-key="EnableHover_Desc_Key" usage="input" required="false" />
+    <property name="ShowColumnChooser" of-type="TwoOptions" default-value="false" display-name-key="ShowColumnChooser" description-key="ShowColumnChooser_Desc_Key" usage="input" required="false" />
+    <property name="ShowColumnMenu" of-type="TwoOptions" default-value="false" display-name-key="ShowColumnMenu" description-key="ShowColumnMenu_Desc_Key" usage="input" required="false" />
+
+    <!-- TreeGrid Events Property -->
+    <property name="EventName" of-type="SingleLine.Text" display-name-key="EventName" description-key="EventName_Desc_Key" usage="output" default-value="" />
+    <property name="OnError" of-type="SingleLine.Text" display-name-key="OnError" description-key="OnError_Desc_Key" usage="output" default-value="" />
+
+    <resources>
+      <code path="index.ts" order="1"/>
+      <platform-library name="React" version="16.8.6" />
+      <resx path="strings/SfTreeGrid.1033.resx" version="1.0.0" />
+      <css path='../../../node_modules/@syncfusion/ej2-base/styles/fluent2.css' />
+      <css path='../../../node_modules/@syncfusion/ej2-buttons/styles/fluent2.css' />
+      <css path='../../../node_modules/@syncfusion/ej2-calendars/styles/fluent2.css' />
+      <css path='../../../node_modules/@syncfusion/ej2-dropdowns/styles/fluent2.css' />
+      <css path='../../../node_modules/@syncfusion/ej2-inputs/styles/fluent2.css' />
+      <css path='../../../node_modules/@syncfusion/ej2-navigations/styles/fluent2.css' />
+      <css path='../../../node_modules/@syncfusion/ej2-popups/styles/fluent2.css' />
+      <css path='../../../node_modules/@syncfusion/ej2-splitbuttons/styles/fluent2.css' />
+      <css path='../../../node_modules/@syncfusion/ej2-grids/styles/fluent2.css' />
+      <css path='../../../node_modules/@syncfusion/ej2-treegrid/styles/fluent2.css' />
+      <css path="styles/theme.css" />
+    </resources>
+    <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
+    <feature-usage>
+      <uses-feature name="Device.captureAudio" required="true" />
+      <uses-feature name="Device.captureImage" required="true" />
+      <uses-feature name="Device.captureVideo" required="true" />
+      <uses-feature name="Device.getBarcodeValue" required="true" />
+      <uses-feature name="Device.getCurrentPosition" required="true" />
+      <uses-feature name="Device.pickFile" required="true" />
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+    -->
+  </control>
+</manifest>

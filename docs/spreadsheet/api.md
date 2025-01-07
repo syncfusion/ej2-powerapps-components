@@ -42,7 +42,7 @@ Defaults to `true`
 
 ### Allow Print (TwoOptions)
 
-If `allowPrint` set to true, then it will allows you to enable printing functionality in the spreadsheet. 
+If `allowPrint` set to true, then it will allows you to enable printing functionality in the spreadsheet.
 
 Defaults to `true`
 

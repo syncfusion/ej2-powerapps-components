@@ -1,0 +1,17 @@
+Table(
+    { TaskID: 1, TaskName: "Parent Task 1", StartDate: "2017-02-23", Duration: 3, Priority: "Normal", EndDate: "2017-02-27", Progress: 40, ParentID: Blank() },
+    { TaskID: 2, TaskName: "Child Task 1", StartDate: "2017-02-23", Duration: 4, Priority: "Low", EndDate: "2017-02-27", Progress: 40, ParentID: 1 },
+    { TaskID: 3, TaskName: "Child Task 2", StartDate: "2017-02-23", Duration: 2, Priority: "Normal", EndDate: "2017-02-27", Progress: 40, ParentID: 1 },
+    { TaskID: 4, TaskName: "Child Task 3", StartDate: "2017-02-23", Duration: 2, Priority: "Low", EndDate: "2017-02-27", Progress: 40, ParentID: 1 },
+    { TaskID: 5, TaskName: "Parent Task 2", StartDate: "2017-03-14", Duration: 6, Priority: "Normal", EndDate: "2017-03-18", Progress: 40, ParentID: Blank() },
+    { TaskID: 6, TaskName: "Child Task 1", StartDate: "2017-03-02", Duration: 11, Priority: "High", EndDate: "2017-03-06", Progress: 40, ParentID: 5 },
+    { TaskID: 7, TaskName: "Child Task 2", StartDate: "2017-03-02", Duration: 7, Priority: "Critical", EndDate: "2017-03-06", Progress: 40, ParentID: 5 },
+    { TaskID: 8, TaskName: "Child Task 3", StartDate: "2017-03-02", Duration: 10, Priority: "Breaker", EndDate: "2017-03-06", Progress: 40, ParentID: 5 },
+    { TaskID: 9, TaskName: "Child Task 4", StartDate: "2017-03-02", Duration: 15, Priority: "High", EndDate: "2017-03-06", Progress: 40, ParentID: 5 },
+    { TaskID: 10, TaskName: "Parent Task 3", StartDate: "2017-03-09", Duration: 17, Priority: "Breaker", EndDate: "2017-03-13", Progress: 40, ParentID: Blank() },
+    { TaskID: 11, TaskName: "Child Task 1", StartDate: "2017-03-09", Duration: 0, Priority: "Low", EndDate: "2017-03-13", Progress: 40, ParentID: 10 },
+    { TaskID: 12, TaskName: "Child Task 2", StartDate: "2017-03-09", Duration: 10, Priority: "Breaker", EndDate: "2017-03-13", Progress: 40, ParentID: 10 },
+    { TaskID: 13, TaskName: "Child Task 3", StartDate: "2017-03-09", Duration: 11, Priority: "Normal", EndDate: "2017-03-13", Progress: 40, ParentID: 10 },
+    { TaskID: 14, TaskName: "Child Task 4", StartDate: "2017-03-09", Duration: 1, Priority: "Normal", EndDate: "2017-03-13", Progress: 40, ParentID: 10 },
+    { TaskID: 15, TaskName: "Child Task 5", StartDate: "2017-03-09", Duration: 14, Priority: "Critical", EndDate: "2017-03-13", Progress: 40, ParentID: 10 }
+)

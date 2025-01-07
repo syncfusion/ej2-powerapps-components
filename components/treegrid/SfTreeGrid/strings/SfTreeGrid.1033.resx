@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root"
+    xmlns=""
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <!-- TreeGrid Control properties -->
+  <data name="SfTreeGrid" xml:space="preserve">
+    <value>SfTreeGrid (28.1.33) Preview</value>
+  </data>
+  <data name="SfTreeGrid_Desc_Key" xml:space="preserve">
+    <value>The Syncfusion EJ2 TreeGrid component for PowerApps enables hierarchical data representation with advanced features such as filtering, sorting, and seamless data binding.</value>
+  </data>
+
+  <data name="DataSource" xml:space="preserve">
+    <value>Data Source </value>
+  </data>
+
+  <data name="EnableDarkMode" xml:space="preserve">
+    <value>Enable Dark Mode</value>
+  </data>
+  <data name="EnableDarkMode_Desc_Key" xml:space="preserve">
+    <value>Toggle this option to switch the application interface to Dark Mode</value>
+  </data>
+  <data name="TreeGridConfig" xml:space="preserve">
+    <value>TreeGrid Config</value>
+  </data>
+  <data name="TreeGridConfig_Desc_Key" xml:space="preserve">
+    <value>The configuration settings for the TreeGrid component allow you to customize its features and behavior. For reference, you can find the default configuration in the JSON file located in the "components/treegrid/data" folder in the repository.</value>
+  </data>
+  <data name="IdMapping" xml:space="preserve">
+    <value>Id Mapping</value>
+  </data>
+  <data name="IdMapping_Desc_Key" xml:space="preserve">
+    <value>Specifies the name of the field in the dataSource, which contains the id of that row.</value>
+  </data>
+  <data name="ParentIdMapping" xml:space="preserve">
+    <value>Parent Id Mapping</value>
+  </data>
+  <data name="ParentIdMapping_Desc_Key" xml:space="preserve">
+    <value>Specifies the name of the field in the dataSource, which contains the parent's id.</value>
+  </data>
+  <data name="FrozenColumns" xml:space="preserve">
+    <value>Frozen Columns</value>
+  </data>
+  <data name="FrozenColumns_Desc_Key" xml:space="preserve">
+    <value>Gets or sets the number of frozen columns.</value>
+  </data>
+  <data name="FrozenRows" xml:space="preserve">
+    <value>Frozen Rows</value>
+  </data>
+  <data name="FrozenRows_Desc_Key" xml:space="preserve">
+    <value>Gets or sets the number of frozen rows.</value>
+  </data>
+  <data name="RowHeight" xml:space="preserve">
+    <value>Row Height</value>
+  </data>
+  <data name="RowHeight_Desc_Key" xml:space="preserve">
+    <value>Defines the height of TreeGrid rows.</value>
+  </data>
+  <data name="TreeColumnIndex" xml:space="preserve">
+    <value>TreeColumnIndex</value>
+  </data>
+  <data name="TreeColumnIndex_Desc_Key" xml:space="preserve">
+    <value>Specifies the index of the column that needs to have the expander button.</value>
+  </data>
+  <data name="ClipMode" xml:space="preserve">
+    <value>Clip Mode</value>
+  </data>
+  <data name="ClipMode_Desc_Key" xml:space="preserve">
+    <value>Defines the mode of clip.</value>
+  </data>
+  <data name="CopyHierarchyMode" xml:space="preserve">
+    <value>Copy Hierarchy Mode</value>
+  </data>
+  <data name="CopyHierarchyMode_Desc_Key" xml:space="preserve">
+    <value>Defines the copy clipboard types.</value>
+  </data>
+  <data name="GridLines" xml:space="preserve">
+    <value>Grid Lines</value>
+  </data>
+  <data name="GridLines_Desc_Key" xml:space="preserve">
+    <value>Defines the mode of TreeGrid lines.</value>
+  </data>
+  <data name="PrintMode" xml:space="preserve">
+    <value>Print Mode</value>
+  </data>
+  <data name="PrintMode_Desc_Key" xml:space="preserve">
+    <value>Defines the print modes.</value>
+  </data>
+  <data name="AllowExcelExport" xml:space="preserve">
+    <value>Allow Excel Export</value>
+  </data>
+  <data name="AllowExcelExport_Desc_Key" xml:space="preserve">
+    <value>If allowExcelExport set to true, then it will allow the user to export treegrid to Excel file.</value>
+  </data>
+  <data name="AllowPdfExport" xml:space="preserve">
+    <value>Allow Pdf Export</value>
+  </data>
+  <data name="AllowPdfExport_Desc_Key" xml:space="preserve">
+    <value>If allowPdfExport set to true, then it will allow the user to export treegrid to Pdf file.</value>
+  </data>
+  <data name="AllowFiltering" xml:space="preserve">
+    <value>Allow Filtering</value>
+  </data>
+  <data name="AllowFiltering_Desc_Key" xml:space="preserve">
+    <value>If allowFiltering is set to true the filter bar will be displayed. If set to false the filter bar will not be displayed. Filter bar allows the user to filter tree grid records with required criteria.</value>
+  </data>
+  <data name="AllowSorting" xml:space="preserve">
+    <value>Allow Sorting</value>
+  </data>
+  <data name="AllowSorting_Desc_Key" xml:space="preserve">
+    <value>If allowSorting is set to true, it allows sorting of treegrid records when column header is clicked.</value>
+  </data>
+  <data name="AllowMultiSorting" xml:space="preserve">
+    <value>Allow Multi Sorting</value>
+  </data>
+  <data name="AllowMultiSorting_Desc_Key" xml:space="preserve">
+    <value>If allowMultiSorting set to true, then it will allow the user to sort multiple column in the treegrid.</value>
+  </data>
+  <data name="AllowPaging" xml:space="preserve">
+    <value>Allow Paging</value>
+  </data>
+  <data name="AllowPaging_Desc_Key" xml:space="preserve">
+    <value>If allowPaging is set to true, pager renders.</value>
+  </data>
+  <data name="AllowReordering" xml:space="preserve">
+    <value>Allow Reordering</value>
+  </data>
+  <data name="AllowReordering_Desc_Key" xml:space="preserve">
+    <value>If allowReordering is set to true, TreeGrid columns can be reordered. Reordering can be done by drag and drop of a particular column from one index to another index.</value>
+  </data>
+  <data name="AllowResizing" xml:space="preserve">
+    <value>Allow Resizing</value>
+  </data>
+  <data name="AllowResizing_Desc_Key" xml:space="preserve">
+    <value>If allowResizing is set to true, TreeGrid columns can be resized.</value>
+  </data>
+  <data name="AllowSelection" xml:space="preserve">
+    <value>Allow Selection</value>
+  </data>
+  <data name="AllowSelection_Desc_Key" xml:space="preserve">
+    <value>If allowSelection is set to true, it allows selection of (highlight row) TreeGrid records by clicking it.</value>
+  </data>
+  <data name="AllowTextWrap" xml:space="preserve">
+    <value>Allow Text Wrap</value>
+  </data>
+  <data name="AllowTextWrap_Desc_Key" xml:space="preserve">
+    <value>If allowTextWrap set to true, then text content will wrap to the next line when its text content exceeds the width of the Column Cells.</value>
+  </data>
+  <data name="AutoCheckHierarchy" xml:space="preserve">
+    <value>Auto Check Hierarchy</value>
+  </data>
+  <data name="AutoCheckHierarchy_Desc_Key" xml:space="preserve">
+    <value>If autoCheckHierarchy is set to true, hierarchy checkbox selection is enabled in TreeGrid.</value>
+  </data>
+  <data name="EnableAltRow" xml:space="preserve">
+    <value>Enable Alt Row</value>
+  </data>
+  <data name="EnableAltRow_Desc_Key" xml:space="preserve">
+    <value>If enableAltRow is set to true, the TreeGrid will render with e-altrow CSS class to the alternative tr elements.</value>
+  </data>
+  <data name="EnableAutoFill" xml:space="preserve">
+    <value>Enable Auto Fill</value>
+  </data>
+  <data name="EnableAutoFill_Desc_Key" xml:space="preserve">
+    <value>If enableAutoFill is set to true, then the auto fill icon will displayed on cell selection for copy cells. It requires the selection mode to be Cell and cellSelectionMode to be Box.</value>
+  </data>
+  <data name="EnableCollapseAll" xml:space="preserve">
+    <value>Enable Collapse All</value>
+  </data>
+  <data name="EnableCollapseAll_Desc_Key" xml:space="preserve">
+    <value>Specifies whether to load all the rows in collapsed state when the TreeGrid is rendered for the first time.</value>
+  </data>
+  <data name="EnableHover" xml:space="preserve">
+    <value>Enable Hover</value>
+  </data>
+  <data name="EnableHover_Desc_Key" xml:space="preserve">
+    <value>If enableHover is set to true, the row hover is enabled in the TreeGrid.</value>
+  </data>
+  <data name="ShowColumnChooser" xml:space="preserve">
+    <value>Show Column Chooser</value>
+  </data>
+  <data name="ShowColumnChooser_Desc_Key" xml:space="preserve">
+    <value>If showColumnChooser is set to true, it allows you to dynamically show or hide columns.</value>
+  </data>
+  <data name="ShowColumnMenu" xml:space="preserve">
+    <value>Show Column Menu</value>
+  </data>
+  <data name="ShowColumnMenu_Desc_Key" xml:space="preserve">
+    <value>If showColumnMenu set to true, then it will enable the column menu options in each column.</value>
+  </data>
+  <data name="NoDataSource_Message" xml:space="preserve">
+    <value>There is no data available to display at the moment.</value>
+  </data>
+
+  <!-- TreeGrid Event Properties -->
+  <data name="EventName" xml:space="preserve">
+    <value>Event Name</value>
+  </data>
+  <data name="EventName_Desc_Key" xml:space="preserve">
+    <value>Outputs event name when OnChange is triggered.</value>
+  </data>
+  <data name="OnError" xml:space="preserve">
+    <value>OnError Event</value>
+  </data>
+  <data name="OnError_Desc_Key" xml:space="preserve">
+    <value>Outputs error message when onError is triggered.</value>
+  </data>
+</root>

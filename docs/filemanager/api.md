@@ -72,9 +72,9 @@ Defaults to `name`
 
 Specifies a value that indicates whether the folders and files are sorted in the ascending or descending order, or they are not sorted at all. The available types of sort orders are,
 
-* `None` - Indicates that the folders and files are not sorted.
-* `Ascending` - Indicates that the folders and files are sorted in the ascending order.
-* `Descending` - Indicates that the folders and files are sorted in the descending order.
+- `None` - Indicates that the folders and files are not sorted.
+- `Ascending` - Indicates that the folders and files are sorted in the ascending order.
+- `Descending` - Indicates that the folders and files are sorted in the descending order.
 
 Defaults to `Ascending`
 
@@ -82,8 +82,8 @@ Defaults to `Ascending`
 
 Specifies the initial view of the file manager. With the help of this property, initial view can be changed to details or large icons view. The available views are:
 
-* `LargeIcons` - Displays the large icons view.
-* `Details` - Displays the details view.
+- `LargeIcons` - Displays the large icons view.
+- `Details` - Displays the details view.
 
 Defaults to `LargeIcons`
 

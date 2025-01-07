@@ -1,0 +1,20 @@
+{
+  "searchSettings": { "fields": ["TaskName", "TaskID", "StartDate", "EndDate", "Duration", "Progress", "Priority"] },
+  "columnMenuItems": [ "AutoFitAll" , "AutoFit" , "SortAscending" , "SortDescending" , "ColumnChooser" , "Filter" ],
+  "filterSettings": { "type": "Menu", "mode": "Immediate", "showFilterBarStatus": true, "hierarchyMode": "Parent" },
+  "loadingIndicator": { "indicatorType":"Spinner" },
+  "selectionSettings": { "type": "Single" },
+  "sortSettings": { "columns": [ { "field": "TaskName", "direction": "Ascending" } ] },
+  "textWrapSettings": { "wrapMode": "Header" },
+  "toolbar": [ "Search", "ExpandAll", "CollapseAll", "ExcelExport", "PdfExport", "CsvExport", "Print", "ColumnChooser" ],
+  "columns": [
+    { "field": "TaskName", "type": "string", "headerText": "TaskName", "showCheckbox": "true" },
+    { "field": "TaskID", "type": "number", "headerText": "TaskID", "textAlign": "Right", "format": "N" },
+    { "field": "StartDate", "type": "date", "headerText": "StartDate", "textAlign": "Right", "format": { "type": "date", "format": "M/d/yyyy" } },
+    { "field": "EndDate", "type": "date", "headerText": "EndDate", "textAlign": "Right", "format": { "type": "date", "format": "M/d/yyyy" } },
+    { "field": "Duration", "type": "", "headerText": "Duration", "textAlign": "Right", "format": "N" },
+    { "field": "Priority", "type": "string", "headerText": "Priority", "textAlign": "Right" },
+    { "field": "Progress", "type": "number", "headerText": "Progress", "format": "N" }
+  ],
+  "pageSettings": { "pageCount": 5, "pageSize": 10, "pageSizes": false }
+}

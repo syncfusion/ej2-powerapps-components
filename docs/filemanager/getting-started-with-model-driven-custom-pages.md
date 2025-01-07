@@ -10,7 +10,7 @@ PowerApps Model-Driven is a versatile platform for creating structured applicati
 
 ## Create a new Dataverse table
 
-Syncfusion PowerApps FileManager code component requires data to be loaded from a data source. Follow the steps provided in [Create a new Dataverse table](../common/faq.md#how-to-create-a-new-dataverse-table) section to create a new table in Dataverse using the CSV in the FileManager code component [CSV data](../../components/filemanager/data/TreeGridData.csv) folder. Skip this step if you have an existing table with data.
+Syncfusion PowerApps FileManager code component requires data to be loaded from a data source. Follow the steps provided in [Create a new Dataverse table](../common/faq.md#how-to-create-a-new-dataverse-table) section to create a new table in Dataverse using the CSV in the FileManager code component [CSV data](../../components/filemanager/data/fileSystemData.csv) folder. Skip this step if you have an existing table with data.
 
 When creating the Dataverse table using [CSV](../../components/filemanager/data/fileSystemData.csv) file, ensure the column names and data types match those in the table below:
 
@@ -29,8 +29,9 @@ When creating the Dataverse table using [CSV](../../components/filemanager/data/
 | imageUrl    | SingleLine.Text |
 
 > [!NOTE]
-- When setting up a Dataverse, make sure that the table columns are assigned the correct data types to prevent data loading issues in the FileManager code component. Checkout the supported columns in the [FileManager component](./api.md#filesystemdata-dataset).
-- When setting active views for the Dataverse table, ensure that the records are sorted by the id column in ascending order.
+>
+> - When setting up a Dataverse, make sure that the table columns are assigned the correct data types to prevent data loading issues in the FileManager code component. Checkout the supported columns in the [FileManager component](./api.md#filesystemdata-dataset).
+> - When setting active views for the Dataverse table, ensure that the records are sorted by the id column in ascending order.
 
 ## Create a PowerApps model-driven application
 
@@ -38,42 +39,42 @@ To create a model-driven application, follow the steps below:
 
 1. In the [PowerApps portal](https://make.powerapps.com/), navigate to the `Apps` tab located in the left navigation pane and select the `Start with a page design` option.
 
-![Model-Driven App Create](../images/common/CV-App.png)
+    ![Model-Driven App Create](../images/common/CV-App.png)
 
 2. Opt for the `Blank page with navigation` option and assign a meaningful name for your model-driven application. Proceed by clicking `create`.
 
-![Model-Driven App Create 1](../images/common/CV-App1.png)
+    ![Model-Driven App Create 1](../images/common/CV-App1.png)
 
 3. The PowerApps platform will generate a blank model-driven application based on your specifications. You are now ready to start building your application.
 
-![Model-Driven App Created](../images/common/MD-Created.png)
+    ![Model-Driven App Created](../images/common/MD-Created.png)
 
 4. To incorporate custom page into your application, click on the `Add Page` button. Select `Custom Page` & select `Create a new custom page` option. And assign a meaningful name for your custom page. Proceed by clicking `Add`.
 
-![Add Custom Page 1](../images/common/CP-AddCustomPage1.png)
+    ![Add Custom Page 1](../images/common/CP-AddCustomPage1.png)
 
-![Add Custom Page 2](../images/common/CP-AddCustomPage2.png)
+    ![Add Custom Page 2](../images/common/CP-AddCustomPage2.png)
 
 5. The PowerApps platform will generate a blank custom page based on your specifications in a new tab. You are now ready to start building your custom page (Canvas).
 
-6. Use any layouts & import the Syncfusion PowerApps FileManager code component to the custom page. Configure the data source for the FileManager code component by accessing the list of Dataverse tables. 
+6. Use any layouts & import the Syncfusion PowerApps FileManager code component to the custom page. Configure the data source for the FileManager code component by accessing the list of Dataverse tables.
 
-7. Once the data is loaded, include the necessary fileManagerConfig data for the FileManager code component by accessing the `fileManagerConifg` property and paste the [**FileManagerConfig.json**](../../components/filemanager/data/FileManagerConfig.json). Also, customize the other FileManager code component properties in the property pane.
+7. Once the data is loaded, include the necessary fileManagerConfig data for the FileManager code component by accessing the `fileManagerConfig` property and paste the [**FileManagerConfig.json**](../../components/filemanager/data/FileManagerConfig.json). Also, customize the other FileManager code component properties in the property pane.
 
-![Custom Page Import](../images/common/CP-ImportLayout.png)
+    ![Custom Page Import](../images/common/CP-ImportLayout.png)
 
-![Custom Page Import](../images/common/CP-Import.png)
+    ![Custom Page Import](../images/common/CP-Import.png)
 
-![Canvas Output](../images/filemanager/CP-Output.png)
+    ![Canvas Output](../images/filemanager/CP-Output.png)
 
-> [!NOTE]
-> Update the flexible height, width, and other properties of the FileManager code component to suit your application requirements. Also, refer to the [FileManager Canvas documentation](getting-started-with-canvas.md#import-syncfusion-powerapps-chart-code-component-into-canvas-application) for additional information.
+    > [!NOTE]
+    > Update the flexible height, width, and other properties of the FileManager code component to suit your application requirements. Also, refer to the [FileManager Canvas documentation](getting-started-with-canvas.md#import-syncfusion-powerapps-chart-code-component-into-canvas-application) for additional information.
 
 8. Save the custom page and publish the changes to add it in the model-driven application.
 
 9. After that in the previously created model-driven application, click on the `Publish` button to make the changes live.
 
-![Model-Driven App with CP](../images/filemanager/MD-CP-Output.png)
+    ![Model-Driven App with CP](../images/filemanager/MD-CP-Output.png)
 
 > [!NOTE]
 > For more information, refer to the [Create an blank Model-Driven app in PowerApps](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/build-app-three-steps).

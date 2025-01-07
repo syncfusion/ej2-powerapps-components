@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest>
-  <control namespace="Syncfusion" constructor="SfKanban" version="27.2.2" display-name-key="SfKanban" description-key="SfKanban_Desc_Key" control-type="virtual">
+  <control namespace="Syncfusion" constructor="SfKanban" version="28.1.33" display-name-key="SfKanban" description-key="SfKanban_Desc_Key" control-type="virtual">
     <!--external-service-usage
     node declares whether this 3rd party PCF control is using external service or not, if yes, this
     control will be considered as premium and please also add the external domain it is using.

@@ -24,7 +24,7 @@ Defines the column data for the Grid component. It specifies the `dataset` that 
 * `ColAllowResizing` - Defines the column allow resizing.
 * `ColAllowFiltering` - Defines the column allow filtering.
 * `ColAllowGrouping` - Defines the column allow grouping.
-* `ColallowEditing` - Defines the column allow editing.
+* `ColAllowEditing` - Defines the column allow editing.
 * `ColDisableHtmlEncode` - Defines the column disable html encode.
 * `ColEnableGroupByFormat` - Defines the column enable group by format.
 * `ColDisplayAsCheckBox` - Defines the column display as check box.

@@ -123,7 +123,7 @@
 
   <!-- Gantt Control properties -->
   <data name="SfGantt" xml:space="preserve">
-    <value>SfGantt (27.2.2) Preview</value>
+    <value>SfGantt (28.1.33) Preview</value>
   </data>
   <data name="SfGantt_Desc_Key" xml:space="preserve">
     <value>The EJ2 PowerApps Gantt allows users to track project progress, manage resources, and visualize task relationships in a clear and interactive format. Ideal for project management and planning.</value>

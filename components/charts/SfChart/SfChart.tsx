@@ -36,6 +36,7 @@ import {
   StepAreaSeries,
   StepLineSeries,
   Tooltip,
+  ValueType,
   WaterfallSeries,
   Zoom
 } from "@syncfusion/ej2-react-charts";
@@ -92,7 +93,7 @@ export const SfChartComponent: React.FC<ISfChart> = React.memo((props: ISfChart)
       tooltip={{ enable: props.enableTooltip }}
       crosshair={{ enable: props.enableCrosshair }}
       primaryXAxis={{
-        valueType: props.primaryXAxisType,
+        valueType: props.primaryXAxisType as ValueType,
         crosshairTooltip: { enable: props.enableCrosshairTooltip }
       }}
       primaryYAxis={{

@@ -123,7 +123,7 @@
 
   <!-- Schedule Control properties -->
   <data name="SfSchedule" xml:space="preserve">
-    <value>SfSchedule (27.2.2) Preview</value>
+    <value>SfSchedule (28.1.33) Preview</value>
   </data>
   <data name="SfSchedule_Desc_Key" xml:space="preserve">
     <value>Represents the Schedule component that displays a list of events scheduled against specific date and timings, thus helping us to plan and manage it properly.</value>

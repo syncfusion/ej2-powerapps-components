@@ -105,6 +105,11 @@ exports.DEPLOY_MESSAGE = {
   solution_deployed: `\n✅\u0020 Solution ${solutionName} deployed successfully.`
 };
 
+exports.UPDATE_VERSION_MESSAGE = {
+  starting_update_version: "🔄\u0020 Updating the version number...",
+  version_update_success: "✅\u0020 Version number updated successfully."
+}
+
 // -------------------------------
 // FAQ REFERENCE
 // -------------------------------

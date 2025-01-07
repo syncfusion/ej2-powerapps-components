@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="Syncfusion" constructor="SfAccordion" version="28.1.33" display-name-key="SfAccordion" description-key="SfAccordion_Desc_Key" control-type="virtual">
+    <!--external-service-usage node declares whether this 3rd party PCF control is using external service or not, if yes, this control will be considered as premium and please also add the external domain it is using.
+    If it is not using any external service, please set the enabled="false" and DO NOT add any domain below. The "enabled" will be false by default.
+    Example1:
+      <external-service-usage enabled="true">
+        <domain>www.Microsoft.com</domain>
+      </external-service-usage>
+    Example2:
+      <external-service-usage enabled="false">
+      </external-service-usage>
+    -->
+    <external-service-usage enabled="false">
+      <!--UNCOMMENT TO ADD EXTERNAL DOMAINS
+      <domain></domain>
+      <domain></domain>
+      -->
+    </external-service-usage>
+
+    <!-- Accordion Items Property -->
+    <data-set name="Items" display-name-key="Items"></data-set>
+
+    <!-- DarkMode property -->
+    <property name="EnableDarkMode" of-type="TwoOptions" default-value="false" display-name-key="EnableDarkMode" description-key="EnableDarkMode_Desc_Key" usage="input" required="false" />
+
+    <!-- Accordion Config Property -->
+    <property name="AccordionConfig" of-type="Multiple" default-value="" display-name-key="AccordionConfig" description-key="AccordionConfig_Desc_Key" usage="input" required="false" />
+
+    <!-- Accordion ExpandMode Property -->
+    <property name="ExpandMode" of-type="Enum" default-value="Multiple" display-name-key="ExpandMode" description-key="ExpandMode_Desc_Key" usage="input" required="false">
+      <value name="Single" display-name-key="Single">Single</value>
+      <value name="Multiple" display-name-key="Multiple">Multiple</value>
+    </property>
+
+    <!-- Accordion Event Properties -->
+    <property name="EventName" of-type="SingleLine.Text" default-value="" display-name-key="EventName" description-key="EventName_Desc_Key" usage="output" />
+    <property name="OnError" of-type="SingleLine.Text" default-value="" display-name-key="OnError" description-key="OnError_Desc_Key" usage="output" />
+
+    <resources>
+      <code path="index.ts" order="1"/>
+      <platform-library name="React" version="16.8.6" />
+      <resx path="strings/SfAccordion.1033.resx" version="1.0.0" />
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      <css path="css/SfAccordion.css" order="1" />
+      -->
+    </resources>
+    <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
+    <feature-usage>
+      <uses-feature name="Device.captureAudio" required="true" />
+      <uses-feature name="Device.captureImage" required="true" />
+      <uses-feature name="Device.captureVideo" required="true" />
+      <uses-feature name="Device.getBarcodeValue" required="true" />
+      <uses-feature name="Device.getCurrentPosition" required="true" />
+      <uses-feature name="Device.pickFile" required="true" />
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+    -->
+  </control>
+</manifest>

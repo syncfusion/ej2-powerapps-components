@@ -17,19 +17,44 @@ The repository is organized into the following folders:
 
 The Syncfusion PowerApps Code components library includes the following components, which can be used in supported PowerApps applications:
 
-| Code component | Supported Apps |
-| ------------------------ | ----------------------------------------------------------- |
-| [Grid](components/grids) `Preview` | ✅ [Local (TestHarness)](docs/grids/getting-started-with-code-component.md) <br/> ✅ [Canvas](docs/grids/getting-started-with-canvas.md) <br/> ✅ [Model-Driven (Form)](docs/grids/getting-started-with-model-driven-form.md) <br/> ✅ [Model-Driven (Custom Pages)](docs/grids/getting-started-with-model-driven-custom-pages.md) <br/> ⬜ PowerPages (Portals) |
-| [Chart](components/charts) `Preview` | ✅ [Local (TestHarness)](docs/charts/getting-started-with-code-component.md) <br/> ✅ [Canvas](docs/charts/getting-started-with-canvas.md) <br/> ✅ [Model-Driven (Form)](docs/charts/getting-started-with-model-driven-form.md) <br/> ✅ [Model-Driven (Custom Pages)](docs/charts/getting-started-with-model-driven-custom-pages.md) <br/> ✅ [PowerPages (Portals)](./docs/charts/getting-started-with-power-pages.md) |
-| [Schedule](components/schedule) `Preview` | ✅ [Local (TestHarness)](docs/schedule/getting-started-with-code-component.md) <br/> ✅ [Canvas](docs/schedule/getting-started-with-canvas.md) <br/> ✅ [Model-Driven (Form)](docs/schedule/getting-started-with-model-driven-form.md) <br/> ✅ [Model-Driven (Custom Pages)](docs/schedule/getting-started-with-model-driven-custom-pages.md) <br/> ✅ [PowerPages (Portals)](./docs/schedule/getting-started-with-power-pages.md) |
-| [PdfViewer](components/pdfviewer) `Preview` | ✅ [Local (TestHarness)](docs/pdfviewer/getting-started-with-code-component.md) <br/> ✅ [Canvas](docs/pdfviewer/getting-started-with-canvas.md) <br/> ✅ [Model-Driven (Form)](docs/pdfviewer/getting-started-with-model-driven-form.md) <br/> ✅ [Model-Driven (Custom Pages)](docs/pdfviewer/getting-started-with-model-driven-custom-pages.md) <br/> ⬜ PowerPages (Portals) |
-| [PivotView](components/pivotview) `Preview` | ✅ [Local (TestHarness)](docs/pivotview/getting-started-with-code-component.md) <br/> ✅ [Canvas](docs/pivotview/getting-started-with-canvas.md) <br/> ✅ [Model-Driven (Form)](docs/pivotview/getting-started-with-model-driven-form.md) <br/> ✅ [Model-Driven (Custom Pages)](docs/pivotview/getting-started-with-model-driven-custom-pages.md) <br/> ✅ [PowerPages (Portals)](docs/pivotview/getting-started-with-power-pages.md) <br/>
-| [Gantt](components/gantt) `Preview` | ✅ [Local (TestHarness)](docs/gantt/getting-started-with-code-component.md) <br/> ✅ [Canvas](docs/gantt/getting-started-with-canvas.md) <br/> ✅ [Model-Driven (Form)](docs/gantt/getting-started-with-model-driven-form.md) <br/> ✅ [Model-Driven (Custom Pages)](docs/gantt/getting-started-with-model-driven-custom-pages.md) <br/> ✅ [PowerPages (Portals)](docs/gantt/getting-started-with-power-pages.md) <br/>
-| [FileManager](components/filemanager) `Preview` | ✅ [Local (TestHarness)](docs/filemanager/getting-started-with-code-component.md) <br/> ✅ [Canvas](docs/filemanager/getting-started-with-canvas.md) <br/> ✅ [Model-Driven (Form)](docs/filemanager/getting-started-with-model-driven-form.md) <br/> ✅ [Model-Driven (Custom Pages)](docs/filemanager/getting-started-with-model-driven-custom-pages.md) <br/> ✅ [PowerPages (Portals)](docs/filemanager/getting-started-with-power-pages.md) <br/>
-| [Spreadsheet](components/spreadsheet) `Preview` | ✅ [Local (TestHarness)](docs/spreadsheet/getting-started-with-code-component.md) <br/> ✅ [Canvas](docs/spreadsheet/getting-started-with-canvas.md) <br/> ⬜ Model-Driven (Form) <br/> ✅ [Model-Driven (Custom Pages)](docs/spreadsheet/getting-started-with-model-driven-custom-pages.md) <br/> ⬜ PowerPages (Portals) |
-| [Kanban](components/kanban) `Preview` | ✅ [Local (TestHarness)](docs/kanban/getting-started-with-code-component.md) <br/> ✅ [Canvas](docs/kanban/getting-started-with-canvas.md) <br/> ⬜ Model-Driven (Form) <br/> ✅ [Model-Driven (Custom Pages)](docs/kanban/getting-started-with-model-driven-custom-pages.md) <br/> ⬜ PowerPages (Portals) |
+### Grids
 
-<em>Anticipate future updates to the component list. \*</em>
+| Code component | Documentation | Canvas Apps | Model-Driven Apps | Custom Pages | Power Pages |
+|----------------|---------------|-------------|-------------------|--------------|-------------|
+| [DataGrid](components/grids) `Preview` | 🔗 [link](./docs/grids/) | ✅ | ✅ | ✅ | ⬜ |
+| [Pivot Table](components/pivotview) `Preview` | 🔗 [link](./docs/pivotview/) | ✅ | ✅ | ✅ | ✅ |
+| [Spreadsheet](components/spreadsheet) `Preview` | 🔗 [link](./docs/spreadsheet/) | ✅ | ⬜ | ✅ | ⬜ |
+| [Tree Grid](components/treegrid) `Preview` | 🔗 [link](./docs/treegrid/) | ✅ | ✅ | ✅ | ✅ |
+
+### File Viewers & Editors
+
+| Code component | Documentation | Canvas Apps | Model-Driven Apps | Custom Pages | Power Pages |
+|----------------|---------------|-------------|-------------------|--------------|-------------|
+| [PdfViewer](components/pdfviewer) `Preview` | 🔗 [link](./docs/pdfviewer/) | ✅ | ✅ | ✅ | ⬜ |
+| [Rich Text Editor](components/richtexteditor) `Preview` | 🔗 [link](./docs/richtexteditor/) | ✅ | ✅ | ✅ | ⬜ |
+
+### Data Visualization
+
+| Code component | Documentation | Canvas Apps | Model-Driven Apps | Custom Pages | Power Pages |
+|----------------|---------------|-------------|-------------------|--------------|-------------|
+| [Chart](components/charts) `Preview` | 🔗 [link](./docs/charts/) | ✅ | ✅ | ✅ | ✅ |
+| [Kanban](components/kanban) `Preview` | 🔗 [link](./docs/kanban/) | ✅ | ⬜ | ✅ | ⬜ |
+
+### Calendars
+
+| Code component | Documentation | Canvas Apps | Model-Driven Apps | Custom Pages | Power Pages |
+|----------------|---------------|-------------|-------------------|--------------|-------------|
+| [Schedule](components/schedule) `Preview` | 🔗 [link](./docs/schedule/) | ✅ | ✅ | ✅ | ✅ |
+| [Gantt](components/gantt) `Preview` | 🔗 [link](./docs/gantt/) | ✅ | ✅ | ✅ | ✅ |
+
+### Navigation
+
+| Code component | Documentation | Canvas Apps | Model-Driven Apps | Custom Pages | Power Pages |
+|----------------|---------------|-------------|-------------------|--------------|-------------|
+| [FileManager](components/filemanager) `Preview` | 🔗 [link](./docs/filemanager/) | ✅ | ✅ | ✅ | ✅ |
+| [Accordion](components/accordion) `Preview` | 🔗 [link](./docs/accordion/) | ✅ | ⬜ | ✅ | ⬜ |
+
+_Anticipate future updates to the component list. \*_
 
 ## Install the prerequisites
 
@@ -50,27 +75,27 @@ To generate a solution project and bundle all Syncfusion code components to crea
 
 1. Open your command prompt and navigate to the [root folder](./) of this project.
 
-> [!IMPORTANT]
-> To avoid build failures, ensure that the entire folder path does not contain spaces. For example, instead of a path like C:\Projects\My Project, use C:\Projects\MyProject or C:\Projects\My_Project.
+    > [!IMPORTANT]
+    > To avoid build failures, ensure that the entire folder path does not contain spaces. For example, instead of a path like **C:\Projects\My Project**, use `C:\Projects\MyProject` or `C:\Projects\My_Project`.
 
 2. Execute the following commands to install dependencies
 
-```bash
-npm install
-```
+    ```bash
+    npm install
+    ```
 
 3. Place the Syncfusion license key in the [`syncfusion-license.txt`](syncfusion-license.txt) file located in the project's root folder for registration.
 
-> [!NOTE]
-> A license banner will be visible if the application is run without a Syncfusion license key. To obtain your Syncfusion license key, visit the [Get license key](https://help.syncfusion.com/common/essential-studio/licensing/licensing-faq/where-can-i-get-a-license-key) page.
+    > [!NOTE]
+    > A license banner will be visible if the application is run without a Syncfusion license key. To obtain your Syncfusion license key, visit the [Get license key](https://help.syncfusion.com/common/essential-studio/licensing/licensing-faq/where-can-i-get-a-license-key) page.
 
 4. Execute the following command to create & pack the solution package:
 
-```bash
-npm run pack
-```
+    ```bash
+    npm run pack
+    ```
 
-The resulting package will be created at [`SyncfusionPowerAppsComponents/bin/Debug/SyncfusionPowerAppsComponents.zip`](SyncfusionPowerAppsComponents/bin/Debug/SyncfusionPowerAppsComponents.zip), containing all Syncfusion code component.
+5. The resulting package will be created at [`SyncfusionPowerAppsComponents/bin/release/SyncfusionPowerAppsComponents.zip`](SyncfusionPowerAppsComponents/bin/release/SyncfusionPowerAppsComponents.zip), containing all Syncfusion code component.
 
 ## Deploying the solution package in the PowerApps portal
 
@@ -80,63 +105,67 @@ To deploy the solution package in the PowerApps portal, follow these steps:
 
 2. Update the `Environment` property in [config](./config.json#L2) with PowerApps solution importing environment name from [PowerApps portal](https://make.powerapps.com/).
 
-![Environment PowerApps portal](./docs/images/common/PowerApps-Environment.png)
+    ![Environment PowerApps portal](./docs/images/common/PowerApps-Environment.png)
 
 3. Execute the following command to deploy the solution package in the PowerApps portal in root folder:
 
-```bash
-npm run deploy
-```
+    ```bash
+    npm run deploy
+    ```
 
-> [!NOTE]
-> If you face any difficulties during the automatic importing process, please check the [FAQ](docs/common/faq.md) page for help. For instructions on manually deploying the solution package in the PowerApps portal, visit the [manual deployment](./docs/common/deploy-solution-pack-manually.md) page.
+    > [!NOTE]
+    > If you face any difficulties during the automatic importing process, please check the [FAQ](docs/common/faq.md) page for help. For instructions on manually deploying the solution package in the PowerApps portal, visit the [manual deployment](./docs/common/deploy-solution-pack-manually.md) page.
 
 4. After the successful execution of the command, the solution package will be deployed in the [PowerApps portal](https://make.powerapps.com/) under the specified environment in [config](./config.json#L2) as shown below in the opened PowerApps solution page:
 
-![Deployed solution package in PowerApps portal](./docs/images/common/PB-DeploySuccess.png)
+    ![Deployed solution package in PowerApps portal](./docs/images/common/PB-DeploySuccess.png)
 
 ## Integrating Syncfusion code components into PowerApps applications
 
-After successfully deploying the solution package, integrate Syncfusion code components into your PowerApps applications. Refer to the [Component List](#components-list) and their accompanying guides for compatible applications.
+Once the solution package is successfully deployed, you can integrate Syncfusion code components into your PowerApps applications. Refer to the [Component List](#components-list) for a comprehensive overview of available components and their respective documentation.
 
-For instance, for utilizing the Grid code component within a PowerApps Canvas application, refer to the [Canvas](docs/grids/getting-started-with-canvas.md) guide for detailed instructions.
+For example, to use the Grid component within a PowerApps Canvas application, check out the [Getting started with Canvas](docs/grids/getting-started-with-canvas.md) guide located in the respective component documentation folder.
 
 ## Testing Syncfusion code components locally (using Test Harness)
 
-To update and test the Syncfusion code components on your local machine, refer to the documentation for setting up `Local (TestHarness)` in the respective code components getting started guides listed in the [Component List](#components-list).
+To update and test Syncfusion code components locally, refer to the `README` file associated with each respective code component listed in the [Component List](#components-list).
 
-For instance, to test the Grid code component, you can visit the [Local (TestHarness)](docs/grids/getting-started-with-code-component.md) documentation and follow the instructions provided.
+For example, to test the Grid code component, navigate to the [README.md](components/grids/README.md) file in the corresponding code component link and follow the provided instructions.
+
+> [!NOTE]
+> To upgrade the published solution package, update the `solutionVersion` property in [config.json](./config.json#L7) before repackaging. After modifying the version, execute the `npm run pack` command to generate a new package reflecting the updated version.
 
 ## Upcoming Plans and Feedbacks
 
-The following components are set to be published soon:
+We’re excited to share that the following components are planned for release soon:
 
 1. Document Editor
-2. Rich Text Editor
-3. TreeGrid
+2. Menu
+3. TreeView
 
-We welcome your suggestions and improvements! Please share your feedback with us through [Github Discussions](https://github.com/syncfusion/ej2-powerapps-components/issues).
+We value your suggestions and ideas for improvement! Share your feedback with us through [Github Discussions](https://github.com/syncfusion/ej2-powerapps-components/issues).
 
 ## Support and feedback
 
-- For any other queries, reach our [Syncfusion support team](https://www.syncfusion.com/support/directtrac/incidents/newincident) or post the queries through the [Community forums](https://www.syncfusion.com/forums) and submit a feature request or a bug through our [Feedback portal](https://www.syncfusion.com/feedback).
-- To renew the subscription, click [renew](https://www.syncfusion.com/sales/products) or contact our sales team at <salessupport@syncfusion.com> | Toll Free: 1-888-9 DOTNET.
+- For any inquiries, please contact our [Syncfusion Support Team](https://www.syncfusion.com/support/directtrac/incidents/newincident) or post your questions on our [Community forums](https://www.syncfusion.com/forums). You can also submit feature requests or report bugs through our [Feedback portal](https://www.syncfusion.com/feedback).
+- To renew your subscription, visit [Renew Subscription](https://www.syncfusion.com/sales/products) or reach out to our sales team at <salessupport@syncfusion.com> | Toll Free: 1-888-9 DOTNET.
 
 ## License
 
-Syncfusion React Components is available under the Syncfusion Essential Studio program, and can be licensed either under the Syncfusion Community License Program or the Syncfusion commercial license.
+Syncfusion React Components are available through the Syncfusion Essential Studio program and can be licensed under either the Syncfusion Community License Program or the Syncfusion Commercial License.
 
-To be qualified for the Syncfusion Community License Program, you must have gross revenue of less than one (1) million U.S. dollars (USD 1,000,000.00) per year and have less than five (5) developers in your organization, and agree to be bound by Syncfusion’s terms and conditions.
+To qualify for the Syncfusion Community License Program, your organization must have annual gross revenue of less than 1 million U.S. dollars (USD 1,000,000) and fewer than 5 developers. Additionally, you must agree to Syncfusion’s terms and conditions.
 
-Customers who do not qualify for the community license can contact <sales@syncfusion.com> for commercial licensing options.
+If you do not meet the requirements for the community license, please reach out to <sales@syncfusion.com> for commercial licensing options.
 
-You may not use this product without first purchasing a Community License or a Commercial License, as well as agreeing to and complying with Syncfusion's license terms and conditions.
+You are required to obtain either a Community License or a Commercial License before using this product and must agree to comply with Syncfusion's terms and conditions.
 
-The Syncfusion license that contains the terms and conditions can be found at
-[https://www.syncfusion.com/content/downloads/syncfusion_license.pdf](https://www.syncfusion.com/content/downloads/syncfusion_license.pdf)
+The full Syncfusion license, including terms and conditions, can be found at: [Syncfusion License PDF](https://www.syncfusion.com/content/downloads/syncfusion_license.pdf)
 
 ## About Syncfusion
 
-Founded in 2001 and headquartered in Research Triangle Park, N.C., Syncfusion has more than 29,000 customers and more than 1 million users, including large financial institutions, Fortune 500 companies, and global IT consultancies.
+Founded in 2001 and headquartered in Research Triangle Park, N.C., Syncfusion serves over 29,000 customers and more than 1 million users, including major financial institutions, Fortune 500 companies, and leading global IT consultancies.
 
-Today we provide 1,800+ controls and frameworks for web ([ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls), [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls), [ASP.NET WebForms](https://www.syncfusion.com/jquery/aspnet-web-forms-ui-controls), [JavaScript](https://www.syncfusion.com/javascript-ui-controls), [Angular](https://www.syncfusion.com/angular-ui-components), [React](https://www.syncfusion.com/react-ui-components), [Vue](https://www.syncfusion.com/vue-ui-components), and [Blazor](https://www.syncfusion.com/blazor-components), mobile ([Xamarin](https://www.syncfusion.com/xamarin-ui-controls), [Flutter](https://www.syncfusion.com/flutter-widgets), [UWP](https://www.syncfusion.com/uwp-ui-controls), and [JavaScript](https://www.syncfusion.com/javascript-ui-controls)), and desktop development ([WinForms](https://www.syncfusion.com/winforms-ui-controls), [WPF](https://www.syncfusion.com/wpf-ui-controls), and [UWP](https://www.syncfusion.com/uwp-ui-controls) and [WinUI](https://www.syncfusion.com/winui-controls))). We provide ready-to deploy enterprise software for dashboards, reports, data integration, and big data processing. Many customers have saved millions in licensing fees by deploying our software.
+Syncfusion offers a comprehensive suite of over 1,800+ controls and frameworks for web development, including support for [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls), [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls), [ASP.NET WebForms](https://www.syncfusion.com/jquery/aspnet-web-forms-ui-controls), [JavaScript](https://www.syncfusion.com/javascript-ui-controls), [Angular](https://www.syncfusion.com/angular-ui-components), [React](https://www.syncfusion.com/react-ui-components), [Vue](https://www.syncfusion.com/vue-ui-components), and [Blazor](https://www.syncfusion.com/blazor-components); mobile platforms like [Xamarin](https://www.syncfusion.com/xamarin-ui-controls), [Flutter](https://www.syncfusion.com/flutter-widgets), [UWP](https://www.syncfusion.com/uwp-ui-controls), and [JavaScript](https://www.syncfusion.com/javascript-ui-controls), as well as desktop development with [WinForms](https://www.syncfusion.com/winforms-ui-controls), [WPF](https://www.syncfusion.com/wpf-ui-controls), and [UWP](https://www.syncfusion.com/uwp-ui-controls) and [WinUI](https://www.syncfusion.com/winui-controls).
+
+We provide ready-to-deploy enterprise software solutions for dashboards, reports, data integration, and big data processing. By leveraging our software, many customers have saved millions in licensing fees.
