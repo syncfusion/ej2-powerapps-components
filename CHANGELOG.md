@@ -1,6 +1,6 @@
 # Changelog
 
-## v28.1.33 (January 06, 2025)
+## v28.1.33 (January 07, 2025)
 
 We are excited to announce the addition of three new components in this release, bringing enhanced functionality and versatility to PowerApps. This release also includes improvements to existing components and updated documentation to streamline your integration processes.
 
