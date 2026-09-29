@@ -123,7 +123,7 @@
 
   <!-- TreeGrid Control properties -->
   <data name="SfTreeGrid" xml:space="preserve">
-    <value>SfTreeGrid (28.1.33) Preview</value>
+    <value>SfTreeGrid (35.1.37) Preview</value>
   </data>
   <data name="SfTreeGrid_Desc_Key" xml:space="preserve">
     <value>The Syncfusion EJ2 TreeGrid component for PowerApps enables hierarchical data representation with advanced features such as filtering, sorting, and seamless data binding.</value>

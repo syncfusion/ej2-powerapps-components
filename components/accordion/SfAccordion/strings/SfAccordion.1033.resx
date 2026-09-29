@@ -123,7 +123,7 @@
 
   <!-- Accordion Control properties -->
   <data name="SfAccordion" xml:space="preserve">
-    <value>SfAccordion (28.1.33) Preview</value>
+    <value>SfAccordion (35.1.37) Preview</value>
   </data>
   <data name="SfAccordion_Desc_Key" xml:space="preserve">
     <value>The EJ2 Accordion in PowerApps organizes content into collapsible sections, offering a clean and interactive way to manage and display information efficiently.</value>

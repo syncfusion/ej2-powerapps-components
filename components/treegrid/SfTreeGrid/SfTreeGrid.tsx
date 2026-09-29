@@ -21,6 +21,7 @@ import {
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import * as React from "react";
 import { ISfTreeGrid, ITreeGridConfig } from "./types";
+import "./styles/theme.css";
 
 /**
  * Renders SfTreeGrid component.
@@ -43,11 +44,6 @@ export const SfTreeGridComponent: React.FC<ISfTreeGrid> = React.memo((props: ISf
     setAllowSelection(props.allowSelection);
     setTreeGridConfig(props.treeGridConfig);
   }, [props.allowPaging, props.autoCheckHierarchy, props.allowSelection, props.treeGridConfig]);
-
-  // Effect to refresh the TreeGrid when specific props are updated
-  React.useEffect(() => {
-    treegridRef.current?.refresh();
-  }, [props.idMapping, props.parentIdMapping, treeGridConfig]);
 
   /**
    * Handles the click event of the toolbar items in the SfTreeGrid component.

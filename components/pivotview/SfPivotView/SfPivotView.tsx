@@ -1,14 +1,11 @@
 import { isNullOrUndefined } from "@syncfusion/ej2-base";
 import {
   PivotViewComponent,
-  Grouping,
   GroupingBar,
   FieldList,
-  CalculatedField,
   Inject,
   Toolbar,
   ToolbarItems,
-  Pager,
   PivotChart
 } from '@syncfusion/ej2-react-pivotview';
 import * as React from "react";
@@ -111,12 +108,9 @@ export const SfPivotViewComponent: React.FC<ISfPivotView> = React.memo((props: I
           formatSettings: configJSON?.dataSourceSettings?.formatSettings
         }}
         showFieldList={props.showFieldList}
-        allowCalculatedField={props.allowCalculatedField}
         allowDeferLayoutUpdate={props.allowDeferLayoutUpdate}
         allowDrillThrough={props.allowDrillThrough}
-        allowGrouping={props.allowGrouping}
         enableFieldSearching={props.enableFieldSearching}
-        enablePaging={props.enablePaging}
         enableRtl={props.enableRtl}
         enableValueSorting={props.enableValueSorting}
         showGroupingBar={props.showGroupingBar}
@@ -137,21 +131,6 @@ export const SfPivotViewComponent: React.FC<ISfPivotView> = React.memo((props: I
           view: props.displayOptions
         }}
         toolbar={toolbarOption}
-        pageSettings={props.enablePaging ? {
-          columnPageSize: configJSON?.pageSettings.columnPageSize,
-          currentColumnPage: configJSON?.pageSettings.currentColumnPage,
-          currentRowPage: configJSON?.pageSettings.currentRowPage,
-          rowPageSize: configJSON?.pageSettings.rowPageSize
-        } : undefined}
-        pagerSettings={props.enablePaging ? {
-          enableCompactView: configJSON?.pagerSettings.enableCompactView,
-          isInversed: configJSON?.pagerSettings.isInversed,
-          position: configJSON?.pagerSettings.position,
-          showColumnPageSize: configJSON?.pagerSettings.showColumnPageSize,
-          showColumnPager: configJSON?.pagerSettings.showColumnPager,
-          showRowPageSize: configJSON?.pagerSettings.showRowPageSize,
-          showRowPager: configJSON?.pagerSettings.showRowPager
-        } : undefined}
         groupingBarSettings={props.showGroupingBar ? {
           allowDragAndDrop: configJSON?.groupingBarSettings?.allowDragAndDrop,
           showFieldsPanel: configJSON?.groupingBarSettings?.showFieldsPanel,
@@ -164,12 +143,9 @@ export const SfPivotViewComponent: React.FC<ISfPivotView> = React.memo((props: I
       >
         <Inject
           services={[
-            Grouping,
             GroupingBar,
             FieldList,
-            CalculatedField,
             Toolbar,
-            Pager,
             PivotChart
           ]}
         />
@@ -183,7 +159,5 @@ SfPivotViewComponent.displayName = "SfPivotViewComponent";
 const defaultPivotViewConfig: IPivotViewConfig = {
   chartSettings: {} as ChartSettings,
   dataSourceSettings: {},
-  pageSettings: {},
-  pagerSettings: {},
   groupingBarSettings: {}
 };

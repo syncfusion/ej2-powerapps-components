@@ -1,4 +1,4 @@
-import { ChartSeriesType, PagerSettingsModel, GroupingBarSettingsModel, IDataOptions, PageSettingsModel, View } from "@syncfusion/ej2-react-pivotview";
+import { ChartSeriesType, GroupingBarSettingsModel, IDataOptions, View } from "@syncfusion/ej2-react-pivotview";
 import { ChartSettings } from "@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings";
 
 /**
@@ -12,14 +12,11 @@ export interface ISfPivotView {
   chartType: ChartSeriesType;
   displayOptions: View | undefined;
   showFieldList: boolean;
-  allowCalculatedField: boolean;
   allowDeferLayoutUpdate: boolean;
   enableFieldSearching: boolean;
   showValuesButton: boolean;
   allowDrillThrough: boolean;
   enableValueSorting: boolean;
-  allowGrouping: boolean;
-  enablePaging: boolean;
   enableRtl: boolean;
   showGroupingBar: boolean;
   showToolbar: boolean;
@@ -34,8 +31,6 @@ export interface ISfPivotView {
 export interface IPivotViewConfig {
   chartSettings: ChartSettings;
   dataSourceSettings: IDataOptions;
-  pageSettings: PageSettingsModel;
-  pagerSettings: PagerSettingsModel;
   groupingBarSettings: GroupingBarSettingsModel;
 }
 

@@ -33,12 +33,6 @@ If `showFieldList` set to true, then built-in popup field list to be enabled in 
 
 Defaults to `false`
 
-### Allow CalculatedField (TwoOptions)
-
-If `allowCalculatedField` set to true, then built-in calculated field dialog to be displayed in the component
-
-Defaults to `false`
-
 ### Allow DeferLayoutUpdate (TwoOptions)
 
 If `allowDeferLayoutUpdate` set to true, then the pivot table component to be updated only on demand.
@@ -66,18 +60,6 @@ Defaults to `false`
 ### Enable ValueSorting (TwoOptions)
 
 If `enableValueSorting` set to true, then you can sort the values by clicking directly on the value field header positioned either in row or column axis to ascending or descending order of the pivot table.
-
-Defaults to `false`
-
-### Allow Grouping (TwoOptions)
-
-If `allowGrouping` set to true, then its show the grouping UI in the pivot table that automatically groups date, time, number and string at runtime. by right clicking on the pivot table’s row or column header.
-
-Defaults to `false`
-
-### Enable Paging (TwoOptions)
-
-If `enablePaging` set to true, then its allows large amounts of data to be displayed page-by-page.
 
 Defaults to `false`
 

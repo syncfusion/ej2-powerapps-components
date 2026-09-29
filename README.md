@@ -30,7 +30,6 @@ The Syncfusion PowerApps Code components library includes the following componen
 
 | Code component | Documentation | Canvas Apps | Model-Driven Apps | Custom Pages | Power Pages |
 |----------------|---------------|-------------|-------------------|--------------|-------------|
-| [PdfViewer](components/pdfviewer) `Preview` | 🔗 [link](./docs/pdfviewer/) | ✅ | ✅ | ✅ | ⬜ |
 | [Rich Text Editor](components/richtexteditor) `Preview` | 🔗 [link](./docs/richtexteditor/) | ✅ | ✅ | ✅ | ⬜ |
 
 ### Data Visualization
