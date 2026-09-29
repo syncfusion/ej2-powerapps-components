@@ -14,7 +14,8 @@
     "activate-license": " cd ../../ && npx syncfusion-license activate \"../../syncfusion-license.txt\""
   },
   "dependencies": {
-    "@syncfusion/ej2-react-filemanager": "^28.1.33",
+    "@syncfusion/ej2-react-filemanager": "^35.1.37",
+    "@syncfusion/ej2-fluent2-theme": "^35.1.37",
     "react": "16.8.6",
     "react-dom": "16.8.6"
   },
@@ -28,9 +29,9 @@
     "eslint": "^8.57.0",
     "eslint-plugin-promise": "^7.1.0",
     "eslint-plugin-react": "^7.37.1",
-    "pcf-scripts": "1.35.1",
+    "pcf-scripts": "1.51.1",
     "pcf-start": "^1",
     "react": "^16.8",
-    "typescript": "^4.9.5"
+    "typescript": "5.4.5"
   }
 }

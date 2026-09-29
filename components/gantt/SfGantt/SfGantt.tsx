@@ -11,8 +11,10 @@ import {
   ColumnMenu,
   DayMarkers
 } from "@syncfusion/ej2-react-gantt";
+import { closest } from "@syncfusion/ej2-base" 
 import * as React from "react";
 import { ISfGantt } from './types';
+import "./styles/theme.css";
 
 /**
  * Represents the SfGanttComponent component.
@@ -32,12 +34,67 @@ export const SfGanttComponent: React.FC<ISfGantt> = React.memo((props: ISfGantt)
     if (ganttRef.current) ganttRef.current.refresh();
   }, [props.width, props.height, props.allowFiltering, props.allowSorting])
 
+  const dataBound = () => {
+    let ganttObj = (document.getElementsByClassName('e-gantt')[0] as any).ej2_instances[0];
+    if (ganttObj) {
+      let gridRef
+      if (ganttObj) {
+        gridRef = ganttObj.treeGrid.grid
+      }
+        
+      if ((gridRef as any).resizeModule) {
+        (gridRef as any).resizeModule.updateHelper = function () {
+          const rect = closest(this.element, 'th.e-headercell');
+          let left: number;
+          left = Math.floor(this.calcPos(rect).left + (this.parent.enableRtl ? 0 - 1 : rect.getBoundingClientRect().width - 2));
+          const borderWidth = 2;
+          if (left > this.parentElementWidth) {
+            left = this.parentElementWidth - borderWidth;
+          }
+          let scalerElement = this.parent.element.closest('.animated-canvas-scaler');
+          if (scalerElement) {
+            let scalerStyle = scalerElement.style.transform;
+            const parts = scalerStyle.split(' ');
+            const scaleValue = parseFloat(parts[2].replace('scale(', '').replace(')', ''));
+            if (scalerStyle) {
+              left = left / scaleValue;
+            }
+          }
+          this.helper.style.left = left + 'px';
+        };
+        (gridRef as any).resizeModule.setHelperHeight = function () {
+          let height = this.parent.getContent().offsetHeight - this.getScrollBarWidth();
+          const rect: any = closest(this.element, 'th.e-headercell');
+          const tr: HTMLElement[] = [].slice.call(this.parent.getHeaderContent().querySelectorAll('tr'));
+          for (let i = tr.indexOf(rect.parentElement); i < tr.length && i > -1; i++) {
+            height += tr[parseInt(i.toString(), 10)].offsetHeight;
+          }
+          const pos = this.calcPos(rect);
+          pos.left += (this.parent.enableRtl ? 0 - 1 : rect.getBoundingClientRect().width - 2);
+          let scalerElement = this.parent.element.closest('.animated-canvas-scaler');
+          if (scalerElement) {
+            let scalerStyle = scalerElement.style.transform;
+            const parts = scalerStyle.split(' ');
+            const scaleValue = parseFloat(parts[2].replace('scale(', '').replace(')', ''));
+            if (scalerStyle) {
+              pos.left = pos.left / scaleValue;
+            }
+          }
+          this.helper.style.cssText = 'height: ' + height + 'px; top: ' + pos.top + 'px; left:' + Math.floor(pos.left) + 'px;';
+          if (this.parent.enableVirtualization) {
+            this.helper.classList.add('e-virtual-rhandler');
+          }
+        }
+      }
+    }
+  };
   return (
     <>
       {!noDataSource && props.ganttConfig?.taskFields && Object.keys(props.ganttConfig?.taskFields).length > 0 && (
         <GanttComponent
           key={props.showToolbar ? "toolbar-visible" : "toolbar-hidden"}
           ref={ganttRef}
+          dataBound={dataBound.bind(this)}
           width={props.width}
           height={props.height && props.height !== 'auto' ? props.height : '650px'}
           dataSource={props.dataSource}

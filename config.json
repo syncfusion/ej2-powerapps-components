@@ -4,7 +4,7 @@
     "solutionName": "SyncfusionPowerAppsComponents",
     "publisherName": "Syncfusion",
     "publisherPrefix": "Sf",
-    "solutionVersion": "28.1.33",
+    "solutionVersion": "35.1.37",
     "includeComponents": ["Add your component folder name here to include"],
     "excludeComponents": ["Add your component folder name here to exclude"],
     "publishManagedSolution": true

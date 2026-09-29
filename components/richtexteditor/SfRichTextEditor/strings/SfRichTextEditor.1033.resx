@@ -123,7 +123,7 @@
 
   <!-- RichTextEditor Control properties -->
   <data name="SfRichTextEditor" xml:space="preserve">
-    <value>SfRichTextEditor (28.1.33) Preview</value>
+    <value>SfRichTextEditor (35.1.37) Preview</value>
   </data>
   <data name="SfRichTextEditor_Desc_Key" xml:space="preserve">
     <value>SfRichTextEditorComponent is a configurable RichTextEditor that displays formatted data.</value>

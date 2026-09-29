@@ -1,5 +1,16 @@
 # Changelog
 
+## v35.1.37 (September 29, 2026)
+
+### Improvements
+
+- Updated all Syncfusion PowerApps code components to **v35.1.37**.
+- PowerApps components now use styles from the [Theme Packages](https://ej2.syncfusion.com/react/documentation/appearance/theme#theme-packages) instead of individual component packages.
+
+### Breaking Changes
+
+- The **PDF Viewer** PowerApps code component has been temporarily removed due to package size limitations and will be reintroduced in a future release after bundle size optimizations.
+
 ## v28.1.33 (January 07, 2025)
 
 We are excited to announce the addition of three new components in this release, bringing enhanced functionality and versatility to PowerApps. This release also includes improvements to existing components and updated documentation to streamline your integration processes.

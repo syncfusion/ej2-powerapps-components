@@ -1,3 +1,5 @@
+@import '../../../../node_modules/@syncfusion/ej2-fluent2-theme/styles/treegrid/index-lite.css';
+
 /* Unset the default text alignment and border styles */
 .control-pane {
   text-align: unset;

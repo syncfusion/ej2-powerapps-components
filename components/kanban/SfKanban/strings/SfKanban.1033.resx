@@ -123,7 +123,7 @@
 
   <!-- Kanban Control properties -->
   <data name="SfKanban" xml:space="preserve">
-    <value>SfKanban (28.1.33) Preview</value>
+    <value>SfKanban (35.1.37) Preview</value>
   </data>
   <data name="SfKanban_Desc_Key" xml:space="preserve">
     <value>The EJ2 Kanban component in PowerApps allows you to integrate Syncfusion's Kanban board into your PowerApps application. It visually organizes tasks into columns representing different workflow stages, enabling better task management and tracking. The component is highly customizable and supports features like drag-and-drop, swimlanes, providing an efficient way to manage tasks in a PowerApps environment.</value>

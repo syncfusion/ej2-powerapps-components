@@ -124,7 +124,7 @@
 
   <!-- PivotView Control properties -->
   <data name="SfPivotView" xml:space="preserve">
-    <value>SfPivotView (28.1.33) Preview</value>
+    <value>SfPivotView (35.1.37) Preview</value>
   </data>
   <data name="SfPivotView_Desc_Key" xml:space="preserve">
     <value>The EJ2 PowerApps Pivot View Component provides interactive tables with rows, columns, and values that can be dynamically adjusted, offering powerful insights through data aggregation and visualization. This component supports features like filtering, sorting, conditional formatting, and drill-down capabilities, making it an essential tool for data analysis within PowerApps.</value>
@@ -158,12 +158,6 @@
   <data name="ShowFieldsList_Desc_Key" xml:space="preserve">
     <value>Allows built-in popup field list to be enabled in the pivot table UI.</value>
   </data>
-  <data name="AllowCalculatedField" xml:space="preserve">
-    <value>Allow CalculatedField</value>
-  </data>
-  <data name="AllowCalculatedField_Desc_Key" xml:space="preserve">
-    <value>Allows the built-in calculated field dialog to be displayed in the component.</value>
-  </data>
   <data name="AllowDeferLayoutUpdate" xml:space="preserve">
     <value>Allow DeferLayoutUpdate</value>
   </data>
@@ -193,18 +187,6 @@
   </data>
   <data name="EnableValueSorting_Desc_Key" xml:space="preserve">
     <value>Allows you to sort individual value field and its aggregated values either in row or column axis to ascending or descending order.</value>
-  </data>
-  <data name="AllowGrouping" xml:space="preserve">
-    <value>Allow Grouping</value>
-  </data>
-  <data name="AllowGrouping_Desc_Key" xml:space="preserve">
-    <value>Allows you to show the grouping UI in the pivot table that automatically groups date, time, number and string at runtime.</value>
-  </data>
-  <data name="EnablePaging" xml:space="preserve">
-    <value>Enable Paging</value>
-  </data>
-  <data name="EnablePaging_Desc_Key" xml:space="preserve">
-    <value>Allows large amounts of data to be displayed page-by-page.</value>
   </data>
   <data name="ShowGroupingbar" xml:space="preserve">
     <value>Show Groupingbar</value>

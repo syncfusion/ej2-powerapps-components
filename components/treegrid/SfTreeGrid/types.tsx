@@ -4,7 +4,6 @@ import {
   Column,
   ColumnMenuItem,
   ColumnModel,
-  FilterSettingsModel,
   GridLine,
   LoadingIndicatorModel,
   PageSettingsModel,
@@ -14,7 +13,7 @@ import {
   SortSettingsModel,
   TextWrapSettingsModel
 } from "@syncfusion/ej2-grids";
-import { CopyHierarchyType, ToolbarItems } from "@syncfusion/ej2-react-treegrid";
+import { CopyHierarchyType, ToolbarItems, FilterSettingsModel } from "@syncfusion/ej2-react-treegrid";
 
 /**
  * Specifies Grid property interface.

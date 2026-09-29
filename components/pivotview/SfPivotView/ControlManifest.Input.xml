@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest>
-  <control namespace="Syncfusion" constructor="SfPivotView" version="28.1.33" display-name-key="SfPivotView" description-key="SfPivotView_Desc_Key" control-type="virtual">
+  <control namespace="Syncfusion" constructor="SfPivotView" version="35.1.37" display-name-key="SfPivotView" description-key="SfPivotView_Desc_Key" control-type="virtual">
     <!--external-service-usage node declares whether this 3rd party PCF control is using external service or not, if yes, this control will be considered as premium and please also add the external domain it is using.
     If it is not using any external service, please set the enabled="false" and DO NOT add any domain below. The "enabled" will be false by default.
     Example1:
@@ -27,14 +27,11 @@
 
     <!-- PivotView Properties -->
     <property name="ShowFieldsList" of-type="TwoOptions" default-value="false" display-name-key="ShowFieldsList" description-key="ShowFieldsList_Desc_Key" usage="input" required="false" />
-    <property name="AllowCalculatedField" of-type="TwoOptions" default-value="false" display-name-key="AllowCalculatedField" description-key="AllowCalculatedField_Desc_Key" usage="input" required="false" />
     <property name="AllowDeferLayoutUpdate" of-type="TwoOptions" default-value="false" display-name-key="AllowDeferLayoutUpdate" description-key="AllowDeferLayoutUpdate_Desc_Key" usage="input" required="false" />
     <property name="EnableFieldSearching" of-type="TwoOptions" default-value="false" display-name-key="EnableFieldSearching" description-key="EnableFieldSearching_Desc_Key" usage="input" required="false" />
     <property name="ShowValuesbutton" of-type="TwoOptions" default-value="false" display-name-key="ShowValuesbutton" description-key="ShowValuesbutton_Desc_Key" usage="input" required="false" />
     <property name="AllowDrillThrough" of-type="TwoOptions" default-value="false" display-name-key="AllowDrillThrough" description-key="AllowDrillThrough_Desc_Key" usage="input" required="false" />
     <property name="EnableValueSorting" of-type="TwoOptions" default-value="false" display-name-key="EnableValueSorting" description-key="EnableValueSorting_Desc_Key" usage="input" required="false" />
-    <property name="AllowGrouping" of-type="TwoOptions" default-value="false" display-name-key="AllowGrouping" description-key="AllowGrouping_Desc_Key" usage="input" required="false" />
-    <property name="EnablePaging" of-type="TwoOptions" default-value="false" display-name-key="EnablePaging" description-key="EnablePaging_Desc_Key" usage="input" required="false" />
     <property name="ShowGroupingbar" of-type="TwoOptions" default-value="false" display-name-key="ShowGroupingbar" description-key="ShowGroupingbar_Desc_Key" usage="input" required="false" />
     <property name="ShowToolbar" of-type="TwoOptions" default-value="false" display-name-key="ShowToolbar" description-key="ShowToolbar_Desc_Key" usage="input" required="false" />
     <property name="ShowTooltip" of-type="TwoOptions" default-value="false" display-name-key="ShowTooltip" description-key="ShowTooltip_Desc_Key" usage="input" required="false" />
@@ -80,17 +77,6 @@
       <code path="index.ts" order="1" />
       <platform-library name="React" version="16.8.6" />
       <resx path="strings/SfPivotView.1033.resx" version="1.0.0" />
-      <css path="../../../node_modules/@syncfusion/ej2-base/styles/fluent2.css" />
-      <css path="../../../node_modules/@syncfusion/ej2-buttons/styles/fluent2.css" />
-      <css path="../../../node_modules/@syncfusion/ej2-dropdowns/styles/fluent2.css" />
-      <css path="../../../node_modules/@syncfusion/ej2-grids/styles/fluent2.css" />
-      <css path="../../../node_modules/@syncfusion/ej2-inputs/styles/fluent2.css" />
-      <css path="../../../node_modules/@syncfusion/ej2-lists/styles/fluent2.css" />
-      <css path="../../../node_modules/@syncfusion/ej2-navigations/styles/fluent2.css" />
-      <css path="../../../node_modules/@syncfusion/ej2-popups/styles/fluent2.css" />
-      <css path="../../../node_modules/@syncfusion/ej2-splitbuttons/styles/fluent2.css" />
-      <css path="../../../node_modules/@syncfusion/ej2-calendars/styles/fluent2.css" />
-      <css path="../../../node_modules/@syncfusion/ej2-pivotview/styles/fluent2.css" />
       <css path="styles/theme.css" />
     </resources>
     <!-- UNCOMMENT TO ENABLE THE SPECIFIED API

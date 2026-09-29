@@ -123,7 +123,7 @@
 
     <!-- FileManager Control properties -->
     <data name="SfFileManager" xml:space="preserve">
-        <value>SfFileManager (28.1.33) Preview</value>
+        <value>SfFileManager (35.1.37) Preview</value>
     </data>
     <data name="SfFileManager_Desc_Key" xml:space="preserve">
         <value>The EJ2 FileManager component in PowerApps allows users to efficiently manage files and folders in a user-friendly interface. it offers seamless navigation and file operations, enhancing the user experience within PowerApps environments.</value>
