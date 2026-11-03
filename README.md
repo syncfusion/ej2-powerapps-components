@@ -163,7 +163,7 @@ The full Syncfusion license, including terms and conditions, can be found at: [S
 
 ## About Syncfusion
 
-Founded in 2001 and headquartered in Research Triangle Park, N.C., Syncfusion serves 47K+ enterprise customers and more than 1 million users, including major financial institutions, Fortune 500 companies, and leading global IT consultancies.
+Founded in 2001 and headquartered in Research Triangle Park, N.C., Syncfusion serves 63K+ enterprise customers and more than 2 million users, including major financial institutions, Fortune 500 companies, and leading global IT consultancies.
 
 Syncfusion offers 1,600+ UI components for web development, including support for [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls), [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls), [JavaScript](https://www.syncfusion.com/javascript-ui-controls), [Angular](https://www.syncfusion.com/angular-components), [React](https://www.syncfusion.com/react-components), [Vue](https://www.syncfusion.com/vue-components), and [Blazor](https://www.syncfusion.com/blazor-components); mobile platforms like [.NET MAUI](https://www.syncfusion.com/maui-controls), [Flutter](https://www.syncfusion.com/flutter-widgets), [UWP](https://www.syncfusion.com/uwp-ui-controls), and [JavaScript](https://www.syncfusion.com/javascript-ui-controls), as well as desktop development with [.NET MAUI](https://www.syncfusion.com/maui-controls), [WinForms](https://www.syncfusion.com/winforms-ui-controls), [WPF](https://www.syncfusion.com/wpf-ui-controls), and [UWP](https://www.syncfusion.com/uwp-ui-controls), and [WinUI](https://www.syncfusion.com/winui-controls).
 
