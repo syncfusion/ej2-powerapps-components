@@ -59,10 +59,10 @@ _Anticipate future updates to the component list. \*_
 
 Before starting with the Syncfusion PowerApps Code Components library, ensure the following prerequisites are installed:
 
-- [node.js  (>= v18.20.4)](https://nodejs.org/en/download/) (LTS version is recommended)
-- [.NET 6.x SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+- [Supported Node LTS (22/24)](https://nodejs.org/en/download/) (LTS version is recommended)
+- [.NET 8/10 SDK](https://dotnet.microsoft.com/en-us/download)
 - [Microsoft Power Platform CLI](https://learn.microsoft.com/en-us/power-platform/developer/cli/introduction#install-microsoft-power-platform-cli)
-- [System requirements for Syncfusion React components](https://ej2.syncfusion.com/react/documentation/system-requirement)
+- [System requirements for Syncfusion PowerApps Code Components](https://ej2.syncfusion.com/react/documentation/system-requirement)
 
 ## Clone the repository
 
@@ -142,7 +142,7 @@ We’re excited to share that the following components are planned for release s
 2. Menu
 3. TreeView
 
-We value your suggestions and ideas for improvement! Share your feedback with us through [Github Discussions](https://github.com/syncfusion/ej2-powerapps-components/issues).
+We value your suggestions and ideas for improvement! Share your feedback with us through [Github Discussions](https://github.com/syncfusion/ej2-powerapps-components/discussions).
 
 ## Support and feedback
 
@@ -151,9 +151,9 @@ We value your suggestions and ideas for improvement! Share your feedback with us
 
 ## License
 
-Syncfusion React Components are available through the Syncfusion Essential Studio program and can be licensed under either the Syncfusion Community License Program or the Syncfusion Commercial License.
+Syncfusion PowerApps Code Components are available through the Syncfusion Essential Studio program and can be licensed under either the Syncfusion Community License Program or the Syncfusion Commercial License.
 
-To qualify for the Syncfusion Community License Program, your organization must have annual gross revenue of less than 1 million U.S. dollars (USD 1,000,000) and fewer than 5 developers. Additionally, you must agree to Syncfusion’s terms and conditions.
+To qualify for the Syncfusion Community License Program, your organization must have $1M revenue, 5 or fewer developers, 10 or fewer employees, never more than $3M outside capital. Additionally, you must agree to Syncfusion’s terms and conditions.
 
 If you do not meet the requirements for the community license, please reach out to <sales@syncfusion.com> for commercial licensing options.
 
@@ -163,8 +163,8 @@ The full Syncfusion license, including terms and conditions, can be found at: [S
 
 ## About Syncfusion
 
-Founded in 2001 and headquartered in Research Triangle Park, N.C., Syncfusion serves over 29,000 customers and more than 1 million users, including major financial institutions, Fortune 500 companies, and leading global IT consultancies.
+Founded in 2001 and headquartered in Research Triangle Park, N.C., Syncfusion serves 63K+ enterprise customers and more than 2 million users, including major financial institutions, Fortune 500 companies, and leading global IT consultancies.
 
-Syncfusion offers a comprehensive suite of over 1,800+ controls and frameworks for web development, including support for [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls), [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls), [ASP.NET WebForms](https://www.syncfusion.com/jquery/aspnet-web-forms-ui-controls), [JavaScript](https://www.syncfusion.com/javascript-ui-controls), [Angular](https://www.syncfusion.com/angular-ui-components), [React](https://www.syncfusion.com/react-ui-components), [Vue](https://www.syncfusion.com/vue-ui-components), and [Blazor](https://www.syncfusion.com/blazor-components); mobile platforms like [Xamarin](https://www.syncfusion.com/xamarin-ui-controls), [Flutter](https://www.syncfusion.com/flutter-widgets), [UWP](https://www.syncfusion.com/uwp-ui-controls), and [JavaScript](https://www.syncfusion.com/javascript-ui-controls), as well as desktop development with [WinForms](https://www.syncfusion.com/winforms-ui-controls), [WPF](https://www.syncfusion.com/wpf-ui-controls), and [UWP](https://www.syncfusion.com/uwp-ui-controls) and [WinUI](https://www.syncfusion.com/winui-controls).
+Syncfusion offers 1,600+ UI components for web development, including support for [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls), [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls), [JavaScript](https://www.syncfusion.com/javascript-ui-controls), [Angular](https://www.syncfusion.com/angular-components), [React](https://www.syncfusion.com/react-components), [Vue](https://www.syncfusion.com/vue-components), and [Blazor](https://www.syncfusion.com/blazor-components); mobile platforms like [.NET MAUI](https://www.syncfusion.com/maui-controls), [Flutter](https://www.syncfusion.com/flutter-widgets), [UWP](https://www.syncfusion.com/uwp-ui-controls), and [JavaScript](https://www.syncfusion.com/javascript-ui-controls), as well as desktop development with [.NET MAUI](https://www.syncfusion.com/maui-controls), [WinForms](https://www.syncfusion.com/winforms-ui-controls), [WPF](https://www.syncfusion.com/wpf-ui-controls), and [UWP](https://www.syncfusion.com/uwp-ui-controls), and [WinUI](https://www.syncfusion.com/winui-controls).
 
-We provide ready-to-deploy enterprise software solutions for dashboards, reports, data integration, and big data processing. By leveraging our software, many customers have saved millions in licensing fees.
+We provide ready-to-deploy UI Component Suite, Document SDK, Code Studio, Agent Skills, MCP Servers. By leveraging our software, many customers have saved millions in licensing fees.
